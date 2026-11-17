@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+Dataset_UNet_Unificado/
+resultados_locales/
+*.tif
+*.tiff
+*.keras
+*.npz
+*.zip
+.env

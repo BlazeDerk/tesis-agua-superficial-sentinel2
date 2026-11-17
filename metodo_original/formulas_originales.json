@@ -1,0 +1,17 @@
+{
+  "threshold": 0.5,
+  "tp": "count(reference==1 AND probability>=0.5)",
+  "fp": "count(reference==0 AND probability>=0.5)",
+  "fn": "count(reference==1 AND probability<0.5)",
+  "tn": "count(reference==0 AND probability<0.5)",
+  "iou": "TP/(TP+FP+FN)",
+  "f1": "2TP/(2TP+FP+FN)",
+  "zero_denominator_value_original": 0.0,
+  "dtype_original_counts": "float64 metric accumulation; integer explicit counts",
+  "dtype_original_returned_ratios": "float32",
+  "dtype_recalculated_ratios": "Python float64 from saved integer counts",
+  "global": "aggregate integer counts then compute ratios",
+  "macro": "simple mean of unrounded float32 regional ratios saved by the original evaluation",
+  "validity_rule": "all pixels in admitted patch; read_pair rejects any GDAL-invalid pixels or65535 in any band or reference; see fresh59-row mask audit",
+  "legacy_zero_limitation": "pixelwise GDAL validity does not certify that all observed surfaces are cloud/shadow-free or correctly labelled"
+}

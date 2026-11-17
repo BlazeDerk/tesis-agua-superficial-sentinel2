@@ -1,0 +1,15 @@
+{
+  "mode": "final",
+  "dataset": "Dataset_UNet_Unificado",
+  "manifest": "Dataset_UNet_Unificado\\manifest.csv",
+  "output": "entrenamiento\\final_multirregional_20261004",
+  "epochs": 50,
+  "batch_size": 4,
+  "smoke_samples": null,
+  "freeze_encoder": false,
+  "allow_ambiguous_zeros": false,
+  "seed": 42,
+  "threads": 8,
+  "buffer_m": 2560.0,
+  "learning_rate": 0.0001
+}
