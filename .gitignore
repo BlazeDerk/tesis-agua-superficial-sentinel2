@@ -9,3 +9,10 @@ resultados_locales/
 *.npz
 *.zip
 .env
+revision/estadistica_recalculada/
+control59_local/
+historicos_local/
+externo_local/
+control_externo_local/
+contraste_local/
+l1c_original/

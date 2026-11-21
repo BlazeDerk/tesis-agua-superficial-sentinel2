@@ -1,0 +1,1103 @@
+{
+  "archive": "part3.zip",
+  "url": "https://zenodo.org/api/records/11278238/files/part3.zip/content",
+  "size": 30763336558,
+  "entries": [
+    {
+      "filename": "32/",
+      "compress_type": 0,
+      "compress_size": 0,
+      "file_size": 0,
+      "CRC": 0,
+      "header_offset": 0,
+      "flag_bits": 0
+    },
+    {
+      "filename": "32/sentinel12_copdem30_32_elevation.tif",
+      "compress_type": 8,
+      "compress_size": 19492946,
+      "file_size": 19766612,
+      "CRC": 1068642901,
+      "header_offset": 65,
+      "flag_bits": 8
+    },
+    {
+      "filename": "32/sentinel12_copdem30_32_slope.tif",
+      "compress_type": 8,
+      "compress_size": 11157781,
+      "file_size": 11159941,
+      "CRC": 446705339,
+      "header_offset": 19493128,
+      "flag_bits": 8
+    },
+    {
+      "filename": "32/sentinel12_s2_32_img.tif",
+      "compress_type": 8,
+      "compress_size": 1736737687,
+      "file_size": 1860944400,
+      "CRC": 4268313697,
+      "header_offset": 30651022,
+      "flag_bits": 8
+    },
+    {
+      "filename": "32/sentinel12_s2_32_valid.tif",
+      "compress_type": 8,
+      "compress_size": 103123,
+      "file_size": 702585,
+      "CRC": 2587538043,
+      "header_offset": 1767388814,
+      "flag_bits": 8
+    },
+    {
+      "filename": "32/sentinel12_s1_32_msk.tif",
+      "compress_type": 8,
+      "compress_size": 465592,
+      "file_size": 1225076,
+      "CRC": 2270403596,
+      "header_offset": 1767492044,
+      "flag_bits": 8
+    },
+    {
+      "filename": "32/sentinel12_s2_32_msk.tif",
+      "compress_type": 8,
+      "compress_size": 357317,
+      "file_size": 848446,
+      "CRC": 503917007,
+      "header_offset": 1767957741,
+      "flag_bits": 8
+    },
+    {
+      "filename": "32/sentinel12_s1_32_valid.tif",
+      "compress_type": 8,
+      "compress_size": 146396,
+      "file_size": 1034448,
+      "CRC": 2164016205,
+      "header_offset": 1768315163,
+      "flag_bits": 8
+    },
+    {
+      "filename": "32/sentinel12_32_meta.json",
+      "compress_type": 8,
+      "compress_size": 730,
+      "file_size": 3808,
+      "CRC": 2430574400,
+      "header_offset": 1768461666,
+      "flag_bits": 8
+    },
+    {
+      "filename": "32/sentinel12_s1_32_img.tif",
+      "compress_type": 8,
+      "compress_size": 831703691,
+      "file_size": 851525887,
+      "CRC": 3549544914,
+      "header_offset": 1768462500,
+      "flag_bits": 8
+    },
+    {
+      "filename": "33/",
+      "compress_type": 0,
+      "compress_size": 0,
+      "file_size": 0,
+      "CRC": 0,
+      "header_offset": 2600166296,
+      "flag_bits": 0
+    },
+    {
+      "filename": "33/sentinel12_33_meta.json",
+      "compress_type": 8,
+      "compress_size": 749,
+      "file_size": 3890,
+      "CRC": 292370318,
+      "header_offset": 2600166361,
+      "flag_bits": 8
+    },
+    {
+      "filename": "33/sentinel12_s1_33_img.tif",
+      "compress_type": 8,
+      "compress_size": 931944369,
+      "file_size": 954873839,
+      "CRC": 585160987,
+      "header_offset": 2600167214,
+      "flag_bits": 8
+    },
+    {
+      "filename": "33/sentinel12_s2_33_msk.tif",
+      "compress_type": 8,
+      "compress_size": 1426869,
+      "file_size": 1673958,
+      "CRC": 271385774,
+      "header_offset": 3532111688,
+      "flag_bits": 8
+    },
+    {
+      "filename": "33/sentinel12_s1_33_msk.tif",
+      "compress_type": 8,
+      "compress_size": 1915538,
+      "file_size": 2341634,
+      "CRC": 3496641285,
+      "header_offset": 3533538662,
+      "flag_bits": 8
+    },
+    {
+      "filename": "33/sentinel12_s2_33_img.tif",
+      "compress_type": 8,
+      "compress_size": 1707824023,
+      "file_size": 1814330122,
+      "CRC": 3206079829,
+      "header_offset": 3535454305,
+      "flag_bits": 8
+    },
+    {
+      "filename": "33/sentinel12_s1_33_valid.tif",
+      "compress_type": 8,
+      "compress_size": 77693,
+      "file_size": 998176,
+      "CRC": 608577170,
+      "header_offset": 5243278433,
+      "flag_bits": 8
+    },
+    {
+      "filename": "33/sentinel12_s2_33_valid.tif",
+      "compress_type": 8,
+      "compress_size": 200274,
+      "file_size": 785261,
+      "CRC": 646326043,
+      "header_offset": 5243356233,
+      "flag_bits": 8
+    },
+    {
+      "filename": "33/sentinel12_copdem30_33_elevation.tif",
+      "compress_type": 8,
+      "compress_size": 15676668,
+      "file_size": 15761812,
+      "CRC": 1978849283,
+      "header_offset": 5243556614,
+      "flag_bits": 8
+    },
+    {
+      "filename": "33/sentinel12_copdem30_33_slope.tif",
+      "compress_type": 8,
+      "compress_size": 9300786,
+      "file_size": 9300208,
+      "CRC": 1526786702,
+      "header_offset": 5259233399,
+      "flag_bits": 8
+    },
+    {
+      "filename": "35/",
+      "compress_type": 0,
+      "compress_size": 0,
+      "file_size": 0,
+      "CRC": 0,
+      "header_offset": 5268534298,
+      "flag_bits": 0
+    },
+    {
+      "filename": "35/sentinel12_copdem30_35_elevation.tif",
+      "compress_type": 8,
+      "compress_size": 24909738,
+      "file_size": 25419760,
+      "CRC": 1000545901,
+      "header_offset": 5268534363,
+      "flag_bits": 8
+    },
+    {
+      "filename": "35/sentinel12_copdem30_35_slope.tif",
+      "compress_type": 8,
+      "compress_size": 12987896,
+      "file_size": 12999134,
+      "CRC": 2811243408,
+      "header_offset": 5293444218,
+      "flag_bits": 8
+    },
+    {
+      "filename": "35/sentinel12_s1_35_msk.tif",
+      "compress_type": 8,
+      "compress_size": 498096,
+      "file_size": 1254810,
+      "CRC": 1588463725,
+      "header_offset": 5306432227,
+      "flag_bits": 8
+    },
+    {
+      "filename": "35/sentinel12_s2_35_img.tif",
+      "compress_type": 8,
+      "compress_size": 1702467663,
+      "file_size": 1810188523,
+      "CRC": 3056585225,
+      "header_offset": 5306930428,
+      "flag_bits": 8
+    },
+    {
+      "filename": "35/sentinel12_s2_35_msk.tif",
+      "compress_type": 8,
+      "compress_size": 374899,
+      "file_size": 860858,
+      "CRC": 3319184938,
+      "header_offset": 7009398196,
+      "flag_bits": 8
+    },
+    {
+      "filename": "35/sentinel12_s1_35_valid.tif",
+      "compress_type": 8,
+      "compress_size": 430875,
+      "file_size": 1222745,
+      "CRC": 3585788318,
+      "header_offset": 7009773200,
+      "flag_bits": 8
+    },
+    {
+      "filename": "35/sentinel12_s2_35_valid.tif",
+      "compress_type": 8,
+      "compress_size": 294245,
+      "file_size": 852244,
+      "CRC": 2887586973,
+      "header_offset": 7010204182,
+      "flag_bits": 8
+    },
+    {
+      "filename": "35/sentinel12_35_meta.json",
+      "compress_type": 8,
+      "compress_size": 751,
+      "file_size": 3901,
+      "CRC": 488120076,
+      "header_offset": 7010498534,
+      "flag_bits": 8
+    },
+    {
+      "filename": "35/sentinel12_s1_35_img.tif",
+      "compress_type": 8,
+      "compress_size": 915935301,
+      "file_size": 943720337,
+      "CRC": 4040685174,
+      "header_offset": 7010499389,
+      "flag_bits": 8
+    },
+    {
+      "filename": "36/",
+      "compress_type": 0,
+      "compress_size": 0,
+      "file_size": 0,
+      "CRC": 0,
+      "header_offset": 7926434795,
+      "flag_bits": 0
+    },
+    {
+      "filename": "36/sentinel12_s2_36_msk.tif",
+      "compress_type": 8,
+      "compress_size": 256288,
+      "file_size": 768739,
+      "CRC": 4277325163,
+      "header_offset": 7926434860,
+      "flag_bits": 8
+    },
+    {
+      "filename": "36/sentinel12_s1_36_valid.tif",
+      "compress_type": 8,
+      "compress_size": 185698,
+      "file_size": 1089696,
+      "CRC": 2649555875,
+      "header_offset": 7926691253,
+      "flag_bits": 8
+    },
+    {
+      "filename": "36/sentinel12_s2_36_valid.tif",
+      "compress_type": 8,
+      "compress_size": 147389,
+      "file_size": 753002,
+      "CRC": 4015089929,
+      "header_offset": 7926877058,
+      "flag_bits": 8
+    },
+    {
+      "filename": "36/sentinel12_36_meta.json",
+      "compress_type": 8,
+      "compress_size": 734,
+      "file_size": 3816,
+      "CRC": 2873300450,
+      "header_offset": 7927024554,
+      "flag_bits": 8
+    },
+    {
+      "filename": "36/sentinel12_s1_36_msk.tif",
+      "compress_type": 8,
+      "compress_size": 333189,
+      "file_size": 1124672,
+      "CRC": 652764612,
+      "header_offset": 7927025392,
+      "flag_bits": 8
+    },
+    {
+      "filename": "36/sentinel12_s2_36_img.tif",
+      "compress_type": 8,
+      "compress_size": 1775148316,
+      "file_size": 1907548340,
+      "CRC": 2575755882,
+      "header_offset": 7927358686,
+      "flag_bits": 8
+    },
+    {
+      "filename": "36/sentinel12_s1_36_img.tif",
+      "compress_type": 8,
+      "compress_size": 947028588,
+      "file_size": 974253603,
+      "CRC": 4010135149,
+      "header_offset": 9702507107,
+      "flag_bits": 8
+    },
+    {
+      "filename": "36/sentinel12_copdem30_36_elevation.tif",
+      "compress_type": 8,
+      "compress_size": 24100510,
+      "file_size": 25084273,
+      "CRC": 1634874356,
+      "header_offset": 10649535800,
+      "flag_bits": 8
+    },
+    {
+      "filename": "36/sentinel12_copdem30_36_slope.tif",
+      "compress_type": 8,
+      "compress_size": 12435032,
+      "file_size": 12456624,
+      "CRC": 2807303671,
+      "header_offset": 10673636427,
+      "flag_bits": 8
+    },
+    {
+      "filename": "37/",
+      "compress_type": 0,
+      "compress_size": 0,
+      "file_size": 0,
+      "CRC": 0,
+      "header_offset": 10686071572,
+      "flag_bits": 0
+    },
+    {
+      "filename": "37/sentinel12_copdem30_37_elevation.tif",
+      "compress_type": 8,
+      "compress_size": 10537868,
+      "file_size": 10766250,
+      "CRC": 1941211346,
+      "header_offset": 10686071637,
+      "flag_bits": 8
+    },
+    {
+      "filename": "37/sentinel12_copdem30_37_slope.tif",
+      "compress_type": 8,
+      "compress_size": 6117100,
+      "file_size": 6142825,
+      "CRC": 3291663040,
+      "header_offset": 10696609622,
+      "flag_bits": 8
+    },
+    {
+      "filename": "37/sentinel12_s1_37_img.tif",
+      "compress_type": 8,
+      "compress_size": 756653575,
+      "file_size": 781619185,
+      "CRC": 3332049085,
+      "header_offset": 10702726835,
+      "flag_bits": 8
+    },
+    {
+      "filename": "37/sentinel12_s2_37_msk.tif",
+      "compress_type": 8,
+      "compress_size": 514551,
+      "file_size": 987361,
+      "CRC": 2544636533,
+      "header_offset": 11459380515,
+      "flag_bits": 8
+    },
+    {
+      "filename": "37/sentinel12_s1_37_valid.tif",
+      "compress_type": 8,
+      "compress_size": 119808,
+      "file_size": 783816,
+      "CRC": 4287636135,
+      "header_offset": 11459895171,
+      "flag_bits": 8
+    },
+    {
+      "filename": "37/sentinel12_s2_37_valid.tif",
+      "compress_type": 8,
+      "compress_size": 235784,
+      "file_size": 804243,
+      "CRC": 999768384,
+      "header_offset": 11460015086,
+      "flag_bits": 8
+    },
+    {
+      "filename": "37/sentinel12_s1_37_msk.tif",
+      "compress_type": 8,
+      "compress_size": 591561,
+      "file_size": 1144099,
+      "CRC": 1752802194,
+      "header_offset": 11460250977,
+      "flag_bits": 8
+    },
+    {
+      "filename": "37/sentinel12_s2_37_img.tif",
+      "compress_type": 8,
+      "compress_size": 1488741244,
+      "file_size": 1561313500,
+      "CRC": 743181695,
+      "header_offset": 11460842643,
+      "flag_bits": 8
+    },
+    {
+      "filename": "37/sentinel12_37_meta.json",
+      "compress_type": 8,
+      "compress_size": 694,
+      "file_size": 3771,
+      "CRC": 2682332598,
+      "header_offset": 12949583992,
+      "flag_bits": 8
+    },
+    {
+      "filename": "39/",
+      "compress_type": 0,
+      "compress_size": 0,
+      "file_size": 0,
+      "CRC": 0,
+      "header_offset": 12949584790,
+      "flag_bits": 0
+    },
+    {
+      "filename": "39/sentinel12_copdem30_39_elevation.tif",
+      "compress_type": 8,
+      "compress_size": 26488032,
+      "file_size": 27669094,
+      "CRC": 841607895,
+      "header_offset": 12949584855,
+      "flag_bits": 8
+    },
+    {
+      "filename": "39/sentinel12_copdem30_39_slope.tif",
+      "compress_type": 8,
+      "compress_size": 14139118,
+      "file_size": 14170722,
+      "CRC": 1114226666,
+      "header_offset": 12976073004,
+      "flag_bits": 8
+    },
+    {
+      "filename": "39/sentinel12_s1_39_img.tif",
+      "compress_type": 8,
+      "compress_size": 971313606,
+      "file_size": 1003150351,
+      "CRC": 354072491,
+      "header_offset": 12990212235,
+      "flag_bits": 8
+    },
+    {
+      "filename": "39/sentinel12_s1_39_msk.tif",
+      "compress_type": 8,
+      "compress_size": 186773,
+      "file_size": 1014639,
+      "CRC": 1411877129,
+      "header_offset": 13961525946,
+      "flag_bits": 8
+    },
+    {
+      "filename": "39/sentinel12_s2_39_img.tif",
+      "compress_type": 8,
+      "compress_size": 1751878037,
+      "file_size": 1882521615,
+      "CRC": 3196176387,
+      "header_offset": 13961712824,
+      "flag_bits": 8
+    },
+    {
+      "filename": "39/sentinel12_s2_39_msk.tif",
+      "compress_type": 8,
+      "compress_size": 139663,
+      "file_size": 680677,
+      "CRC": 1815109641,
+      "header_offset": 15713590966,
+      "flag_bits": 8
+    },
+    {
+      "filename": "39/sentinel12_s1_39_valid.tif",
+      "compress_type": 8,
+      "compress_size": 28342,
+      "file_size": 966488,
+      "CRC": 1246532230,
+      "header_offset": 15713730734,
+      "flag_bits": 8
+    },
+    {
+      "filename": "39/sentinel12_s2_39_valid.tif",
+      "compress_type": 8,
+      "compress_size": 622112,
+      "file_size": 1096642,
+      "CRC": 3779190002,
+      "header_offset": 15713759183,
+      "flag_bits": 8
+    },
+    {
+      "filename": "39/sentinel12_39_meta.json",
+      "compress_type": 8,
+      "compress_size": 748,
+      "file_size": 3895,
+      "CRC": 2509320348,
+      "header_offset": 15714381402,
+      "flag_bits": 8
+    },
+    {
+      "filename": "40/",
+      "compress_type": 0,
+      "compress_size": 0,
+      "file_size": 0,
+      "CRC": 0,
+      "header_offset": 15714382254,
+      "flag_bits": 0
+    },
+    {
+      "filename": "40/sentinel12_40_meta.json",
+      "compress_type": 8,
+      "compress_size": 735,
+      "file_size": 3812,
+      "CRC": 937320978,
+      "header_offset": 15714382319,
+      "flag_bits": 8
+    },
+    {
+      "filename": "40/sentinel12_s1_40_img.tif",
+      "compress_type": 8,
+      "compress_size": 1127205147,
+      "file_size": 1145071633,
+      "CRC": 1889430393,
+      "header_offset": 15714383158,
+      "flag_bits": 8
+    },
+    {
+      "filename": "40/sentinel12_s2_40_msk.tif",
+      "compress_type": 8,
+      "compress_size": 426616,
+      "file_size": 904525,
+      "CRC": 3150473051,
+      "header_offset": 16841588410,
+      "flag_bits": 8
+    },
+    {
+      "filename": "40/sentinel12_s1_40_valid.tif",
+      "compress_type": 8,
+      "compress_size": 68386,
+      "file_size": 1279572,
+      "CRC": 4153939694,
+      "header_offset": 16842015131,
+      "flag_bits": 8
+    },
+    {
+      "filename": "40/sentinel12_s1_40_msk.tif",
+      "compress_type": 8,
+      "compress_size": 667262,
+      "file_size": 1664059,
+      "CRC": 2038089508,
+      "header_offset": 16842083624,
+      "flag_bits": 8
+    },
+    {
+      "filename": "40/sentinel12_s2_40_img.tif",
+      "compress_type": 8,
+      "compress_size": 1666800526,
+      "file_size": 1745113272,
+      "CRC": 819447430,
+      "header_offset": 16842750991,
+      "flag_bits": 8
+    },
+    {
+      "filename": "40/sentinel12_s2_40_valid.tif",
+      "compress_type": 8,
+      "compress_size": 48658,
+      "file_size": 668665,
+      "CRC": 586100436,
+      "header_offset": 18509551622,
+      "flag_bits": 8
+    },
+    {
+      "filename": "40/sentinel12_copdem30_40_elevation.tif",
+      "compress_type": 8,
+      "compress_size": 16840917,
+      "file_size": 16886743,
+      "CRC": 1650603077,
+      "header_offset": 18509600387,
+      "flag_bits": 8
+    },
+    {
+      "filename": "40/sentinel12_copdem30_40_slope.tif",
+      "compress_type": 8,
+      "compress_size": 8622445,
+      "file_size": 8621566,
+      "CRC": 2834934510,
+      "header_offset": 18526441421,
+      "flag_bits": 8
+    },
+    {
+      "filename": "41/",
+      "compress_type": 0,
+      "compress_size": 0,
+      "file_size": 0,
+      "CRC": 0,
+      "header_offset": 18535063979,
+      "flag_bits": 0
+    },
+    {
+      "filename": "41/sentinel12_41_meta.json",
+      "compress_type": 8,
+      "compress_size": 745,
+      "file_size": 3887,
+      "CRC": 1141936574,
+      "header_offset": 18535064044,
+      "flag_bits": 8
+    },
+    {
+      "filename": "41/sentinel12_s1_41_img.tif",
+      "compress_type": 8,
+      "compress_size": 1148467730,
+      "file_size": 1170247546,
+      "CRC": 2174962623,
+      "header_offset": 18535064893,
+      "flag_bits": 8
+    },
+    {
+      "filename": "41/sentinel12_copdem30_41_elevation.tif",
+      "compress_type": 8,
+      "compress_size": 19941079,
+      "file_size": 20089412,
+      "CRC": 294539811,
+      "header_offset": 19683532728,
+      "flag_bits": 8
+    },
+    {
+      "filename": "41/sentinel12_copdem30_41_slope.tif",
+      "compress_type": 8,
+      "compress_size": 10401133,
+      "file_size": 10401405,
+      "CRC": 2612154819,
+      "header_offset": 19703473924,
+      "flag_bits": 8
+    },
+    {
+      "filename": "41/sentinel12_s1_41_valid.tif",
+      "compress_type": 8,
+      "compress_size": 107663,
+      "file_size": 1259011,
+      "CRC": 4055011927,
+      "header_offset": 19713875170,
+      "flag_bits": 8
+    },
+    {
+      "filename": "41/sentinel12_s2_41_valid.tif",
+      "compress_type": 8,
+      "compress_size": 40301,
+      "file_size": 658376,
+      "CRC": 3298376991,
+      "header_offset": 19713982940,
+      "flag_bits": 8
+    },
+    {
+      "filename": "41/sentinel12_s1_41_msk.tif",
+      "compress_type": 8,
+      "compress_size": 515656,
+      "file_size": 1539579,
+      "CRC": 2596838327,
+      "header_offset": 19714023348,
+      "flag_bits": 8
+    },
+    {
+      "filename": "41/sentinel12_s2_41_img.tif",
+      "compress_type": 8,
+      "compress_size": 1725284973,
+      "file_size": 1832596553,
+      "CRC": 1501269938,
+      "header_offset": 19714539109,
+      "flag_bits": 8
+    },
+    {
+      "filename": "41/sentinel12_s2_41_msk.tif",
+      "compress_type": 8,
+      "compress_size": 331108,
+      "file_size": 828652,
+      "CRC": 2847911310,
+      "header_offset": 21439824187,
+      "flag_bits": 8
+    },
+    {
+      "filename": "47/",
+      "compress_type": 0,
+      "compress_size": 0,
+      "file_size": 0,
+      "CRC": 0,
+      "header_offset": 21440155400,
+      "flag_bits": 0
+    },
+    {
+      "filename": "47/sentinel12_copdem30_47_elevation.tif",
+      "compress_type": 8,
+      "compress_size": 12085196,
+      "file_size": 12164371,
+      "CRC": 4220271447,
+      "header_offset": 21440155465,
+      "flag_bits": 8
+    },
+    {
+      "filename": "47/sentinel12_copdem30_47_slope.tif",
+      "compress_type": 8,
+      "compress_size": 7070715,
+      "file_size": 7070440,
+      "CRC": 415052968,
+      "header_offset": 21452240778,
+      "flag_bits": 8
+    },
+    {
+      "filename": "47/sentinel12_47_meta.json",
+      "compress_type": 8,
+      "compress_size": 703,
+      "file_size": 3773,
+      "CRC": 2355117881,
+      "header_offset": 21459311606,
+      "flag_bits": 8
+    },
+    {
+      "filename": "47/sentinel12_s1_47_msk.tif",
+      "compress_type": 8,
+      "compress_size": 1055266,
+      "file_size": 1415473,
+      "CRC": 2278554310,
+      "header_offset": 21459312413,
+      "flag_bits": 8
+    },
+    {
+      "filename": "47/sentinel12_s2_47_img.tif",
+      "compress_type": 8,
+      "compress_size": 1480781043,
+      "file_size": 1581309551,
+      "CRC": 2059024494,
+      "header_offset": 21460367784,
+      "flag_bits": 8
+    },
+    {
+      "filename": "47/sentinel12_s2_47_msk.tif",
+      "compress_type": 8,
+      "compress_size": 995337,
+      "file_size": 1364020,
+      "CRC": 1025787876,
+      "header_offset": 22941148932,
+      "flag_bits": 8
+    },
+    {
+      "filename": "47/sentinel12_s1_47_valid.tif",
+      "compress_type": 8,
+      "compress_size": 208269,
+      "file_size": 716930,
+      "CRC": 483344298,
+      "header_offset": 22942144374,
+      "flag_bits": 8
+    },
+    {
+      "filename": "47/sentinel12_s2_47_valid.tif",
+      "compress_type": 8,
+      "compress_size": 154307,
+      "file_size": 732050,
+      "CRC": 1369782650,
+      "header_offset": 22942352750,
+      "flag_bits": 8
+    },
+    {
+      "filename": "47/sentinel12_s1_47_img.tif",
+      "compress_type": 8,
+      "compress_size": 547295879,
+      "file_size": 562562131,
+      "CRC": 2729831931,
+      "header_offset": 22942507164,
+      "flag_bits": 8
+    },
+    {
+      "filename": "48/",
+      "compress_type": 0,
+      "compress_size": 0,
+      "file_size": 0,
+      "CRC": 0,
+      "header_offset": 23489803148,
+      "flag_bits": 0
+    },
+    {
+      "filename": "48/sentinel12_copdem30_48_elevation.tif",
+      "compress_type": 8,
+      "compress_size": 16906825,
+      "file_size": 16940979,
+      "CRC": 2825631237,
+      "header_offset": 23489803213,
+      "flag_bits": 8
+    },
+    {
+      "filename": "48/sentinel12_copdem30_48_slope.tif",
+      "compress_type": 8,
+      "compress_size": 10925307,
+      "file_size": 10923404,
+      "CRC": 1766473131,
+      "header_offset": 23506710155,
+      "flag_bits": 8
+    },
+    {
+      "filename": "48/sentinel12_s2_48_msk.tif",
+      "compress_type": 8,
+      "compress_size": 1265184,
+      "file_size": 1520637,
+      "CRC": 2577464466,
+      "header_offset": 23517635575,
+      "flag_bits": 8
+    },
+    {
+      "filename": "48/sentinel12_s1_48_valid.tif",
+      "compress_type": 8,
+      "compress_size": 88172,
+      "file_size": 791949,
+      "CRC": 2191073911,
+      "header_offset": 23518900864,
+      "flag_bits": 8
+    },
+    {
+      "filename": "48/sentinel12_s2_48_valid.tif",
+      "compress_type": 8,
+      "compress_size": 73228,
+      "file_size": 672042,
+      "CRC": 3044771104,
+      "header_offset": 23518989143,
+      "flag_bits": 8
+    },
+    {
+      "filename": "48/sentinel12_s1_48_msk.tif",
+      "compress_type": 8,
+      "compress_size": 1434161,
+      "file_size": 1757341,
+      "CRC": 3984912301,
+      "header_offset": 23519062478,
+      "flag_bits": 8
+    },
+    {
+      "filename": "48/sentinel12_s2_48_img.tif",
+      "compress_type": 8,
+      "compress_size": 1757723817,
+      "file_size": 1877238961,
+      "CRC": 1800153539,
+      "header_offset": 23520496744,
+      "flag_bits": 8
+    },
+    {
+      "filename": "48/sentinel12_48_meta.json",
+      "compress_type": 8,
+      "compress_size": 735,
+      "file_size": 3815,
+      "CRC": 2228312084,
+      "header_offset": 25278220666,
+      "flag_bits": 8
+    },
+    {
+      "filename": "48/sentinel12_s1_48_img.tif",
+      "compress_type": 8,
+      "compress_size": 695583778,
+      "file_size": 712565943,
+      "CRC": 585309819,
+      "header_offset": 25278221505,
+      "flag_bits": 8
+    },
+    {
+      "filename": "49/",
+      "compress_type": 0,
+      "compress_size": 0,
+      "file_size": 0,
+      "CRC": 0,
+      "header_offset": 25973805388,
+      "flag_bits": 0
+    },
+    {
+      "filename": "49/sentinel12_copdem30_49_elevation.tif",
+      "compress_type": 8,
+      "compress_size": 12224030,
+      "file_size": 12227898,
+      "CRC": 3119785530,
+      "header_offset": 25973805453,
+      "flag_bits": 8
+    },
+    {
+      "filename": "49/sentinel12_copdem30_49_slope.tif",
+      "compress_type": 8,
+      "compress_size": 6722999,
+      "file_size": 6725239,
+      "CRC": 907709885,
+      "header_offset": 25986029600,
+      "flag_bits": 8
+    },
+    {
+      "filename": "49/sentinel12_s2_49_msk.tif",
+      "compress_type": 8,
+      "compress_size": 1118114,
+      "file_size": 1388525,
+      "CRC": 2621143889,
+      "header_offset": 25992752712,
+      "flag_bits": 8
+    },
+    {
+      "filename": "49/sentinel12_s1_49_valid.tif",
+      "compress_type": 8,
+      "compress_size": 238486,
+      "file_size": 865184,
+      "CRC": 3979515664,
+      "header_offset": 25993870931,
+      "flag_bits": 8
+    },
+    {
+      "filename": "49/sentinel12_s2_49_valid.tif",
+      "compress_type": 8,
+      "compress_size": 191283,
+      "file_size": 765375,
+      "CRC": 4025449158,
+      "header_offset": 25994109524,
+      "flag_bits": 8
+    },
+    {
+      "filename": "49/sentinel12_s1_49_msk.tif",
+      "compress_type": 8,
+      "compress_size": 1283767,
+      "file_size": 1630492,
+      "CRC": 2498178102,
+      "header_offset": 25994300914,
+      "flag_bits": 8
+    },
+    {
+      "filename": "49/sentinel12_s2_49_img.tif",
+      "compress_type": 8,
+      "compress_size": 1646629084,
+      "file_size": 1757910010,
+      "CRC": 1382375320,
+      "header_offset": 25995584786,
+      "flag_bits": 8
+    },
+    {
+      "filename": "49/sentinel12_49_meta.json",
+      "compress_type": 8,
+      "compress_size": 702,
+      "file_size": 3771,
+      "CRC": 3398959065,
+      "header_offset": 27642213975,
+      "flag_bits": 8
+    },
+    {
+      "filename": "49/sentinel12_s1_49_img.tif",
+      "compress_type": 8,
+      "compress_size": 712765027,
+      "file_size": 730882475,
+      "CRC": 2279766363,
+      "header_offset": 27642214781,
+      "flag_bits": 8
+    },
+    {
+      "filename": "51/",
+      "compress_type": 0,
+      "compress_size": 0,
+      "file_size": 0,
+      "CRC": 0,
+      "header_offset": 28354979913,
+      "flag_bits": 0
+    },
+    {
+      "filename": "51/sentinel12_s1_51_img.tif",
+      "compress_type": 8,
+      "compress_size": 773604667,
+      "file_size": 797435717,
+      "CRC": 3596649701,
+      "header_offset": 28354979978,
+      "flag_bits": 8
+    },
+    {
+      "filename": "51/sentinel12_s2_51_msk.tif",
+      "compress_type": 8,
+      "compress_size": 5909680,
+      "file_size": 5943198,
+      "CRC": 4159060138,
+      "header_offset": 29128584750,
+      "flag_bits": 8
+    },
+    {
+      "filename": "51/sentinel12_s1_51_valid.tif",
+      "compress_type": 8,
+      "compress_size": 122980,
+      "file_size": 783933,
+      "CRC": 1473088649,
+      "header_offset": 29134494535,
+      "flag_bits": 8
+    },
+    {
+      "filename": "51/sentinel12_s2_51_valid.tif",
+      "compress_type": 8,
+      "compress_size": 103936,
+      "file_size": 667039,
+      "CRC": 3553695292,
+      "header_offset": 29134617622,
+      "flag_bits": 8
+    },
+    {
+      "filename": "51/sentinel12_s1_51_msk.tif",
+      "compress_type": 8,
+      "compress_size": 7015463,
+      "file_size": 7044740,
+      "CRC": 2110094336,
+      "header_offset": 29134721665,
+      "flag_bits": 8
+    },
+    {
+      "filename": "51/sentinel12_s2_51_img.tif",
+      "compress_type": 8,
+      "compress_size": 1609362105,
+      "file_size": 1700950396,
+      "CRC": 4069795083,
+      "header_offset": 29141737233,
+      "flag_bits": 8
+    },
+    {
+      "filename": "51/sentinel12_51_meta.json",
+      "compress_type": 8,
+      "compress_size": 721,
+      "file_size": 3873,
+      "CRC": 2657716795,
+      "header_offset": 30751099443,
+      "flag_bits": 8
+    },
+    {
+      "filename": "51/sentinel12_copdem30_51_elevation.tif",
+      "compress_type": 8,
+      "compress_size": 7150756,
+      "file_size": 7158335,
+      "CRC": 2394454230,
+      "header_offset": 30751100268,
+      "flag_bits": 8
+    },
+    {
+      "filename": "51/sentinel12_copdem30_51_slope.tif",
+      "compress_type": 8,
+      "compress_size": 5071370,
+      "file_size": 5071599,
+      "CRC": 533701671,
+      "header_offset": 30758251141,
+      "flag_bits": 8
+    }
+  ],
+  "metadata_files": [
+    "sentinel12_32_meta.json",
+    "sentinel12_33_meta.json",
+    "sentinel12_35_meta.json",
+    "sentinel12_36_meta.json",
+    "sentinel12_37_meta.json",
+    "sentinel12_39_meta.json",
+    "sentinel12_40_meta.json",
+    "sentinel12_41_meta.json",
+    "sentinel12_47_meta.json",
+    "sentinel12_48_meta.json",
+    "sentinel12_49_meta.json",
+    "sentinel12_51_meta.json"
+  ],
+  "http_range_requests": 40,
+  "http_bytes": 23353
+}

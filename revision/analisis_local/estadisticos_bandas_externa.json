@@ -1,0 +1,117 @@
+{
+  "units": "physical L2A surface reflectance; scale/offset already applied once",
+  "std": "population ddof=0, descriptive, not independent-pixel inference",
+  "source_manifest_sha256": "53c01804256a98a65d0ee212650f28153350d677da913fcc85d6d117beea8f97",
+  "rows": [
+    {
+      "scope": "model_input_after_zero_filler",
+      "band": "B2",
+      "pixels": 16777216,
+      "mean": 0.057434504100852886,
+      "std_population": 0.05401776488725327,
+      "minimum": 0.0,
+      "maximum": 2.0016000270843506
+    },
+    {
+      "scope": "model_input_after_zero_filler",
+      "band": "B3",
+      "pixels": 16777216,
+      "mean": 0.08524397972823008,
+      "std_population": 0.07288992324831861,
+      "minimum": 0.0,
+      "maximum": 1.8639999628067017
+    },
+    {
+      "scope": "model_input_after_zero_filler",
+      "band": "B4",
+      "pixels": 16777216,
+      "mean": 0.09826336660033119,
+      "std_population": 0.10596501283048479,
+      "minimum": 0.0,
+      "maximum": 1.7583999633789062
+    },
+    {
+      "scope": "model_input_after_zero_filler",
+      "band": "B8",
+      "pixels": 16777216,
+      "mean": 0.22819891959885216,
+      "std_population": 0.12514806128756678,
+      "minimum": 0.0,
+      "maximum": 1.6511999368667603
+    },
+    {
+      "scope": "all_finite_four_band_inputs",
+      "band": "B2",
+      "pixels": 16579556,
+      "mean": 0.05811923317807151,
+      "std_population": 0.05397138284125163,
+      "minimum": 9.999999747378752e-05,
+      "maximum": 2.0016000270843506
+    },
+    {
+      "scope": "all_finite_four_band_inputs",
+      "band": "B3",
+      "pixels": 16579556,
+      "mean": 0.08626025091384454,
+      "std_population": 0.07272288164832749,
+      "minimum": 9.999999747378752e-05,
+      "maximum": 1.8639999628067017
+    },
+    {
+      "scope": "all_finite_four_band_inputs",
+      "band": "B4",
+      "pixels": 16579556,
+      "mean": 0.09943485376453641,
+      "std_population": 0.10604698710384841,
+      "minimum": 9.999999747378752e-05,
+      "maximum": 1.7583999633789062
+    },
+    {
+      "scope": "all_finite_four_band_inputs",
+      "band": "B8",
+      "pixels": 16579556,
+      "mean": 0.23091948693177175,
+      "std_population": 0.12337149854772311,
+      "minimum": 9.999999747378752e-05,
+      "maximum": 1.6511999368667603
+    },
+    {
+      "scope": "common_evaluation_support",
+      "band": "B2",
+      "pixels": 16554593,
+      "mean": 0.05806071033042594,
+      "std_population": 0.05357976861828713,
+      "minimum": 9.999999747378752e-05,
+      "maximum": 2.0
+    },
+    {
+      "scope": "common_evaluation_support",
+      "band": "B3",
+      "pixels": 16554593,
+      "mean": 0.08622470793873627,
+      "std_population": 0.07248788591010237,
+      "minimum": 9.999999747378752e-05,
+      "maximum": 1.8639999628067017
+    },
+    {
+      "scope": "common_evaluation_support",
+      "band": "B4",
+      "pixels": 16554593,
+      "mean": 0.0994205221420738,
+      "std_population": 0.10594291355110282,
+      "minimum": 9.999999747378752e-05,
+      "maximum": 1.7583999633789062
+    },
+    {
+      "scope": "common_evaluation_support",
+      "band": "B8",
+      "pixels": 16554593,
+      "mean": 0.23102766991473395,
+      "std_population": 0.12328970799664324,
+      "minimum": 9.999999747378752e-05,
+      "maximum": 1.6511999368667603
+    }
+  ],
+  "training_comparison_available": false,
+  "training_absence_reason": "Only four original Test examples are local, not the 460 Train images. Min/max manifest values and VGG centering constants cannot recover means/std."
+}

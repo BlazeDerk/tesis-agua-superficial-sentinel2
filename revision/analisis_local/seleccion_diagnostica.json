@@ -1,0 +1,72 @@
+{
+  "selection_is_illustrative_not_representative": true,
+  "rows": [
+    {
+      "case_id": "S023_r06656_c02048",
+      "scene_id": "23",
+      "selection": "largest reference-water support among 16 selected cases, ties case_id; no method-error selection",
+      "reference_water_common_pixels": 2392,
+      "rgb_stretch_percentiles_2_98_by_channel": [
+        [
+          0.013669999781996017,
+          0.4472000002861023
+        ],
+        [
+          0.01769999973475933,
+          0.32099997997283936
+        ],
+        [
+          9.999999747378752e-05,
+          0.2337999939918518
+        ]
+      ],
+      "source_l1c": "S2A_MSIL1C_20190816T180921_N0208_R084_T12SVF_20190816T214639",
+      "source_l2a": "S2A_MSIL2A_20190816T180921_N0213_R084_T12SVF_20190816T222328.SAFE"
+    },
+    {
+      "case_id": "S025_r06912_c00768",
+      "scene_id": "25",
+      "selection": "largest reference-water support among 16 selected cases, ties case_id; no method-error selection",
+      "reference_water_common_pixels": 4966,
+      "rgb_stretch_percentiles_2_98_by_channel": [
+        [
+          0.00839999970048666,
+          0.0551999993622303
+        ],
+        [
+          0.010900000110268593,
+          0.06560000032186508
+        ],
+        [
+          0.009499999694526196,
+          0.03610000014305115
+        ]
+      ],
+      "source_l1c": "S2A_MSIL1C_20190828T084601_N0208_R107_T37VCE_20190828T123410",
+      "source_l2a": "S2A_MSIL2A_20190828T084601_N0213_R107_T37VCE_20190828T131555.SAFE"
+    },
+    {
+      "case_id": "S033_r09472_c05376",
+      "scene_id": "33",
+      "selection": "largest reference-water support among 16 selected cases, ties case_id; no method-error selection",
+      "reference_water_common_pixels": 9845,
+      "rgb_stretch_percentiles_2_98_by_channel": [
+        [
+          0.014099999330937862,
+          0.09950000047683716
+        ],
+        [
+          0.026569999568164353,
+          0.09339999407529831
+        ],
+        [
+          0.011099999770522118,
+          0.061400000005960464
+        ]
+      ],
+      "source_l1c": "S2A_MSIL1C_20190913T154901_N0208_R054_T18TXS_20190913T192840",
+      "source_l2a": "S2A_MSIL2A_20190913T154901_N0213_R054_T18TXS_20190913T200642.SAFE"
+    }
+  ],
+  "no_source_raster_modified": true
+}

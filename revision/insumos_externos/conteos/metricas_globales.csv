@@ -1,0 +1,4 @@
+﻿aggregation,aggregate_id,method,n_cases,n_scenes,n_clusters,n_cases_with_valid_pixels,valid_pixels,water_reference_pixels,water_predicted_pixels,tp,fp,fn,tn,iou,iou_defined,f1,f1_defined,precision,precision_defined,recall,recall_defined,reference_has_no_water,prediction_has_no_water,status
+global,ALL,mndwi,256,16,16,253,16554593,2296504,2126509,2115454,11055,181050,14247034,0.9167496909071448,True,0.9565669375152187,True,0.9948013387199396,True,0.9211627761153475,True,False,False,evaluated
+global,ALL,ndwi,256,16,16,253,16554593,2296504,2118278,2112811,5467,183693,14252622,0.9178269404783987,True,0.9571530372281123,True,0.9974191300669695,True,0.9200118963433114,True,False,False,evaluated
+global,ALL,unet,256,16,16,253,16554593,2296504,2130036,2078173,51863,218331,14206226,0.8849438780224727,True,0.9389604521816136,True,0.9756515852314234,True,0.9049289702957191,True,False,False,evaluated

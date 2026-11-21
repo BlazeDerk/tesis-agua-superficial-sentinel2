@@ -1,0 +1,61 @@
+{
+  "modelo_sha256": "9e28f92b557bdd2e9a2e7b068a6622254ddbf80080926b8c004368ad5683dda4",
+  "reevaluacion_historica": {
+    "started_at_utc": "2026-11-21T06:40:31.530972+00:00",
+    "completed_at_utc": "2026-11-21T06:40:50.740084+00:00",
+    "batch_size": 4,
+    "thresholds": {
+      "unet": ">=0.5",
+      "ndwi": ">0"
+    },
+    "radiometry": "Original uint16 B2/B3/B4/B8; divide by10000 once before exact saved VGG4Preprocess.",
+    "runtime": {
+      "python": "3.12.14",
+      "numpy": "2.2.6",
+      "rasterio": "1.5.1",
+      "gdal": "3.12.4",
+      "platform": "Windows-11-10.0.26300-SP0",
+      "tensorflow": "2.20.0",
+      "keras": "3.15.1"
+    },
+    "original_59_confusion_exactly_reproduced": true
+  },
+  "evaluacion_externa": {
+    "started_at_utc": "2026-11-20T16:01:52.972730+00:00",
+    "completed_at_utc": "2026-11-20T16:02:58.224871+00:00",
+    "thresholds": {
+      "unet": ">=0.5",
+      "ndwi": ">0",
+      "mndwi": ">0"
+    },
+    "common_valid_pixels": 16554593,
+    "runtime": {
+      "python": "3.12.14",
+      "numpy": "2.2.6",
+      "rasterio": "1.5.1",
+      "tensorflow": "2.20.0"
+    },
+    "reference_procedure": "NDWI initialization followed by iterative expert review/correction; possible anchoring to NDWI",
+    "dataset_adaptation": "S1S2-Water v1.0.1 references and validity with matched same-acquisition Sentinel-2 L2A",
+    "manifest_sha256": "53c01804256a98a65d0ee212650f28153350d677da913fcc85d6d117beea8f97"
+  },
+  "externa_zip_compartido_equipo": {
+    "archivo": "resultados_externos_v1.zip",
+    "sha256": "18fc33daecad950b3fb25a10988b4d11f4131c8435165e788dc076585b098a8c"
+  },
+  "revision_original_scripts_sha256": {
+    "analisis_local/analizar_escenas.py": "a7aaef366ede93a0b346c8d21183f87dc7663e5ee3ded723e5b33c514d0d6b6d",
+    "analisis_local/test_estadistica.py": "1a04b1d9c25d9b8a91afcaa2d30d0c06f3a8cba5f5ec134ed3705a69410f9edb",
+    "comparar_bandas.py": "1bb4bd500b483f717d655addd5adf9459ef5062a2a7989ded73ad27892adab12",
+    "diagnosticar_l1c_l2a.py": "e12afe4f182402a2c067ac10f92cc38be879e81079fb65f48d3b01def71948e5",
+    "estadisticos_train_congelado.py": "f6c56f081bf1a51a78a1052bb35df04ea1b6cff910bedba5004f6e65a236cd91",
+    "modelo_original.py": "d81e0cfc2647ec74eb8c7c7569a97f5392ef3376e107a9e3bf3f532469b43a36",
+    "obtener_l1c_original.py": "65b9a3a50a71f046873110176b04fdf2edc9a4e9c185d4d728d3dbb8ee3ce445",
+    "reevaluar_historicos.py": "e2c5ba9d3a745fa77a8ba60a14192132f55a665371db8e2adbb48bbff540d08f",
+    "test_diagnosticar_l1c_l2a.py": "898fa41e852e021244b07e010ba2532b86390735151ee5e0c7b26f811a4357d9",
+    "test_momentos_train.py": "73d650f3a5ea78f5ce76d5bb8b3d25efd3188c89b451c78a199bd093340fce7b",
+    "test_obtener_l1c_original.py": "f0a38ffc53ed87d136eb58735b3584ca9f226b72b733f4853a7b420326645999",
+    "test_reevaluar_historicos.py": "e736fe725e86ac393f970095382294f241dcea864ebd731bba6cf5e33c8164ce"
+  },
+  "note": "El inventario comprueba los bytes de los TIFF conservados con acceso del equipo; no constituye un enlace de descarga público."
+}

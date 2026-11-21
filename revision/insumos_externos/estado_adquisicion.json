@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-11-18T22:01:10.100455+00:00",
+  "plan_sha256": "a3ebb2c24937c93f26626df87d32e87306daac6e1312d335989475a1f908f014",
+  "expected_scenes": 16,
+  "expected_cases": 256,
+  "completed_cases_this_run": 256,
+  "complete": true,
+  "errors": [],
+  "manifest": "manifest_s1s2.csv",
+  "manifest_sha256": "53c01804256a98a65d0ee212650f28153350d677da913fcc85d6d117beea8f97",
+  "unet_evaluated": false,
+  "spectral_indices_evaluated": false
+}

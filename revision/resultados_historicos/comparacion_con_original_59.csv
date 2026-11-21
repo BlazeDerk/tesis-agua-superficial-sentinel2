@@ -1,0 +1,9 @@
+﻿quantity,original,new_inference,new_minus_original,unit
+tp,851937,851937,0,pixels
+fp,54858,54858,0,pixels
+fn,56653,56653,0,pixels
+tn,2903176,2903176,0,pixels
+iou,0.8842584135313997,0.8842584135313997,0.0,percentage_points_for_difference
+f1,0.9385744621664275,0.9385744621664275,0.0,percentage_points_for_difference
+precision,0.9395034158767969,0.9395034158767969,0.0,percentage_points_for_difference
+recall,0.9376473436863711,0.9376473436863711,0.0,percentage_points_for_difference

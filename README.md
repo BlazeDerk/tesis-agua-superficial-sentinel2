@@ -15,7 +15,9 @@ La comparación cubre los mismos 3 866 624 píxeles de prueba. El método NDWI c
 
 U-Net obtuvo mayor concordancia global y en las dos zonas costeras. NDWI obtuvo mayor concordancia en Imbabura y Napo. La muestra de prueba incluye un solo recorte de Imbabura y tres de Napo. El Golfo aporta 687 613 de los 908 590 píxeles de referencia clasificados como agua. Las cifras globales reflejan esa distribución. En las tres zonas incorporadas con mosaicos de Sentinel‑2 se usaron etiquetas automáticas MNDWI. La procedencia detallada de las etiquetas de El Oro permanece sin verificar. La validación con referencias humanas independientes sigue pendiente.
 
-Cuatro recortes de prueba habían aparecido en un ensayo preliminar. En los 55 restantes, NDWI alcanzó una IoU de 79,58 % y un F1 de 88,63 %. La reconstrucción histórica de las métricas de U-Net para ese subconjunto requiere los conteos finales de tres recortes expuestos que faltan en los registros.
+Cuatro recortes de prueba habían aparecido en el ensayo preliminar. El 21 de noviembre de 2026 se ejecutó de nuevo el checkpoint final sobre los 59 originales. Los conteos globales y regionales coincidieron exactamente con los de octubre. En los 55 recortes restantes, U-Net alcanzó una IoU de 87,71 % y un F1 de 93,45 %. NDWI alcanzó 79,58 % y 88,63 %, respectivamente. Imbabura quedó sin muestras en esta cohorte.
+
+El 20 de noviembre se evaluaron además 256 ventanas de 16 escenas externas S1S2-Water con contrapartes L2A. Sobre el soporte común, U-Net obtuvo 88,49 % de IoU y 93,90 % de F1, NDWI obtuvo 91,78 % y 95,72 %, y MNDWI obtuvo 91,67 % y 95,66 %. Estas referencias se inicializaron con NDWI y fueron corregidas por tres expertos. Se incluyen la media por escena, los contrastes exploratorios con remuestreo de escenas y las estadísticas de los 460 recortes de entrenamiento. [Reproducir los análisis de revisión](revision/README.md).
 
 ## Reproducir el cálculo de NDWI
 

@@ -1,0 +1,134 @@
+{
+  "diagnostics": [
+    {
+      "scene_id": "23",
+      "ndwi_on_reference_water": {
+        "pixels": 3333,
+        "mean": 0.2616225327644744,
+        "q05": -0.9489490653192132,
+        "median": 0.4030950382809967,
+        "q95": 0.9936264332871478,
+        "fraction_gt_zero": 0.6198619861986199
+      },
+      "mndwi_on_reference_water": {
+        "pixels": 3333,
+        "mean": -0.28926579071331743,
+        "q05": -0.9962885180825328,
+        "median": -0.16830425158715082,
+        "q95": 0.5124776792169907,
+        "fraction_gt_zero": 0.38223822382238226
+      },
+      "green_on_reference_water": {
+        "pixels": 3333,
+        "mean": 0.0444655567407608,
+        "q05": 9.999999747378752e-05,
+        "median": 0.037699997425079346,
+        "q95": 0.1024799793958664,
+        "fraction_gt_zero": null
+      },
+      "nir_on_reference_water": {
+        "pixels": 3333,
+        "mean": 0.02709999866783619,
+        "q05": 9.999999747378752e-05,
+        "median": 0.010900000110268593,
+        "q95": 0.10203998535871506,
+        "fraction_gt_zero": null
+      },
+      "swir_on_reference_water": {
+        "pixels": 3333,
+        "mean": 0.07220286875963211,
+        "q05": 0.021101249381899834,
+        "median": 0.05693124979734421,
+        "q95": 0.18884120881557465,
+        "fraction_gt_zero": null
+      }
+    },
+    {
+      "scene_id": "25",
+      "ndwi_on_reference_water": {
+        "pixels": 8456,
+        "mean": -0.3911888483764265,
+        "q05": -0.5936599658019959,
+        "median": -0.3884884596382777,
+        "q95": -0.18749998181010508,
+        "fraction_gt_zero": 0.002601702932828761
+      },
+      "mndwi_on_reference_water": {
+        "pixels": 8456,
+        "mean": -0.4550325852721392,
+        "q05": -0.7214272864192982,
+        "median": -0.4809148082215873,
+        "q95": -0.10248474365845538,
+        "fraction_gt_zero": 0.015491958372753075
+      },
+      "green_on_reference_water": {
+        "pixels": 8456,
+        "mean": 0.013468601740896702,
+        "q05": 0.009399999864399433,
+        "median": 0.012000000104308128,
+        "q95": 0.02159999869763851,
+        "fraction_gt_zero": null
+      },
+      "nir_on_reference_water": {
+        "pixels": 8456,
+        "mean": 0.033733077347278595,
+        "q05": 0.01679999940097332,
+        "median": 0.02589999884366989,
+        "q95": 0.07339999824762344,
+        "fraction_gt_zero": null
+      },
+      "swir_on_reference_water": {
+        "pixels": 8456,
+        "mean": 0.0411209836602211,
+        "q05": 0.014060936868190765,
+        "median": 0.03884687274694443,
+        "q95": 0.0754687488079071,
+        "fraction_gt_zero": null
+      }
+    },
+    {
+      "scene_id": "33",
+      "ndwi_on_reference_water": {
+        "pixels": 37049,
+        "mean": -0.03156316196369124,
+        "q05": -0.5563886754319636,
+        "median": -0.1111111111111111,
+        "q95": 0.6550125696484009,
+        "fraction_gt_zero": 0.3495101082350401
+      },
+      "mndwi_on_reference_water": {
+        "pixels": 37049,
+        "mean": 0.048440885936447534,
+        "q05": -0.5989167427050589,
+        "median": 0.027522935779816515,
+        "q95": 0.7848432564736705,
+        "fraction_gt_zero": 0.528435315393128
+      },
+      "green_on_reference_water": {
+        "pixels": 37049,
+        "mean": 0.024891167879104614,
+        "q05": 0.004399999976158142,
+        "median": 0.010599999688565731,
+        "q95": 0.0722000002861023,
+        "fraction_gt_zero": null
+      },
+      "nir_on_reference_water": {
+        "pixels": 37049,
+        "mean": 0.01876276545226574,
+        "q05": 0.0072999997064471245,
+        "median": 0.014999999664723873,
+        "q95": 0.04559999704360962,
+        "fraction_gt_zero": null
+      },
+      "swir_on_reference_water": {
+        "pixels": 37049,
+        "mean": 0.016243433579802513,
+        "q05": 0.005450000055134296,
+        "median": 0.010400000028312206,
+        "q95": 0.04259999841451645,
+        "fraction_gt_zero": null
+      }
+    }
+  ],
+  "interpretation_limit": "Current indices are computed from adapted L2A; the original reference initialization used original L1C plus expert corrections. These data alone cannot isolate radiometric change from expert editing, thresholds or other processing."
+}

@@ -1,0 +1,119 @@
+[
+  {
+    "scene_id": "23",
+    "l1c_source": "S2A_MSIL1C_20190816T180921_N0208_R084_T12SVF_20190816T214639",
+    "l2a_id": "S2A_12SVF_20190816_0_L2A",
+    "l2a_product": "S2A_MSIL2A_20190816T180921_N0213_R084_T12SVF_20190816T222328.SAFE",
+    "same_acquisition_key": [
+      "S2A",
+      "20190816T180921",
+      "R084",
+      "12SVF"
+    ],
+    "item_path": "fuentes/l2a/23.json",
+    "item_sha256": "3b620206e6bd9bb3e5adf8935e1e43a6eadcaef151c55166c58056dd7e475aa6",
+    "cluster_id": "S2A_20190816T180921_R084",
+    "mask_path": "fuentes/referencias/23/sentinel12_s2_23_msk.tif",
+    "valid_path": "fuentes/referencias/23/sentinel12_s2_23_valid.tif",
+    "mask_sha256": "56024731033539adf49e8d86573dd3c23481281920973d891175d07bf225ecbd",
+    "valid_sha256": "854f88cc02bd2ea5d3ea4766744627ea7fa5db2b79362b0898ae0fe7aea251b0",
+    "source_item_sha256": "482b422a2405c73d58089c7fe8963f70922fb2c09977608a998397dd2eb443f9",
+    "crs": "EPSG:32612",
+    "transform": [
+      10.0,
+      0.0,
+      399960.0,
+      0.0,
+      -10.0,
+      4100040.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "shape": [
+      10980,
+      10980
+    ],
+    "full_grid_windows": 1764,
+    "discarded_edge_rows": 228,
+    "discarded_edge_cols": 228
+  },
+  {
+    "scene_id": "25",
+    "l1c_source": "S2A_MSIL1C_20190828T084601_N0208_R107_T37VCE_20190828T123410",
+    "l2a_id": "S2A_37VCE_20190828_0_L2A",
+    "l2a_product": "S2A_MSIL2A_20190828T084601_N0213_R107_T37VCE_20190828T131555.SAFE",
+    "same_acquisition_key": [
+      "S2A",
+      "20190828T084601",
+      "R107",
+      "37VCE"
+    ],
+    "item_path": "fuentes/l2a/25.json",
+    "item_sha256": "c6d1a6aded6dfe32094253ec01f6ad01d143ba23f2feaef4f67f15f5ac10b9ae",
+    "cluster_id": "S2A_20190828T084601_R107",
+    "mask_path": "fuentes/referencias/25/sentinel12_s2_25_msk.tif",
+    "valid_path": "fuentes/referencias/25/sentinel12_s2_25_valid.tif",
+    "mask_sha256": "46d7ff6e54653ded6793236b826f59063f680f41f730cd2eff68455b087cf966",
+    "valid_sha256": "68e8490086bb8f56f9a9135f1018eb102be96e380c4411cd9d3fe636e5ce0d9c",
+    "source_item_sha256": "b75414c2947558f938ca8f899ad7a55e6cf63df124d27e331ada7cbbdb0761d7",
+    "crs": "EPSG:32637",
+    "transform": [
+      10.0,
+      0.0,
+      300000.0,
+      0.0,
+      -10.0,
+      6500040.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "shape": [
+      10980,
+      10980
+    ],
+    "full_grid_windows": 1764,
+    "discarded_edge_rows": 228,
+    "discarded_edge_cols": 228
+  },
+  {
+    "scene_id": "33",
+    "l1c_source": "S2A_MSIL1C_20190913T154901_N0208_R054_T18TXS_20190913T192840",
+    "l2a_id": "S2A_18TXS_20190913_0_L2A",
+    "l2a_product": "S2A_MSIL2A_20190913T154901_N0213_R054_T18TXS_20190913T200642.SAFE",
+    "same_acquisition_key": [
+      "S2A",
+      "20190913T154901",
+      "R054",
+      "18TXS"
+    ],
+    "item_path": "fuentes/l2a/33.json",
+    "item_sha256": "87a16e81ed7aa706187b6b21e544a2fcc9d8f95ffca937d75c10580f80e24f18",
+    "cluster_id": "S2A_20190913T154901_R054",
+    "mask_path": "fuentes/referencias/33/sentinel12_s2_33_msk.tif",
+    "valid_path": "fuentes/referencias/33/sentinel12_s2_33_valid.tif",
+    "mask_sha256": "8fed588e92a6c1da505a37be747e03d227681deaec3521f75d3367bff2886934",
+    "valid_sha256": "bbd1544737c2c6d79f32cefff2e4adf213c7272793e90e349babf27203494acb",
+    "source_item_sha256": "9fd52fff97770e1d9fa81da38ded086d967d063442fdb07f80c9ea94571950bb",
+    "crs": "EPSG:32618",
+    "transform": [
+      10.0,
+      0.0,
+      600000.0,
+      0.0,
+      -10.0,
+      5200020.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "shape": [
+      10980,
+      10980
+    ],
+    "full_grid_windows": 1764,
+    "discarded_edge_rows": 228,
+    "discarded_edge_cols": 228
+  }
+]

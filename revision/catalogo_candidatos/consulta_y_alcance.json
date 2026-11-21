@@ -1,0 +1,888 @@
+{
+  "started_utc": "2026-11-21T06:43:29.944086+00:00",
+  "finished_utc": "2026-11-21T06:43:41.379545+00:00",
+  "url": "https://earth-search.aws.element84.com/v1/search",
+  "stages": [
+    {
+      "zone": "golfo_guayaquil",
+      "stac_candidates": 1077,
+      "historical_gee_matched_count": 1414,
+      "pages": [
+        {
+          "request": {
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "bbox": [
+              -80.2,
+              -2.82,
+              -79.8,
+              -2.38
+            ],
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "limit": 100,
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            }
+          },
+          "response_sha256": "aa659786ad24ebef07fe6e9bf82a04884a76c9081e8242d29db663a8dbfdf141",
+          "returned": 100
+        },
+        {
+          "request": {
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            },
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "bbox": [
+              -80.2,
+              -2.82,
+              -79.8,
+              -2.38
+            ],
+            "limit": 100,
+            "next": "2023-09-06T15:54:12.678000Z,S2A_T17MNS_20230906T155225_L2A,sentinel-2-c1-l2a"
+          },
+          "response_sha256": "e6d0c936065a2c2759de0637c4be169bbad1df1a0aa38e5e3d7996b297ea000e",
+          "returned": 100
+        },
+        {
+          "request": {
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            },
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "next": "2023-06-18T15:53:52.023000Z,S2A_T17MPT_20230618T155223_L2A,sentinel-2-c1-l2a",
+            "bbox": [
+              -80.2,
+              -2.82,
+              -79.8,
+              -2.38
+            ],
+            "limit": 100
+          },
+          "response_sha256": "ed9c5bcde3f0fe868b7c41900948e0b8e46f296650f1c5f27ff912883c22f18c",
+          "returned": 100
+        },
+        {
+          "request": {
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            },
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "next": "2023-03-15T15:54:11.513000Z,S2B_T17MNS_20230315T155348_L2A,sentinel-2-c1-l2a",
+            "bbox": [
+              -80.2,
+              -2.82,
+              -79.8,
+              -2.38
+            ],
+            "limit": 100
+          },
+          "response_sha256": "bae513977f852b8b3b1b8e56cdee57ac9e8d9efc97795fe6620aea508e48ce4e",
+          "returned": 100
+        },
+        {
+          "request": {
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            },
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "next": "2022-12-05T15:53:45.164000Z,S2B_T17MPT_20221205T155218_L2A,sentinel-2-c1-l2a",
+            "bbox": [
+              -80.2,
+              -2.82,
+              -79.8,
+              -2.38
+            ],
+            "limit": 100
+          },
+          "response_sha256": "09196dca52312dc401607de553086d7939d2eaddf9e754646eb508a54bc087e2",
+          "returned": 100
+        },
+        {
+          "request": {
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            },
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "next": "2021-09-18T15:44:05.745000Z,S2B_T17MPS_20210918T153702_L2A,sentinel-2-c1-l2a",
+            "bbox": [
+              -80.2,
+              -2.82,
+              -79.8,
+              -2.38
+            ],
+            "limit": 100
+          },
+          "response_sha256": "e3fe18ba0a1afd873058864451c2a0caceb35fb038359cc40db141a7be207233",
+          "returned": 100
+        },
+        {
+          "request": {
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            },
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "next": "2021-05-11T15:44:10.775000Z,S2B_T17MNS_20210511T153617_L2A,sentinel-2-c1-l2a",
+            "bbox": [
+              -80.2,
+              -2.82,
+              -79.8,
+              -2.38
+            ],
+            "limit": 100
+          },
+          "response_sha256": "302a7891f51fdf14bad4d12d297976492ab1051d382b600050fb3d69d8787f09",
+          "returned": 100
+        },
+        {
+          "request": {
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            },
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "next": "2021-02-08T15:53:51.971000Z,S2A_T17MNT_20210208T155220_L2A,sentinel-2-c1-l2a",
+            "bbox": [
+              -80.2,
+              -2.82,
+              -79.8,
+              -2.38
+            ],
+            "limit": 100
+          },
+          "response_sha256": "2a42886bd8364f023ffff9ee7fed609ece40a0a8d76cbee71ec5a640123341c6",
+          "returned": 100
+        },
+        {
+          "request": {
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            },
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "next": "2020-10-03T15:44:02.810000Z,S2B_T17MNT_20201003T153759_L2A,sentinel-2-c1-l2a",
+            "bbox": [
+              -80.2,
+              -2.82,
+              -79.8,
+              -2.38
+            ],
+            "limit": 100
+          },
+          "response_sha256": "a95a61300639b03638169f9059719405ff3fc218044383a6a2bb2291a7a54a01",
+          "returned": 100
+        },
+        {
+          "request": {
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            },
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "next": "2020-06-15T15:44:14.777000Z,S2B_T17MNS_20200615T153722_L2A,sentinel-2-c1-l2a",
+            "bbox": [
+              -80.2,
+              -2.82,
+              -79.8,
+              -2.38
+            ],
+            "limit": 100
+          },
+          "response_sha256": "a85b87d5ab2de8fa99d6eb06b3826d930ae5f594cc60603b3c6dc670e096aea7",
+          "returned": 100
+        },
+        {
+          "request": {
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            },
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "next": "2020-03-17T15:44:10.369000Z,S2B_T17MNS_20200317T153914_L2A,sentinel-2-c1-l2a",
+            "bbox": [
+              -80.2,
+              -2.82,
+              -79.8,
+              -2.38
+            ],
+            "limit": 100
+          },
+          "response_sha256": "919bd80816788c67ad8b123641d7ee2cc80168151e9ad43ec337317ccd2606ee",
+          "returned": 77
+        },
+        {
+          "request": {
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            },
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "next": "2020-01-05T15:53:42.628000Z,S2A_T17MPT_20200105T155216_L2A,sentinel-2-c1-l2a",
+            "bbox": [
+              -80.2,
+              -2.82,
+              -79.8,
+              -2.38
+            ],
+            "limit": 100
+          },
+          "response_sha256": "d0aa7f7bafc4c193756f746dc23912bd1c00ad6ebcdf2abec8c7249f9bd7043d",
+          "returned": 0
+        }
+      ]
+    },
+    {
+      "zone": "lagos_imbabura",
+      "stac_candidates": 285,
+      "historical_gee_matched_count": 417,
+      "pages": [
+        {
+          "request": {
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "bbox": [
+              -78.47,
+              0.1,
+              -78.02,
+              0.48
+            ],
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "limit": 100,
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            }
+          },
+          "response_sha256": "78be324caa957e76fa516942689854009d8310f912e004e2f2c77e6afdf1350c",
+          "returned": 100
+        },
+        {
+          "request": {
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            },
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "bbox": [
+              -78.47,
+              0.1,
+              -78.02,
+              0.48
+            ],
+            "limit": 100,
+            "next": "2023-01-06T15:43:03.604000Z,S2A_T17NRA_20230106T154157_L2A,sentinel-2-c1-l2a"
+          },
+          "response_sha256": "b7da508be8ddd7c909c1d5f648b98917094e26017a24475700b54eb7fb1c26ac",
+          "returned": 100
+        },
+        {
+          "request": {
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            },
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "next": "2020-12-12T15:43:01.573000Z,S2B_T17NRA_20201212T154111_L2A,sentinel-2-c1-l2a",
+            "bbox": [
+              -78.47,
+              0.1,
+              -78.02,
+              0.48
+            ],
+            "limit": 100
+          },
+          "response_sha256": "40adfcb399b346eb1bebadd0ae7a39f7da342d6064471cc68dc5f1a974628569",
+          "returned": 85
+        },
+        {
+          "request": {
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            },
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "next": "2020-01-07T15:42:59.523000Z,S2B_T17NRA_20200107T154047_L2A,sentinel-2-c1-l2a",
+            "bbox": [
+              -78.47,
+              0.1,
+              -78.02,
+              0.48
+            ],
+            "limit": 100
+          },
+          "response_sha256": "c6edaae1c9935692dabd78045cd8bb9da4173e3cd7bc32d2bc03db81d9c5a36b",
+          "returned": 0
+        }
+      ]
+    },
+    {
+      "zone": "rio_napo",
+      "stac_candidates": 364,
+      "historical_gee_matched_count": 601,
+      "pages": [
+        {
+          "request": {
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "bbox": [
+              -77.8,
+              -1.14,
+              -77.42,
+              -0.92
+            ],
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "limit": 100,
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            }
+          },
+          "response_sha256": "d99f8bbe053bd534126476818da28967d25580bd564353331cf7ebb57f171e3f",
+          "returned": 100
+        },
+        {
+          "request": {
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            },
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "bbox": [
+              -77.8,
+              -1.14,
+              -77.42,
+              -0.92
+            ],
+            "limit": 100,
+            "next": "2023-01-31T15:43:13.898000Z,S2B_T18MTE_20230131T153840_L2A,sentinel-2-c1-l2a"
+          },
+          "response_sha256": "b57287084998ec3000ac7885cb11456743b14c13923a4725e3253986768f3317",
+          "returned": 100
+        },
+        {
+          "request": {
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            },
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "next": "2021-07-15T15:43:19.955000Z,S2A_T18MTE_20210715T153622_L2A,sentinel-2-c1-l2a",
+            "bbox": [
+              -77.8,
+              -1.14,
+              -77.42,
+              -0.92
+            ],
+            "limit": 100
+          },
+          "response_sha256": "e8d974d3b70ac7bee63a89cdcd6fb1ccf8e2fb7dea2e78b261a826291aab4c46",
+          "returned": 100
+        },
+        {
+          "request": {
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            },
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "next": "2020-08-24T15:43:22.786000Z,S2B_T17MRV_20200824T154230_L2A,sentinel-2-c1-l2a",
+            "bbox": [
+              -77.8,
+              -1.14,
+              -77.42,
+              -0.92
+            ],
+            "limit": 100
+          },
+          "response_sha256": "33567773b5194738ba9165254b1476bf9664bc68a5a6d10083c7a696264fbd04",
+          "returned": 64
+        },
+        {
+          "request": {
+            "datetime": "2020-01-01T00:00:00Z/2023-12-31T23:59:59.999Z",
+            "query": {
+              "eo:cloud_cover": {
+                "lt": 90
+              }
+            },
+            "fields": {
+              "include": [
+                "id",
+                "collection",
+                "properties.datetime",
+                "properties.s2:product_uri",
+                "properties.eo:cloud_cover",
+                "properties.platform",
+                "properties.s2:datatake_id",
+                "properties.s2:processing_baseline"
+              ],
+              "exclude": [
+                "assets",
+                "geometry",
+                "bbox",
+                "links"
+              ]
+            },
+            "collections": [
+              "sentinel-2-c1-l2a"
+            ],
+            "next": "2020-01-02T15:43:25.926000Z,S2A_T18MTD_20200102T153743_L2A,sentinel-2-c1-l2a",
+            "bbox": [
+              -77.8,
+              -1.14,
+              -77.42,
+              -0.92
+            ],
+            "limit": 100
+          },
+          "response_sha256": "5455b7e59c52ecbe2983fc5cbdfd304d090e42ebb89b8a665096ebbfe58df7ef",
+          "returned": 0
+        }
+      ]
+    }
+  ],
+  "interpretation": "Consulta de candidatos a Earth Search en la fecha de revisión. Colección C1 reprocesada, huella y cobertura de nubes del catálogo actual. El identificador de gránulo histórico GEE, el cruce original por system:index con probabilidades de nubes y la contribución por píxel se conservan como desconocidos.",
+  "historical_filter": "GEE S2_SR_HARMONIZED y S2_CLOUD_PROBABILITY cruzados por system:index. Nubes de escena <90%, probabilidad <40%, exclusión SCL y bordes, dilatación 60 m, mediana y mínimo de tres observaciones por píxel."
+}

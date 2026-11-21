@@ -1,0 +1,26 @@
+{
+  "SPLITS": {
+    "original": "splits.csv",
+    "sha256_original": "1f116206fa6c55371284e01c84be3747dec59a262200f424e8e44df14edf49ce",
+    "copia": "manifiestos/particion.csv",
+    "sha256_copia": "f125b312ab0e430d9213b9a935f80b9d98a6043056b32e4681b90bf35e24b0da"
+  },
+  "MANIFEST": {
+    "original": "manifest_recortes_auditado.csv",
+    "sha256_original": "f5367f97fcaaf5a12720ac3e709d4779852e270da00a8e37ca907d3436d6134f",
+    "copia": "manifiestos/pares_prueba.csv",
+    "sha256_copia": "bf90359478dd9881f2b99bc15618d7a916163ed9864f39a6c65f0090318175a6"
+  },
+  "EXPOSURE": {
+    "original": "cuatro_recortes_test_expuestos.csv",
+    "sha256_original": "94f7e26d6d222f992b4f8292d1f9d8b7e0c1fbf0d0c9a690594afc46ccbd755a",
+    "copia": "manifiestos/exposicion.csv",
+    "sha256_copia": "255d6076f4c7f76ba280a26109807346b799514ea8c564bb8b552b9a7b98ac68"
+  },
+  "REPORT": {
+    "original": "report_final_original.json",
+    "sha256_original": "5b12c025ee63f6b428a7a8f9293c30f7e61082d2a84e418cfc1c9c8bed9a8aa9",
+    "copia": "revision/insumos_historicos/report_final_original.json",
+    "sha256_copia": "6340b4495cb43b87bcba9bfef06020987e98a4ff73e2a8eb15eb50d012ecfa47"
+  }
+}

@@ -1,0 +1,17 @@
+﻿estimand,comparison,metric,difference_pp,ci95_low_pp,ci95_high_pp,bootstrap_reps,scene_units,seed,status
+micro,unet_minus_ndwi,iou,-3.2883062455926093,-8.716911953827786,4.364609450194393,20000,16,20261120,exploratory_paired_scene_percentile_ci
+micro,unet_minus_ndwi,f1,-1.8192585046498677,-4.857539755419403,2.564114889963589,20000,16,20261120,exploratory_paired_scene_percentile_ci
+micro,unet_minus_ndwi,precision,-2.1767544835546104,-6.218416555787746,-0.39707583717993533,20000,16,20261120,exploratory_paired_scene_percentile_ci
+micro,unet_minus_ndwi,recall,-1.5082926047592315,-6.96042887013883,6.253871818176589,20000,16,20261120,exploratory_paired_scene_percentile_ci
+micro,unet_minus_mndwi,iou,-3.18058128846721,-8.473631348730752,3.397721764673709,20000,16,20261120,exploratory_paired_scene_percentile_ci
+micro,unet_minus_mndwi,f1,-1.7606485333605093,-4.758791224445441,1.9620472022424704,20000,16,20261120,exploratory_paired_scene_percentile_ci
+micro,unet_minus_mndwi,precision,-1.914975348851622,-5.928811620750783,-0.14124643811314505,20000,16,20261120,exploratory_paired_scene_percentile_ci
+micro,unet_minus_mndwi,recall,-1.623380581962841,-6.967239537053538,4.852329029067398,20000,16,20261120,exploratory_paired_scene_percentile_ci
+macro,unet_minus_ndwi,iou,2.8282910514592974,-7.748069008722538,15.440678764123202,20000,16,20261120,exploratory_paired_scene_percentile_ci
+macro,unet_minus_ndwi,f1,4.102053396913263,-6.220655023222657,17.14701142547594,20000,16,20261120,exploratory_paired_scene_percentile_ci
+macro,unet_minus_ndwi,precision,-5.19520411716945,-10.196056112146058,-1.36942785352609,20000,16,20261120,exploratory_paired_scene_percentile_ci
+macro,unet_minus_ndwi,recall,5.555693978111142,-4.771235069309709,17.89420783248153,20000,16,20261120,exploratory_paired_scene_percentile_ci
+macro,unet_minus_mndwi,iou,4.627592738825559,-4.292235274241285,15.374574974162735,20000,16,20261120,exploratory_paired_scene_percentile_ci
+macro,unet_minus_mndwi,f1,5.143113149831768,-3.103850213837058,16.690037513216765,20000,16,20261120,exploratory_paired_scene_percentile_ci
+macro,unet_minus_mndwi,precision,-4.778148293847472,-10.188863118221626,-0.9332829963711532,20000,16,20261120,exploratory_paired_scene_percentile_ci
+macro,unet_minus_mndwi,recall,7.232726063173933,-1.3822985142936708,17.77309295850298,20000,16,20261120,exploratory_paired_scene_percentile_ci

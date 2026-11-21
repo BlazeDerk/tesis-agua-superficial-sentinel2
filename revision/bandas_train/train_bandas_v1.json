@@ -1,0 +1,2502 @@
+{
+  "created_utc": "2026-11-21T06:40:31.026631+00:00",
+  "split": "train",
+  "expected_cases": 460,
+  "splits_sha256": "1f116206fa6c55371284e01c84be3747dec59a262200f424e8e44df14edf49ce",
+  "available_images": 460,
+  "missing_images": [],
+  "not_replaced_by_test_examples": true,
+  "status": "all_frozen_train_inputs_measured",
+  "units": "physical reflectance as original DN/10000 loader",
+  "augmentation": false,
+  "resampling": false,
+  "clipping": false,
+  "statistical_convention": "per-pixel descriptive population moments, ddof=0",
+  "rows": [
+    {
+      "band": "B2",
+      "pixels": 30146560,
+      "mean": 0.12922126919942262,
+      "std_population": 0.16196768145572218,
+      "minimum": 0.0015999999595806003,
+      "maximum": 1.176800012588501
+    },
+    {
+      "band": "B3",
+      "pixels": 30146560,
+      "mean": 0.14422280221854644,
+      "std_population": 0.1493146820712867,
+      "minimum": 0.0066999997943639755,
+      "maximum": 1.1196000576019287
+    },
+    {
+      "band": "B4",
+      "pixels": 30146560,
+      "mean": 0.12267491369112442,
+      "std_population": 0.14974669696332837,
+      "minimum": 0.0017000000225380063,
+      "maximum": 1.0856000185012817
+    },
+    {
+      "band": "B8",
+      "pixels": 30146560,
+      "mean": 0.3066406137187585,
+      "std_population": 0.16867203349692206,
+      "minimum": 9.999999747378752e-05,
+      "maximum": 1.0260000228881836
+    }
+  ],
+  "by_zone": {
+    "el_oro": {
+      "n_cases": 274,
+      "rows": [
+        {
+          "band": "B2",
+          "pixels": 17956864,
+          "mean": 0.17966510113029652,
+          "std_population": 0.19325901727434738,
+          "minimum": 0.003000000026077032,
+          "maximum": 1.176800012588501
+        },
+        {
+          "band": "B3",
+          "pixels": 17956864,
+          "mean": 0.19114802147738538,
+          "std_population": 0.17767539064827775,
+          "minimum": 0.007000000216066837,
+          "maximum": 1.1196000576019287
+        },
+        {
+          "band": "B4",
+          "pixels": 17956864,
+          "mean": 0.1685280564891489,
+          "std_population": 0.17820654470868041,
+          "minimum": 0.0031999999191612005,
+          "maximum": 1.0856000185012817
+        },
+        {
+          "band": "B8",
+          "pixels": 17956864,
+          "mean": 0.39643001571335784,
+          "std_population": 0.11960968069285165,
+          "minimum": 0.007300000172108412,
+          "maximum": 1.0260000228881836
+        }
+      ]
+    },
+    "golfo_guayaquil": {
+      "n_cases": 133,
+      "rows": [
+        {
+          "band": "B2",
+          "pixels": 8716288,
+          "mean": 0.059077967796258526,
+          "std_population": 0.021444093708967354,
+          "minimum": 0.012900000438094139,
+          "maximum": 0.5307999849319458
+        },
+        {
+          "band": "B3",
+          "pixels": 8716288,
+          "mean": 0.0786521707033385,
+          "std_population": 0.02122688019842632,
+          "minimum": 0.020099999383091927,
+          "maximum": 0.49720001220703125
+        },
+        {
+          "band": "B4",
+          "pixels": 8716288,
+          "mean": 0.05610494814288055,
+          "std_population": 0.027721597298439597,
+          "minimum": 0.010900000110268593,
+          "maximum": 0.46860000491142273
+        },
+        {
+          "band": "B8",
+          "pixels": 8716288,
+          "mean": 0.13194176839309263,
+          "std_population": 0.13876101960982332,
+          "minimum": 9.999999747378752e-05,
+          "maximum": 0.5708000063896179
+        }
+      ]
+    },
+    "lagos_imbabura": {
+      "n_cases": 19,
+      "rows": [
+        {
+          "band": "B2",
+          "pixels": 1245184,
+          "mean": 0.06056302384410437,
+          "std_population": 0.03192317148082582,
+          "minimum": 0.0015999999595806003,
+          "maximum": 0.6179999709129333
+        },
+        {
+          "band": "B3",
+          "pixels": 1245184,
+          "mean": 0.08509372250806542,
+          "std_population": 0.033696722840343925,
+          "minimum": 0.0066999997943639755,
+          "maximum": 0.6187999844551086
+        },
+        {
+          "band": "B4",
+          "pixels": 1245184,
+          "mean": 0.08365139599737083,
+          "std_population": 0.04156522898417025,
+          "minimum": 0.0017000000225380063,
+          "maximum": 0.6164000034332275
+        },
+        {
+          "band": "B8",
+          "pixels": 1245184,
+          "mean": 0.24712781720537172,
+          "std_population": 0.07366729752658611,
+          "minimum": 0.0012000000569969416,
+          "maximum": 0.6039000153541565
+        }
+      ]
+    },
+    "rio_napo": {
+      "n_cases": 34,
+      "rows": [
+        {
+          "band": "B2",
+          "pixels": 2228224,
+          "mean": 0.035455263296849254,
+          "std_population": 0.019689300091710632,
+          "minimum": 0.01769999973475933,
+          "maximum": 0.4812000095844269
+        },
+        {
+          "band": "B3",
+          "pixels": 2228224,
+          "mean": 0.05560034425089685,
+          "std_population": 0.02150321396415314,
+          "minimum": 0.023399999365210533,
+          "maximum": 0.5063999891281128
+        },
+        {
+          "band": "B4",
+          "pixels": 2228224,
+          "mean": 0.035365829204038475,
+          "std_population": 0.027044210540197698,
+          "minimum": 0.012500000186264515,
+          "maximum": 0.5199999809265137
+        },
+        {
+          "band": "B8",
+          "pixels": 2228224,
+          "mean": 0.29968159652898496,
+          "std_population": 0.06989147379048188,
+          "minimum": 0.023000000044703484,
+          "maximum": 0.5156000256538391
+        }
+      ]
+    }
+  },
+  "inputs": [
+    {
+      "name": "legacy_el_oro_b2e46cc91986b752625b.tif",
+      "zone": "el_oro",
+      "sha256": "8278ad29a7f0057cd35a4a8e8313477c2419233207cd16083e26cfd8f8dc88e2"
+    },
+    {
+      "name": "legacy_el_oro_b30096310c9bd1086b87.tif",
+      "zone": "el_oro",
+      "sha256": "d701e3d1115e19d45e573c6e8486e95d6541463ce9eb558fa84baa510c789c04"
+    },
+    {
+      "name": "legacy_el_oro_42a069c094f9449df9ed.tif",
+      "zone": "el_oro",
+      "sha256": "f5bd0b2dbf9c1f966a83e9db3ab12e7a566512d34f593bf0586a8dd69745ee3b"
+    },
+    {
+      "name": "legacy_el_oro_f7655682343fa0742dd9.tif",
+      "zone": "el_oro",
+      "sha256": "6ca5e6285188cafe830074b479828cb9584a02d4964937c7eb968a0993a30b4f"
+    },
+    {
+      "name": "legacy_el_oro_270541bcc73915cf68df.tif",
+      "zone": "el_oro",
+      "sha256": "36d70da84c66256aace1725e06aa8557477521c6c51d343c25ce34f55c5bd9da"
+    },
+    {
+      "name": "legacy_el_oro_257ba6702210b9a32989.tif",
+      "zone": "el_oro",
+      "sha256": "cf40b4024a299f4157468147bcfc7df06eee6dcd32c445c8eccaa4add1ada350"
+    },
+    {
+      "name": "legacy_el_oro_d8d626359feb94f5ee63.tif",
+      "zone": "el_oro",
+      "sha256": "6b633b71dcb6576499623efe0fd280b84151c171bce29622d18653cdc71dc6fd"
+    },
+    {
+      "name": "legacy_el_oro_a06b6fa145be02b90670.tif",
+      "zone": "el_oro",
+      "sha256": "4ae1cecf0bce049720d6220fe72bb82166693546213ea9132a4a7302458c5161"
+    },
+    {
+      "name": "legacy_el_oro_cc99061dccc4bd767610.tif",
+      "zone": "el_oro",
+      "sha256": "cad6d76ae4ff5a2a75082196a89dff6382e4448df0daf4fec76c1f09ca4f0170"
+    },
+    {
+      "name": "legacy_el_oro_42b18afadc1237d0db0e.tif",
+      "zone": "el_oro",
+      "sha256": "a2db36e924f1cbd0ab85cfb4e506bd2c020c6364151aa2fedf6414f705cb3e29"
+    },
+    {
+      "name": "legacy_el_oro_eb59a0eadd6efc795c9f.tif",
+      "zone": "el_oro",
+      "sha256": "70f2c5c2767800feb097c7932d27aee88d13054b0e115b22a65fce11af007770"
+    },
+    {
+      "name": "legacy_el_oro_0fab87776ee75928c87f.tif",
+      "zone": "el_oro",
+      "sha256": "a82d3e85b54a3eeee0924f50c3bed09be81c2c6dab7724b816cc1b70819be2c9"
+    },
+    {
+      "name": "legacy_el_oro_3a590f7fc6e76ad14a38.tif",
+      "zone": "el_oro",
+      "sha256": "20f64928e359433a99c2a9de5d33b4a465f50f9e6e1fecc8bd5ebb73a4f5aded"
+    },
+    {
+      "name": "legacy_el_oro_3ff9f6b52eec1ba606c2.tif",
+      "zone": "el_oro",
+      "sha256": "dca03d28a0ceadc36aa7535650efc3b3c8ead0307810b754f23f5131e9756343"
+    },
+    {
+      "name": "legacy_el_oro_a78197ffc75f6583091a.tif",
+      "zone": "el_oro",
+      "sha256": "d29d54f4a26c3590f713814cb852cb1c76673133ccca7d0387d94ccd1bbf8628"
+    },
+    {
+      "name": "legacy_el_oro_87a174c59d4e9cff5c23.tif",
+      "zone": "el_oro",
+      "sha256": "ac9eb228177ff963d35905e62ed8897361402686d4886a95c73f182c48649df9"
+    },
+    {
+      "name": "legacy_el_oro_33ce01697bd781850a40.tif",
+      "zone": "el_oro",
+      "sha256": "d164635e5eee700390c6757887b9f850e6db5e7dd08d333080eda342d3683505"
+    },
+    {
+      "name": "legacy_el_oro_8f66c2e85d1661e20495.tif",
+      "zone": "el_oro",
+      "sha256": "ce2a7b3ed7fab1c64bc5486e76c5f7bc7d244ee93d6f5f7b996e5a8b426b074c"
+    },
+    {
+      "name": "legacy_el_oro_99663b486a312ae9a148.tif",
+      "zone": "el_oro",
+      "sha256": "5865e7e76ffc100b5f75d89baaa69d4c85dfd44fc26b7682706aa8a922d35216"
+    },
+    {
+      "name": "legacy_el_oro_dce21fdd047f80117ffc.tif",
+      "zone": "el_oro",
+      "sha256": "b388ba1e69bc96acce5f774be4b2e951aa4886a60ff94786686de44c0e7a0b0f"
+    },
+    {
+      "name": "legacy_el_oro_27c1871c47d9071da342.tif",
+      "zone": "el_oro",
+      "sha256": "99fa2abf583ebc42b592774592a467e18a64df33ae6098252507dc16040c9941"
+    },
+    {
+      "name": "legacy_el_oro_d0552c1a549ca353af36.tif",
+      "zone": "el_oro",
+      "sha256": "8d247726ca12799e5bf71f5bbe3744db216ca48e0b023ae86504e01005f78aa9"
+    },
+    {
+      "name": "legacy_el_oro_8d4bb5e9e34bdf858b0a.tif",
+      "zone": "el_oro",
+      "sha256": "4d2776d527ac500d20c908c17bb9b518d653059f8fff250d2864082e9d0fe029"
+    },
+    {
+      "name": "legacy_el_oro_eddf75c6babe639010ca.tif",
+      "zone": "el_oro",
+      "sha256": "1c9efb005cfa9d91d413b73610857f0776bb81ba40b97c195e9b5c478f72685c"
+    },
+    {
+      "name": "legacy_el_oro_d6d2bf44a2965008d7c1.tif",
+      "zone": "el_oro",
+      "sha256": "c06a696731771eaad9e6fa13c6849a099845648f7de90d4fff9b2d1721b71c21"
+    },
+    {
+      "name": "legacy_el_oro_7e15193cfbb91fe4e8e0.tif",
+      "zone": "el_oro",
+      "sha256": "92812ddc8ff0209d33caac36add0707102be5d3ae39f031578fd00b2a02bcf5a"
+    },
+    {
+      "name": "legacy_el_oro_937da94d0a4ea8a8378c.tif",
+      "zone": "el_oro",
+      "sha256": "9597d5a9674015c51b6c742a655d7effaea4686f920bd25dfb49293c53257f20"
+    },
+    {
+      "name": "legacy_el_oro_b780333a3cefbdbde75c.tif",
+      "zone": "el_oro",
+      "sha256": "41b02451e28165612b8fa0f8ffa5adbdfb4976ad819a1c167b48e45c56a87040"
+    },
+    {
+      "name": "legacy_el_oro_e57638e483dc42e6d2da.tif",
+      "zone": "el_oro",
+      "sha256": "0b9c0e86c99afd058b5a1473493bf64587d762756332402e016102f6ad73883d"
+    },
+    {
+      "name": "legacy_el_oro_661f77317421f6f8d238.tif",
+      "zone": "el_oro",
+      "sha256": "02a09c8162ffd458376509b1e78e94ae7bda22b6512413070a27fd0151dbac02"
+    },
+    {
+      "name": "legacy_el_oro_6f1453d2e654f1c60e6e.tif",
+      "zone": "el_oro",
+      "sha256": "da4f9110a473e1e701f15cf35f25a9af25adbc0cf4e02a40251f9a45152d5188"
+    },
+    {
+      "name": "legacy_el_oro_ca7fb1c05d9c9b417228.tif",
+      "zone": "el_oro",
+      "sha256": "e01a672888a15add9aaf4479fa90ae2fa7e1959a592df412edfc69ecb51adc26"
+    },
+    {
+      "name": "legacy_el_oro_ef4118edfdb70501ca1e.tif",
+      "zone": "el_oro",
+      "sha256": "aeefc25f93a8009ef0e6216897a0099c3f4598f14b32141d8fdf16b369b83717"
+    },
+    {
+      "name": "legacy_el_oro_736528690900ccc5e45a.tif",
+      "zone": "el_oro",
+      "sha256": "bfacf868d89bb9a8395810cbbf1c8ea78e81be506d7a389ae9b4fe7129ad1a02"
+    },
+    {
+      "name": "legacy_el_oro_4ea9ecd114a0c3f99e3a.tif",
+      "zone": "el_oro",
+      "sha256": "084e50eef57b9e1745052113595ff5274c539a33c5814b22189aa92a037ccf00"
+    },
+    {
+      "name": "legacy_el_oro_1f96b8b643de67ffbf37.tif",
+      "zone": "el_oro",
+      "sha256": "e7349cb270c3e32e2f133402feeb7d07446fb0fc697f5ac1e67e6f15f34d48e9"
+    },
+    {
+      "name": "legacy_el_oro_045295c63c70bed1a5eb.tif",
+      "zone": "el_oro",
+      "sha256": "202f37bb6eafcb967cb9ea54a816ae89dffa26f7f4beb59caa174de91586bbdd"
+    },
+    {
+      "name": "legacy_el_oro_ff30010d87fcf9ddddef.tif",
+      "zone": "el_oro",
+      "sha256": "6efc652c8daa7e887fdc918190af619d5eea21f3618649225ded2b3008aa86fc"
+    },
+    {
+      "name": "legacy_el_oro_3a932010303e884b0d11.tif",
+      "zone": "el_oro",
+      "sha256": "5ca6b09efe6ef267b52b986a2b13198d9694b4c0b20bcce981d16691231a5845"
+    },
+    {
+      "name": "legacy_el_oro_8ff9e477229a087b8436.tif",
+      "zone": "el_oro",
+      "sha256": "fded2d8a435f9c1fc27d9d8681dce6485b0970e5f29f427aa8d6c0320f0827ae"
+    },
+    {
+      "name": "legacy_el_oro_1def9aa2c3d893b2e27c.tif",
+      "zone": "el_oro",
+      "sha256": "13950335689680884d03b86a356fc7dbbdf99fd8ef1387228df294b5b96d8b46"
+    },
+    {
+      "name": "legacy_el_oro_c9a00ab6c0dae6a701e3.tif",
+      "zone": "el_oro",
+      "sha256": "6992c91aa9d0ecec84025eaf560ce68cbf5b92546aa5ffbd6b91271291e405ef"
+    },
+    {
+      "name": "legacy_el_oro_49d186cfc34e9b767653.tif",
+      "zone": "el_oro",
+      "sha256": "adf8c79fcc0e79fb3eaf308598e465a023f5bfb0d0f0ed8056bbff4683e69a02"
+    },
+    {
+      "name": "legacy_el_oro_c9892e771de21345ebc6.tif",
+      "zone": "el_oro",
+      "sha256": "f644dbaa7619a8f32393a9ccae5ab4ae73228cf888474775dcae2a3def2d6b8e"
+    },
+    {
+      "name": "legacy_el_oro_9d42d3359ef123bc8182.tif",
+      "zone": "el_oro",
+      "sha256": "5aa0fe06b5cd0a68da938e0c80b2dda2ebe7262a62d6f5133b9b71593d93fc17"
+    },
+    {
+      "name": "legacy_el_oro_55f412bd32a46861ba30.tif",
+      "zone": "el_oro",
+      "sha256": "493ca2b50b7dbff04cc1b9df56327bbae3ea97a79ef1512cfa1698989eb4c5a0"
+    },
+    {
+      "name": "legacy_el_oro_5b73397e9a520c10f42e.tif",
+      "zone": "el_oro",
+      "sha256": "b80e6141d8814524f5a5d983b728c51ec55ed324ea8edb7d8ce9ac9e808c491d"
+    },
+    {
+      "name": "legacy_el_oro_3a54db4c5e1ae87af02a.tif",
+      "zone": "el_oro",
+      "sha256": "d39857f954e223f5fd553b23d9bbbfc53da710ef654ba7948ea90f026cdf62e0"
+    },
+    {
+      "name": "legacy_el_oro_ab491b6fc948f0c725b7.tif",
+      "zone": "el_oro",
+      "sha256": "f3f8487ef674b5d99277c0c14cfb50c11566038300350d96a0ff34ef36280f6d"
+    },
+    {
+      "name": "legacy_el_oro_2b86c192ddd838156ac5.tif",
+      "zone": "el_oro",
+      "sha256": "c2a3167782790fc4899e32ee1d0271ed61b5af750c61fda63131963806fd5339"
+    },
+    {
+      "name": "legacy_el_oro_132e9a9e85ac4c6ee709.tif",
+      "zone": "el_oro",
+      "sha256": "12208c327c2a85a599553fe701fadad1f1021f850c5893b2c216ab6ea2b707c2"
+    },
+    {
+      "name": "legacy_el_oro_1e9d6361609e95647469.tif",
+      "zone": "el_oro",
+      "sha256": "0ebeb14c4593f8dd22c0fb3f52561b50fe59474ffec682002009781a8b57ac6b"
+    },
+    {
+      "name": "legacy_el_oro_4aff948203e6d3fdfc58.tif",
+      "zone": "el_oro",
+      "sha256": "366b98c46449bcc0113d873e084b7701d84f0e478c50479bbddffdc7a3dc461f"
+    },
+    {
+      "name": "legacy_el_oro_b2611aec54dac160f791.tif",
+      "zone": "el_oro",
+      "sha256": "27a438d0b586600e8d402d2296cff7052cbcb6a4e18c7e834853acc1de4239e1"
+    },
+    {
+      "name": "legacy_el_oro_15fd859dcba1301e33a8.tif",
+      "zone": "el_oro",
+      "sha256": "45de927545e1e6d73265cdbb2ae639dbc75a24769d2160631170814ebe4c2471"
+    },
+    {
+      "name": "legacy_el_oro_ccf3b1e483dd3e86c5ac.tif",
+      "zone": "el_oro",
+      "sha256": "a3e77416eaf3156108906a68cd47f484b246b88033afdcad956c607866f7c54d"
+    },
+    {
+      "name": "legacy_el_oro_e785d3684d4fe798442c.tif",
+      "zone": "el_oro",
+      "sha256": "ce6cc03a4dcba977474de6a478bae006ee90441677ca26d0c0bd3b4968c66186"
+    },
+    {
+      "name": "legacy_el_oro_f8c46f35ff5df1938447.tif",
+      "zone": "el_oro",
+      "sha256": "f6b9cf18fb9aae5a4d8c52c35a300b62d6527d528da8ef41eab30e1250ddeb4f"
+    },
+    {
+      "name": "legacy_el_oro_38395bfc99e482f704fc.tif",
+      "zone": "el_oro",
+      "sha256": "a8e7600087ae84872d0402f69f579157dc1399b67628d2310f2d28d97a5e1b45"
+    },
+    {
+      "name": "legacy_el_oro_88d14e11c370a072edbc.tif",
+      "zone": "el_oro",
+      "sha256": "72a429271c25eb4a17d88c9d2b8bef5b9c9e916fdcb9c1f29dfcd7edac02cbed"
+    },
+    {
+      "name": "legacy_el_oro_b41f8f4f7cc474a990b6.tif",
+      "zone": "el_oro",
+      "sha256": "ece066e8926300226e93242c59a10f413f5f594312ef17b2a53b0a545d6c5066"
+    },
+    {
+      "name": "legacy_el_oro_efabc53c6b5a76a5e881.tif",
+      "zone": "el_oro",
+      "sha256": "3bbe1f9ed232bbcdefeb1781a0518f1743a6fc394a50871af4ffbcb5ed18ceee"
+    },
+    {
+      "name": "legacy_el_oro_68e7297e4e6cbce9a01a.tif",
+      "zone": "el_oro",
+      "sha256": "5941473648b09d5f0b728956327308df052fd7fc02f8596bcdef6ddb8ca3fd8f"
+    },
+    {
+      "name": "legacy_el_oro_8f134b5fb3a7974659c3.tif",
+      "zone": "el_oro",
+      "sha256": "6606d0cb601b276663f86390f5d04e2ac64587e3ff3324e58879f74e0e0828ad"
+    },
+    {
+      "name": "legacy_el_oro_492ffd56835fb29c55aa.tif",
+      "zone": "el_oro",
+      "sha256": "2559b2aadb748cc8a6fe6df392f46d6f083ae83e82951df2cab5ef42cb29bb19"
+    },
+    {
+      "name": "legacy_el_oro_baae8e68a1db7298dfae.tif",
+      "zone": "el_oro",
+      "sha256": "90609da4fd08ecfa1b862ec727151cab468547778e4e96dcef95e47e76a69322"
+    },
+    {
+      "name": "legacy_el_oro_7c43ac4113ee37552d9c.tif",
+      "zone": "el_oro",
+      "sha256": "c1b4cb2cc60da694da3d89150cf76915e9841efcc0e8c85179955c375a771842"
+    },
+    {
+      "name": "legacy_el_oro_5a58e5e32715e38ee9a7.tif",
+      "zone": "el_oro",
+      "sha256": "a530cf81dd8f49637decafb6552c0468238a0d36c65acc43962185991ef0a22c"
+    },
+    {
+      "name": "legacy_el_oro_92aedb3610db7e4710a0.tif",
+      "zone": "el_oro",
+      "sha256": "9f679866cfbd63d0decb6934041e568220d9a88666506728271cc4ea9160ed32"
+    },
+    {
+      "name": "legacy_el_oro_d4845f48e039f82f63fb.tif",
+      "zone": "el_oro",
+      "sha256": "703d12a8de825ea564f1744ae659830e3c4ec4eaf087a8c73b806ae781c1a44b"
+    },
+    {
+      "name": "legacy_el_oro_42e3b95efc0efdf3c071.tif",
+      "zone": "el_oro",
+      "sha256": "a43f5403b0f98324e3eec7ed1bdaa96aad8185aeeafbc49e078299079e82e838"
+    },
+    {
+      "name": "legacy_el_oro_68312892730ac4437697.tif",
+      "zone": "el_oro",
+      "sha256": "c13854be66038e9e038858f6826d06c032dd3ff9ca0f310c262ec505c125c753"
+    },
+    {
+      "name": "legacy_el_oro_34687e64757f3d82ce62.tif",
+      "zone": "el_oro",
+      "sha256": "3f61fd7fc44aa5fbd6dcb2af4c07f1221538b8321fc7e7934250ff4b836c2bb5"
+    },
+    {
+      "name": "legacy_el_oro_6bb92946489c1a5a6cc9.tif",
+      "zone": "el_oro",
+      "sha256": "f486ff6a9b5d06744e46a148ebae66ad27943cd994686e08cfb989182a6f2dd1"
+    },
+    {
+      "name": "legacy_el_oro_518a9bb88f259ba044d1.tif",
+      "zone": "el_oro",
+      "sha256": "b0c3a009f92fda69dbcf3f10d91c9ffb8dd205a01196923f29e53fa3b511ef1c"
+    },
+    {
+      "name": "legacy_el_oro_3278e557d524dee37468.tif",
+      "zone": "el_oro",
+      "sha256": "981742485b038da225cc7beadc4e4cbb8b0c575ba125c4dec049d632e9d06930"
+    },
+    {
+      "name": "legacy_el_oro_0ab8c75c5213c9bd890d.tif",
+      "zone": "el_oro",
+      "sha256": "2784cb0265a46473f4319262810037f0124c8fadfac60f1aa4af431f21ecd438"
+    },
+    {
+      "name": "legacy_el_oro_db456998edebeade3627.tif",
+      "zone": "el_oro",
+      "sha256": "7f0f9a01e1c389d94b8091992e074d856a54d1bb9cf0d599d5990c604eaadc95"
+    },
+    {
+      "name": "legacy_el_oro_910a318515869f15193c.tif",
+      "zone": "el_oro",
+      "sha256": "5d78a045cd2a6ffebeddc322145bacae655dc126220516e3bfd2957330a20f58"
+    },
+    {
+      "name": "legacy_el_oro_c838054b93d77b66f34b.tif",
+      "zone": "el_oro",
+      "sha256": "277343bc29d0f07263daaf9f27a74b7cc96ce719a975160d80dfca0fedecd39c"
+    },
+    {
+      "name": "legacy_el_oro_4f53387ecda1dd0d3855.tif",
+      "zone": "el_oro",
+      "sha256": "af6892d6f4ccbd4b7ba2473c583894c64a5e21407728393b83dde43972e46f65"
+    },
+    {
+      "name": "legacy_el_oro_b211bbe853027db9ef5f.tif",
+      "zone": "el_oro",
+      "sha256": "2015f5e6dfa9468f567385145249862319006593868bbf29d992effcd02fb15b"
+    },
+    {
+      "name": "legacy_el_oro_5cc2d95fcf818b77c780.tif",
+      "zone": "el_oro",
+      "sha256": "b7daeb1b297e3d056763f42dad02003abd2a1c059f43db1214d192787b98fdc2"
+    },
+    {
+      "name": "legacy_el_oro_ae3f855cdf0202b56d06.tif",
+      "zone": "el_oro",
+      "sha256": "40df66b0f3e3b2b98f5bea43998c0f3817f60e79db71c39d26d5562e1d7055a5"
+    },
+    {
+      "name": "legacy_el_oro_61f5bce97f4ee59e62fb.tif",
+      "zone": "el_oro",
+      "sha256": "2d791e57fe4f28cb70e5a4488a58111a4681728c32b41738ec8aa4b76e1f13df"
+    },
+    {
+      "name": "legacy_el_oro_fbf3089d8e05170c5e21.tif",
+      "zone": "el_oro",
+      "sha256": "3dd16f49dc6deb9ea3d5cb8a8e5e5503d47d4103598eecc515a4610d9783db16"
+    },
+    {
+      "name": "legacy_el_oro_80dfde6670c8724eed5a.tif",
+      "zone": "el_oro",
+      "sha256": "9ae32b36fe9d5832efc28930db991a0526d05e5b74f9980bd2e7c8ed8aa53f2b"
+    },
+    {
+      "name": "legacy_el_oro_75d3a78a0a81495e39fa.tif",
+      "zone": "el_oro",
+      "sha256": "768e607270c2fd437b5f003e6117d8af81980f9a8324db1e59191922a2493797"
+    },
+    {
+      "name": "legacy_el_oro_3939ee97bbfbd97880bd.tif",
+      "zone": "el_oro",
+      "sha256": "e3a174a9d4effb962ef447f39de0c5ce148f6882bb37e78b5e410ee3bd875cc2"
+    },
+    {
+      "name": "legacy_el_oro_f75738ac29e75c5b25a9.tif",
+      "zone": "el_oro",
+      "sha256": "eabe2f55167d53f269fe224c5d7455211332b4b878190669ab25cbb370fdbbc0"
+    },
+    {
+      "name": "legacy_el_oro_fb97b9c7225f60b5c7e4.tif",
+      "zone": "el_oro",
+      "sha256": "1eb0a0ec5094dc1757b198decdcacd85a88ea4531467a1495dbd8510b8f6b97a"
+    },
+    {
+      "name": "legacy_el_oro_eed54dd68456b98a906a.tif",
+      "zone": "el_oro",
+      "sha256": "62da66cf3bfa3d79481bae01046290a054647ccdd39bb304d4d87c4b175559fe"
+    },
+    {
+      "name": "legacy_el_oro_aaf4985f1036dd1af6b1.tif",
+      "zone": "el_oro",
+      "sha256": "9875c6d7ec169e509d692d180bafa74e05d94356f9b35c1c038e839956b12a4f"
+    },
+    {
+      "name": "legacy_el_oro_d2120b1735e4eb9e4f18.tif",
+      "zone": "el_oro",
+      "sha256": "c30e203e26da1013f6f0071e7c0889e5a244107f98df579499ae2bef1f43de21"
+    },
+    {
+      "name": "legacy_el_oro_a2a2b2c9d5421ec406f7.tif",
+      "zone": "el_oro",
+      "sha256": "746fe79d51a5b0868150d61d4e2dd874bbff862648d634702cb1c62037d3bdf6"
+    },
+    {
+      "name": "legacy_el_oro_908f17f788395989f5bb.tif",
+      "zone": "el_oro",
+      "sha256": "1f4ab28e953ad78bf19171e8383c8c5aa5e6b145458f48408ac86284d6ead700"
+    },
+    {
+      "name": "legacy_el_oro_652dbfd11690a688739c.tif",
+      "zone": "el_oro",
+      "sha256": "056a3a8471d069d007dc518f0503c2d9abcb8cf28710a3047cfb79eaa09d1fd5"
+    },
+    {
+      "name": "legacy_el_oro_5e960b4f84e133d51d2b.tif",
+      "zone": "el_oro",
+      "sha256": "b9fa70a23e1eecd2fa8b0805d6b861f57e73d36f42d3dca128e4fb971cf13965"
+    },
+    {
+      "name": "legacy_el_oro_84d3ac3f41782041ebda.tif",
+      "zone": "el_oro",
+      "sha256": "a25bb89d6455d50f6269b2836f922b027e963434bfd352d353035e4e1af166b4"
+    },
+    {
+      "name": "legacy_el_oro_dc79c0d0abd9ab22fc97.tif",
+      "zone": "el_oro",
+      "sha256": "b5ad507980c50071c34474e15c0d6c7fd9420cde9928b4702295389ef9cbb27f"
+    },
+    {
+      "name": "legacy_el_oro_ab65bd168a207112db3d.tif",
+      "zone": "el_oro",
+      "sha256": "ba95b151d309b44e39d76079b6543693f85ad2eef1f9384b2494daaa1df9315b"
+    },
+    {
+      "name": "legacy_el_oro_69025c05d98489f6f1e1.tif",
+      "zone": "el_oro",
+      "sha256": "a7a5e26b7d7d119d9440374f140c1d82df78abac133493c5d8c1b03767af9da5"
+    },
+    {
+      "name": "legacy_el_oro_ba16fe89d3a7c993edc2.tif",
+      "zone": "el_oro",
+      "sha256": "360be9af932380aa0e85a9b7b500caad768bb21ef1c45e6ceb1edfd16b2b47ba"
+    },
+    {
+      "name": "legacy_el_oro_7b318a13f443dff4fda8.tif",
+      "zone": "el_oro",
+      "sha256": "65314b5a50c0292c558faa24ab473347b2658bea57a31cdf1d8fcada0ad83b33"
+    },
+    {
+      "name": "legacy_el_oro_d00c490ba1ea3180f556.tif",
+      "zone": "el_oro",
+      "sha256": "594469d215f3abe892c74bec37f03562638baf6754d08fec5696fbf0e3cd0039"
+    },
+    {
+      "name": "legacy_el_oro_2b0473bf5b23f28a9996.tif",
+      "zone": "el_oro",
+      "sha256": "61fefd7218cb237e364b9881e4f3f318f074eb4c038cca1f0b09dba164730fac"
+    },
+    {
+      "name": "legacy_el_oro_7c206e14b8dfb53ec82f.tif",
+      "zone": "el_oro",
+      "sha256": "02d1de8439281b3ec376ab677e09650671d3afb324e6db74dfc5d24e9bed722f"
+    },
+    {
+      "name": "legacy_el_oro_0e47b81bdcacd5635c6e.tif",
+      "zone": "el_oro",
+      "sha256": "4c44ab06ae979cd9a5972c0ac365634ae57d0e193092501f413c495705b13ee8"
+    },
+    {
+      "name": "legacy_el_oro_a1e0194b48e009a0b9bb.tif",
+      "zone": "el_oro",
+      "sha256": "432167f4b44ca10cfe91716b63b78613f6e2bb5f1965fc688c720c781f4bce44"
+    },
+    {
+      "name": "legacy_el_oro_627b2e5f5b5901e31d94.tif",
+      "zone": "el_oro",
+      "sha256": "a5c344c078652347d45c5b9bf5d6c11a71ca842a32d60ec5f965193afd89db9e"
+    },
+    {
+      "name": "legacy_el_oro_a9b4886e6ab2b499789a.tif",
+      "zone": "el_oro",
+      "sha256": "f6246870a9955ad7221b5dc39ded9743f514ce6d9da753991f0c5670f5d54a6c"
+    },
+    {
+      "name": "legacy_el_oro_e1f19bed534ebdc950b0.tif",
+      "zone": "el_oro",
+      "sha256": "4451158625829f60dfde6e87e55cc2a25289d89acf3a4d573ace996d89738a7c"
+    },
+    {
+      "name": "legacy_el_oro_7a55d31e8f460c5bbe7d.tif",
+      "zone": "el_oro",
+      "sha256": "6ae9947de85fb3c8fa4715168e88f7c33ba1f938e93f56a00f12ca866714f9ac"
+    },
+    {
+      "name": "legacy_el_oro_93f79848a83e00fdf568.tif",
+      "zone": "el_oro",
+      "sha256": "705fcc0934eb66399d0a45cfd1c186c80b7ea767c66239d9a56036e2276bcab3"
+    },
+    {
+      "name": "legacy_el_oro_db12a8addca57fe3e24f.tif",
+      "zone": "el_oro",
+      "sha256": "f527325402a5948aae2c15223983ad2bce650cdccb1f30a1ff14959041d5c1d4"
+    },
+    {
+      "name": "legacy_el_oro_883e03fc58afc67990f2.tif",
+      "zone": "el_oro",
+      "sha256": "4d31dbce474cba0c826a54b50e4e5d8ffa55d0804fca8789ddfde97766a56b48"
+    },
+    {
+      "name": "legacy_el_oro_b0e76451e0f0d8050f8e.tif",
+      "zone": "el_oro",
+      "sha256": "1144d4dd475d008e6073d5bb026192aa949e16b7daa65bf70f67f654fd5e2b09"
+    },
+    {
+      "name": "legacy_el_oro_6312b9d3f2505c5e4d8e.tif",
+      "zone": "el_oro",
+      "sha256": "0fb8d63364df0deefd2eca393c6232d706ced0b2a8110a98359715fca41dabfe"
+    },
+    {
+      "name": "legacy_el_oro_d477a78781b286364f81.tif",
+      "zone": "el_oro",
+      "sha256": "09bbf7aac23a8ef8721bf6239273efc12e724d9edf8fc1f57fcc2ead4d30f8b4"
+    },
+    {
+      "name": "legacy_el_oro_9add01ea3b797f946789.tif",
+      "zone": "el_oro",
+      "sha256": "5b151ed70e33a399f50e99fcde0e500293391704bcc741f47bad5602701c0a1f"
+    },
+    {
+      "name": "legacy_el_oro_6abe1c569cbbc62ac2a3.tif",
+      "zone": "el_oro",
+      "sha256": "da9d4d65dd9502d6c48ba4b1e700694972643bb9af2e6ea51453a057ca54d0a3"
+    },
+    {
+      "name": "legacy_el_oro_208ed292a2e3e99eeb3f.tif",
+      "zone": "el_oro",
+      "sha256": "ce9513f43c008bad3fb5141edb509638ebea0409b89be295620339d2dd9aeb8f"
+    },
+    {
+      "name": "legacy_el_oro_62a80b83045b3787ee92.tif",
+      "zone": "el_oro",
+      "sha256": "1ecc832f9d4684458950d4f63432499c1ae83fa11cb814465bae81392f4796c4"
+    },
+    {
+      "name": "legacy_el_oro_a68d73867c2f29b957b3.tif",
+      "zone": "el_oro",
+      "sha256": "53dca271f724c205651179f7f5f403975a1bfceaea44807f172fa3a84e87fa82"
+    },
+    {
+      "name": "legacy_el_oro_fbfd7f48b6511df6ac6e.tif",
+      "zone": "el_oro",
+      "sha256": "759089ccd194df754a0587bd569452b067aaa2781c7aa70e30ae765945bc4dc1"
+    },
+    {
+      "name": "legacy_el_oro_efc0b5d8217590122884.tif",
+      "zone": "el_oro",
+      "sha256": "f3bb0ff40b9ef7ee4f9bb6f7f0762f3adbb4ef05f92a72fd31f3588b2457d122"
+    },
+    {
+      "name": "legacy_el_oro_e7f3bf6eb12f10327e3f.tif",
+      "zone": "el_oro",
+      "sha256": "71e35838eb652ad3b109d411782755493b618753891dd6b2f201db498e415e55"
+    },
+    {
+      "name": "legacy_el_oro_129da4de9e8d74124aa0.tif",
+      "zone": "el_oro",
+      "sha256": "48ed5f1f451a0b708a82bb374a5b8ed6de2d78657944ea088b605fde91740a73"
+    },
+    {
+      "name": "legacy_el_oro_8f329177dd6cb1eb20f4.tif",
+      "zone": "el_oro",
+      "sha256": "9bc7cb5c60ea247c8067671a0664bfaf7381fc6c313d84e65007bb07eb31cdd7"
+    },
+    {
+      "name": "legacy_el_oro_435f2dd5d3ac37730b6a.tif",
+      "zone": "el_oro",
+      "sha256": "49bb146e598a85f759ea0a0d537e1b066ed290db43972416862a7dc56fc135d8"
+    },
+    {
+      "name": "legacy_el_oro_71bb4e6c12c1b3847f73.tif",
+      "zone": "el_oro",
+      "sha256": "b4579647f1d3e8a485c6613748928a9e239be2a3a406d5f8850ad3e1b959c07c"
+    },
+    {
+      "name": "legacy_el_oro_ed8cf201a0920c5eaf4a.tif",
+      "zone": "el_oro",
+      "sha256": "1ba43bb080428e4068a3249c81e2ad7349737bc0d06fb20560bb35bdf6f340e7"
+    },
+    {
+      "name": "legacy_el_oro_9c7fd64c1f916020d73e.tif",
+      "zone": "el_oro",
+      "sha256": "9c7942f2805a18b290b76677549a069e83711112570c4d97cc09242ffca1c97f"
+    },
+    {
+      "name": "legacy_el_oro_9a67c93dab41964544fc.tif",
+      "zone": "el_oro",
+      "sha256": "8fd44a00177c4d49286e6151d680b8e248bfd9324d8c9e2bc7d95608eff09a78"
+    },
+    {
+      "name": "legacy_el_oro_c3330b24dfa94455d061.tif",
+      "zone": "el_oro",
+      "sha256": "892b4870b28b0b774e04e9afb3c23b109ba74e06bffcb5af21058d592d92546c"
+    },
+    {
+      "name": "legacy_el_oro_d1bbf2c96f221d4a796c.tif",
+      "zone": "el_oro",
+      "sha256": "57d85c496700b8c4f53344d0008011bbaaed28d387c5ec262e13ea95bbaf17ce"
+    },
+    {
+      "name": "legacy_el_oro_0c40a6669e89054b1851.tif",
+      "zone": "el_oro",
+      "sha256": "c8cac39fb3a697b7d358e467fee50f1facfe56ef15e1801f329b84b8ecb6a143"
+    },
+    {
+      "name": "legacy_el_oro_ecbffffe68bde216c236.tif",
+      "zone": "el_oro",
+      "sha256": "29e9ac9c6cc7ed78be5b94a5553c800722219c9e17ec707613cc535995cbdecb"
+    },
+    {
+      "name": "legacy_el_oro_f9a56626b53eb15844e5.tif",
+      "zone": "el_oro",
+      "sha256": "43adec8c849ecead6e407f48552f304ef60c77c68360c666c1ed6f46caed6c71"
+    },
+    {
+      "name": "legacy_el_oro_d10d7e9434e499af37fe.tif",
+      "zone": "el_oro",
+      "sha256": "cf3ad5ac5bc6a2ece5dee3a524ac7acd0181c753271afb0897f5754a7670482e"
+    },
+    {
+      "name": "legacy_el_oro_7241885205249346eb36.tif",
+      "zone": "el_oro",
+      "sha256": "10b39ada230e2b1eead37118d217eb72d685fdbadd9d28db7167495c15fd7a1b"
+    },
+    {
+      "name": "legacy_el_oro_1d353e374e7b4127afe6.tif",
+      "zone": "el_oro",
+      "sha256": "77fdd03ab00172884ca0d1c9ea9e1a3853dcf8f9735e307c7d5e709b5c158ae0"
+    },
+    {
+      "name": "legacy_el_oro_9273b4cff8c476741c46.tif",
+      "zone": "el_oro",
+      "sha256": "e75182675053ffba6ba53d04ecf2461b8e13d164ff3c511e430c0cbdd7a5297b"
+    },
+    {
+      "name": "legacy_el_oro_53749a4cf1990377fbe8.tif",
+      "zone": "el_oro",
+      "sha256": "51286db95e67507d246d058c339754fd3e4603fe9898af89b4fd8e290004f674"
+    },
+    {
+      "name": "legacy_el_oro_218e434dcf204c2258cf.tif",
+      "zone": "el_oro",
+      "sha256": "843beee43b990fa744fd3863726baf18b8f1bc3118e842ac5f64c954d3470af6"
+    },
+    {
+      "name": "legacy_el_oro_591b67ad995904c33d79.tif",
+      "zone": "el_oro",
+      "sha256": "7995713bc286f87837d0fd130c52254c76ba9d1e0a99f26fe3d08750462c66e4"
+    },
+    {
+      "name": "legacy_el_oro_c1a6daf67571f5e86d2c.tif",
+      "zone": "el_oro",
+      "sha256": "e15839dea484d48b3d994bb94177aa0a0e7d186b7f0cd2260c7712f45d4fbe6f"
+    },
+    {
+      "name": "legacy_el_oro_733541b7751a6f1f9e0a.tif",
+      "zone": "el_oro",
+      "sha256": "31f7011ae43e72c42399ac1103fabec5c73d7ffe130c7424313be26c802cfc0c"
+    },
+    {
+      "name": "legacy_el_oro_4bb95dfa750312e3d675.tif",
+      "zone": "el_oro",
+      "sha256": "9eb45f7cfc4f3710e6f5863036851e048d603c8cb19ae2d77d245635d7b89c53"
+    },
+    {
+      "name": "legacy_el_oro_1a949a2804a68895e7e2.tif",
+      "zone": "el_oro",
+      "sha256": "926ee7520b98fc9943052e4815ad106941c24f2afa2cd010ee7663dff8462bad"
+    },
+    {
+      "name": "legacy_el_oro_3553f1e5a6cb690e6d15.tif",
+      "zone": "el_oro",
+      "sha256": "994555f74b8708bc9d66970af7f6338d04562e93230c57d1f4a2191201ad7c21"
+    },
+    {
+      "name": "legacy_el_oro_a0001ba1a73aa14c2645.tif",
+      "zone": "el_oro",
+      "sha256": "7a0d13af8cf21ac3ab6ab34d5116fe8a7415066bf0614ad24ea9d6701c86bd12"
+    },
+    {
+      "name": "legacy_el_oro_c531af76a26e0c68fe7d.tif",
+      "zone": "el_oro",
+      "sha256": "d329fab1c60ed0a929c5473b392097b8dd6e987eb5703fb68cdad4bbc1bf5b85"
+    },
+    {
+      "name": "legacy_el_oro_8a17d31c5f344e966974.tif",
+      "zone": "el_oro",
+      "sha256": "39a5618e2bd2f0814fdac5210f1cb1a6e13fb00a06eb83ac080658e7b014a45f"
+    },
+    {
+      "name": "legacy_el_oro_17ff1b855779cd897a39.tif",
+      "zone": "el_oro",
+      "sha256": "0c3bbc514095972938c4f31d9c8b23dae9b73af95205c555be348de3f4e9fc3b"
+    },
+    {
+      "name": "legacy_el_oro_72ee2c5d8315d16578d1.tif",
+      "zone": "el_oro",
+      "sha256": "18bc6f29ff40e5a746002e2d14d2938093e24541f8074f4022adfb3b6fe15068"
+    },
+    {
+      "name": "legacy_el_oro_3b1b9210176dd70f9d72.tif",
+      "zone": "el_oro",
+      "sha256": "bd3a97ced9fd029cc7feec52aa7dcdc4979796ea65841bdbfbf6c93c4d569ad2"
+    },
+    {
+      "name": "legacy_el_oro_62496dad6b255c7d367f.tif",
+      "zone": "el_oro",
+      "sha256": "a6a439c0cf1e8aee1fe7bce8193ac430f19d06e107de326b575fb0ded6512c18"
+    },
+    {
+      "name": "legacy_el_oro_08a96dbedde8df497932.tif",
+      "zone": "el_oro",
+      "sha256": "1d0dc237fab11c8fe2ef3c8d41e582d22e062d70f7d74f205e8ab0a00d23546b"
+    },
+    {
+      "name": "legacy_el_oro_a32d46f8122fdfe49a5d.tif",
+      "zone": "el_oro",
+      "sha256": "c811b62635c0caa5fe7424b12d6e3c857f8ff9c5cb0d8c1f370cdd59f6bc9591"
+    },
+    {
+      "name": "legacy_el_oro_86208ca077a09d08b07d.tif",
+      "zone": "el_oro",
+      "sha256": "203addacdef6cfc0d5e08bd654f696d5a30849427872468502670dfb8f08869c"
+    },
+    {
+      "name": "legacy_el_oro_e95dfb526e1f46d7d547.tif",
+      "zone": "el_oro",
+      "sha256": "d429882bbc36ab02f7ca8c4cd1ddb7ada8fbb33151b5d6eec7008c266f9ae3e4"
+    },
+    {
+      "name": "legacy_el_oro_4c767024f3455f799f81.tif",
+      "zone": "el_oro",
+      "sha256": "98f26cb2be7610e2b3ea90780e074160336168fbb61fd89c6fcef0afbee68b4a"
+    },
+    {
+      "name": "legacy_el_oro_3cd9502613192b2be426.tif",
+      "zone": "el_oro",
+      "sha256": "f96523fcb2b5a1863fb45fd95bc22bf6278045aa24346341427892d725fd249e"
+    },
+    {
+      "name": "legacy_el_oro_2a0217f6dffcf9faae2d.tif",
+      "zone": "el_oro",
+      "sha256": "569c9636ea067696414a434924e4bc55acb4b6fb2de6b7d05694659be6e3f057"
+    },
+    {
+      "name": "legacy_el_oro_016536cc8a374e7670f1.tif",
+      "zone": "el_oro",
+      "sha256": "ec8075190b89e85dbf2a8a709f14517a41bf651f10cc122e2e34eb469aa76601"
+    },
+    {
+      "name": "legacy_el_oro_e2a60c3e75570820648e.tif",
+      "zone": "el_oro",
+      "sha256": "7ad67470462d081df2c6a1c2fbba557d00e9ac4c452b7af15e02359e60a787eb"
+    },
+    {
+      "name": "legacy_el_oro_7c4189f538306da07e8f.tif",
+      "zone": "el_oro",
+      "sha256": "ad0f03cebb4496ac0a0d2e36a1f2ef17b06c2ad88ee3a13dd08e5103064f05e8"
+    },
+    {
+      "name": "legacy_el_oro_56d6b598f58e123f2cff.tif",
+      "zone": "el_oro",
+      "sha256": "232d769aa92e336bc533141ac5b0dd92ed552eb627cad7de12cffac63587b39a"
+    },
+    {
+      "name": "legacy_el_oro_f97b98206745ae2d5ac8.tif",
+      "zone": "el_oro",
+      "sha256": "8f53f4e9541dc112cb4238fd72146c7dffa61b5001705b6c4b783ce77f27b97a"
+    },
+    {
+      "name": "legacy_el_oro_ea682e22ed58d65e23cd.tif",
+      "zone": "el_oro",
+      "sha256": "b49933af09217f5caa22c07f3aefaaa19cef2ef9f8ac355ef447adb91b2d5693"
+    },
+    {
+      "name": "legacy_el_oro_fc202c9be8c14a57c84d.tif",
+      "zone": "el_oro",
+      "sha256": "0f70a55a725ffb52c2495fd271f11e59d0a9e8b06ad75f833aad5eb4680e7510"
+    },
+    {
+      "name": "legacy_el_oro_108d217ef3dc671a7a7b.tif",
+      "zone": "el_oro",
+      "sha256": "5798b229df0296a3ccb1d6a4c27af192ff7e4af731464257c032b6c27e3bdaf5"
+    },
+    {
+      "name": "legacy_el_oro_7e39bca292f20b4f6eb2.tif",
+      "zone": "el_oro",
+      "sha256": "12dead1dfb509ed58b15fa75255bf961b255643365dd8a29ec8216d20a60325e"
+    },
+    {
+      "name": "legacy_el_oro_f092299a69615aa9c8ed.tif",
+      "zone": "el_oro",
+      "sha256": "151cf6e638ba2c385ef0c4ebeee5ec719818e3375562b4f9392e855e6ab3ed5a"
+    },
+    {
+      "name": "legacy_el_oro_9e831dd59804d56db7f6.tif",
+      "zone": "el_oro",
+      "sha256": "10420adc4c3ddc17a00fb5b08908de9cd73edf57383e5043433a3ed5572ddc58"
+    },
+    {
+      "name": "legacy_el_oro_3bd0f47987f3aaa3f22d.tif",
+      "zone": "el_oro",
+      "sha256": "5be0f91549264508d87fce54e2668b4bdb9fba04fffef2307aab42fc948968f0"
+    },
+    {
+      "name": "legacy_el_oro_6274a1059ed60607fa43.tif",
+      "zone": "el_oro",
+      "sha256": "282eaecd36842a7851c5e0a275931b31037a40f771782adea7c17e6e7ea6a5b1"
+    },
+    {
+      "name": "legacy_el_oro_c5f2834c7d5ddab6b9ef.tif",
+      "zone": "el_oro",
+      "sha256": "00f65647fca36d9a5b5bae69f97b3fb6798b0a3d8a66f151f7009f02d8ed9516"
+    },
+    {
+      "name": "legacy_el_oro_8c5e1bf9590787556f7a.tif",
+      "zone": "el_oro",
+      "sha256": "7ecdc6834cdeccdf2a834576ae8a09ece088657478991fb20e347bfb6e6cf9f3"
+    },
+    {
+      "name": "legacy_el_oro_d8604932310d90fad006.tif",
+      "zone": "el_oro",
+      "sha256": "74e221889f90bd5b230a34dd1b7e0ea0e045f28a8a635c428ed06aa8e3dc23a2"
+    },
+    {
+      "name": "legacy_el_oro_6da2f6e6a2405e65a623.tif",
+      "zone": "el_oro",
+      "sha256": "9e5e092ae2659ea954aac7abe0b25f6dfaaf173fc2d2fc4f23e5638fb1b5e8d2"
+    },
+    {
+      "name": "legacy_el_oro_ef30c502aba67feae43e.tif",
+      "zone": "el_oro",
+      "sha256": "d03efe249c79ec5a28b553527b84d36088fb4d1f555775bc86509f7a364107a5"
+    },
+    {
+      "name": "legacy_el_oro_b0fa3846e8066dd9e428.tif",
+      "zone": "el_oro",
+      "sha256": "b17b146eb55a48a6a85e1444067399b09ebb28cad18f10bf9fa0990b92e48cca"
+    },
+    {
+      "name": "legacy_el_oro_70029522655e3a9e1f1f.tif",
+      "zone": "el_oro",
+      "sha256": "c0889e9be2527f5569ed3cc24fa03301a7789334d4ca23f1925d076078fec04b"
+    },
+    {
+      "name": "legacy_el_oro_ad90704685d8370879f6.tif",
+      "zone": "el_oro",
+      "sha256": "5b69eea266eef579d7167fb594e96d1afedab405bb2a770cb45a3ea2107439a0"
+    },
+    {
+      "name": "legacy_el_oro_2823dcf0e57a45cb2179.tif",
+      "zone": "el_oro",
+      "sha256": "05f35de13811bcec3d4b0535bc14c39261cded11fbafd632671331e672616800"
+    },
+    {
+      "name": "legacy_el_oro_d09d5715240036234271.tif",
+      "zone": "el_oro",
+      "sha256": "d74d040f38d5ccb489183fd7aad42847c63ebe8e899301e210034817d46789cc"
+    },
+    {
+      "name": "legacy_el_oro_43473481722fbd9f9d45.tif",
+      "zone": "el_oro",
+      "sha256": "47940c24a1206f6b6ec9a49cd1fb87980e0923dfed5615583e2b5bfbfaa3ea6a"
+    },
+    {
+      "name": "legacy_el_oro_ff2d9badf894463a795d.tif",
+      "zone": "el_oro",
+      "sha256": "f22e537925753230104a213c2936bcec4d0b6b919c943e99e546f3ddc8f90ce4"
+    },
+    {
+      "name": "legacy_el_oro_ac7cefd3735445a62e03.tif",
+      "zone": "el_oro",
+      "sha256": "24ca37eeca838e836e1423145a15a360a8933969f7869edb667b36e37abdd433"
+    },
+    {
+      "name": "legacy_el_oro_e34e2a3b237200e6ad88.tif",
+      "zone": "el_oro",
+      "sha256": "b838a25d00c596a33d691ed52e112bb85424712415e1197045c319fe36dbb29a"
+    },
+    {
+      "name": "legacy_el_oro_0ee055b77b3f94cedbaa.tif",
+      "zone": "el_oro",
+      "sha256": "5fa76fb95bab2762dc54bd77f17abb3ea92962ecb176f9025fe064dbc9951867"
+    },
+    {
+      "name": "legacy_el_oro_28b4054741745e8eaec0.tif",
+      "zone": "el_oro",
+      "sha256": "2c3cda00ada1c8f38cfbc3760a1fb65aa15179fe3db6f203b4e887a9b50a37a0"
+    },
+    {
+      "name": "legacy_el_oro_52c7ee218abc205b6d8b.tif",
+      "zone": "el_oro",
+      "sha256": "d47a65b3211147d423fb4c411e57dbe25d670441bbfc20833c88c7a777a96bd9"
+    },
+    {
+      "name": "legacy_el_oro_1b38a672c621b8bf1869.tif",
+      "zone": "el_oro",
+      "sha256": "a7e456a6da63dac5cf6094ce8e8fe07871555ca4cc9b94c6276c7970298549aa"
+    },
+    {
+      "name": "legacy_el_oro_aaafdc99b961a5e30742.tif",
+      "zone": "el_oro",
+      "sha256": "754bade19b8d3ad690c0437d09d44bfcae17bb08c5b04a0911861b8e02d72a9b"
+    },
+    {
+      "name": "legacy_el_oro_0a326d7a146362ccc7c0.tif",
+      "zone": "el_oro",
+      "sha256": "2d51917a6860af45ec109f32221744dea71231bf510662fa7e1cf9e3f540275c"
+    },
+    {
+      "name": "legacy_el_oro_abf3d648d3b75cbeb409.tif",
+      "zone": "el_oro",
+      "sha256": "5ff789ec61652e46a0a69ae76dcb0d47f6a80aa1d36f172427adaf166adab804"
+    },
+    {
+      "name": "legacy_el_oro_22f59621d163b6a360e2.tif",
+      "zone": "el_oro",
+      "sha256": "01e2cf1fcf240dc81bb9eaf20f4f56ce87a909b9aadc7fcba28ecb35ccbc9be9"
+    },
+    {
+      "name": "legacy_el_oro_8184572b22273755d731.tif",
+      "zone": "el_oro",
+      "sha256": "490ac32a2afef85450c87ca4f4111a47a896377bd7f461342722add485a22957"
+    },
+    {
+      "name": "legacy_el_oro_ecce0b19d123ca87ade7.tif",
+      "zone": "el_oro",
+      "sha256": "fb1ae099236c3600d1739df4dd2f4a9bebe265ca8abc90cb8ce92c08e867ba98"
+    },
+    {
+      "name": "legacy_el_oro_59c0c7c5e5579cc4e72e.tif",
+      "zone": "el_oro",
+      "sha256": "7ee5e0d96f496a950cbb5d42ba06c86e5125c9df878e99e6186b34cbe248a689"
+    },
+    {
+      "name": "legacy_el_oro_8aa675004113118d4f79.tif",
+      "zone": "el_oro",
+      "sha256": "d9addec46d401f77c1da26ff57afea5e7c0e3d863a0c194c17ec1116df09cb1c"
+    },
+    {
+      "name": "legacy_el_oro_c39bb050bcdfffa59ceb.tif",
+      "zone": "el_oro",
+      "sha256": "970dd715ffacb2b30efd7a4187ba4519310dff2f1e9052deb2d8b1f391406051"
+    },
+    {
+      "name": "legacy_el_oro_3b1213682da7be3d80d3.tif",
+      "zone": "el_oro",
+      "sha256": "30c2126e12e7abc3e794ddbc1bda0198eb60c476b3321a08f9e2c80183a91a7d"
+    },
+    {
+      "name": "legacy_el_oro_d30db7e246b51e498271.tif",
+      "zone": "el_oro",
+      "sha256": "5bf6b31b0b204577c787246efda1726eae60d686c1e5afdbe4cce30829b67032"
+    },
+    {
+      "name": "legacy_el_oro_20318aad487e258af8a3.tif",
+      "zone": "el_oro",
+      "sha256": "9a0bc537b14c5f211735d8430f68643839c2594aa748a3220f271d9c29ca6296"
+    },
+    {
+      "name": "legacy_el_oro_6aa0f18d51969bf99af7.tif",
+      "zone": "el_oro",
+      "sha256": "73303464eb85d97b2ad7b038b439b5a76ec90b0ac31a6e1888d70e2d844b2ba0"
+    },
+    {
+      "name": "legacy_el_oro_63ad77116a9139332300.tif",
+      "zone": "el_oro",
+      "sha256": "77350aa04858219d15f2cd5a410ab771093eb6feea082e1bedef95ec42e9a395"
+    },
+    {
+      "name": "legacy_el_oro_36b4078972fb355b7b82.tif",
+      "zone": "el_oro",
+      "sha256": "25eab73730be7e8610de604aba7a11e25a60e0753cb37fe4b82408ac83775abf"
+    },
+    {
+      "name": "legacy_el_oro_8eee24917bc9084cd708.tif",
+      "zone": "el_oro",
+      "sha256": "f3c3edb8f0583f49aa6b6efc9bed9ccc8986eb154644a6117dc6635ff47348c0"
+    },
+    {
+      "name": "legacy_el_oro_2f550dd2a03a242f4511.tif",
+      "zone": "el_oro",
+      "sha256": "c7109337fbac8468f178b818bee2c2ba9c6993d8cc07985c9fe396b86eef42d2"
+    },
+    {
+      "name": "legacy_el_oro_cf52582ca224d7b82f88.tif",
+      "zone": "el_oro",
+      "sha256": "d2cf9f791b3924b4254679453f80574d38ef9045f5c9eebc6ef7c53d90527023"
+    },
+    {
+      "name": "legacy_el_oro_96a97750188b2581ef21.tif",
+      "zone": "el_oro",
+      "sha256": "c591abbe05477bde7e6659853974b69e14be2311203c997c61c54aaf80919447"
+    },
+    {
+      "name": "legacy_el_oro_be196ac0734ac051eb74.tif",
+      "zone": "el_oro",
+      "sha256": "b80d5f04eb6cd2159a649139cda24cd63a01f1ef42dae840dbcd849e21ed8c6e"
+    },
+    {
+      "name": "legacy_el_oro_642661d5a0d1de314db8.tif",
+      "zone": "el_oro",
+      "sha256": "0f623bf3c5531489ba18490a6b45501eb400d6b4726272f4a5ef42db1faab363"
+    },
+    {
+      "name": "legacy_el_oro_9119d62cb64aabc36e3d.tif",
+      "zone": "el_oro",
+      "sha256": "3d39c96ce564d910e77865621a3f15dde5ae5b969558fc9dd75ff2088f9033ec"
+    },
+    {
+      "name": "legacy_el_oro_cf1c1aadd4531d8f19b8.tif",
+      "zone": "el_oro",
+      "sha256": "06f387fe139e70d9c960be6f02e7a4e7d0766cce2feccda992fbdca3aa6ae5b7"
+    },
+    {
+      "name": "legacy_el_oro_bb4880f17c41f902da79.tif",
+      "zone": "el_oro",
+      "sha256": "1436f92c392a3cf52838bc38b012fc393f09c4ef81c762a99a61320475de2ea4"
+    },
+    {
+      "name": "legacy_el_oro_647d23d99674dc31d44d.tif",
+      "zone": "el_oro",
+      "sha256": "b1d85194d64568889bfa6eb331a0ac1f493bec13c98aa2f937a0f6a9a2f58f3f"
+    },
+    {
+      "name": "legacy_el_oro_cc1f6aeff470a8ba9548.tif",
+      "zone": "el_oro",
+      "sha256": "9b35aed4b6eb8e245b51e27c34114a16943068efcaaeb00bc5c69b57234338b2"
+    },
+    {
+      "name": "legacy_el_oro_0a1c35616d1f73e5150c.tif",
+      "zone": "el_oro",
+      "sha256": "857e2d261952ad866c3e9450c04d33f15d6848855822df79912942206ae93d14"
+    },
+    {
+      "name": "legacy_el_oro_234e0ff64002e2daae7b.tif",
+      "zone": "el_oro",
+      "sha256": "0cc865779fa21b87d13522d7f66bb0d1068c8074ee189c3b08aa74ef63bdfa38"
+    },
+    {
+      "name": "legacy_el_oro_30299fdbe1a62d5a67e3.tif",
+      "zone": "el_oro",
+      "sha256": "22ae4432b613ab369f4831b7fea83b555611a39363b97ffa261b6cf0c46fb5d1"
+    },
+    {
+      "name": "legacy_el_oro_4830a8835b0d940b386f.tif",
+      "zone": "el_oro",
+      "sha256": "9907d164cad07b1ffd47635b4a7583ac919a5df90175c650a0a3169098424835"
+    },
+    {
+      "name": "legacy_el_oro_007383619deafa4dac4d.tif",
+      "zone": "el_oro",
+      "sha256": "fa252ff81505002d5d185da3067172a0962e60ef699182c45aa2e8cd1dd7547e"
+    },
+    {
+      "name": "legacy_el_oro_4b2bdff4c7d2ba3bf694.tif",
+      "zone": "el_oro",
+      "sha256": "2b3ce12656357e5c757d44103ecb6efaca838fb1fd33a1b5efad70bc0c5695bd"
+    },
+    {
+      "name": "legacy_el_oro_00cee32918cd22dc9b4e.tif",
+      "zone": "el_oro",
+      "sha256": "00987bdc58325915d39b9cca28e0f93868abaee8addf9b4b021c7cd03a5ebe6d"
+    },
+    {
+      "name": "legacy_el_oro_25eaa6fa7ee648372140.tif",
+      "zone": "el_oro",
+      "sha256": "09c5427d3ba64d8583ce22917ff9d6f6441e48b27f60b01ab9ffc3e245854c36"
+    },
+    {
+      "name": "legacy_el_oro_782b8d2bf1fe7de1b38b.tif",
+      "zone": "el_oro",
+      "sha256": "e22d1f991e91812b595f42fbe59a86df92dc77915a3523f804976edcf8965507"
+    },
+    {
+      "name": "legacy_el_oro_aafd3456dbe78907c4c9.tif",
+      "zone": "el_oro",
+      "sha256": "01ada8018b8e04aebe4add21327a124202609822f9558b73264cc84a39515e29"
+    },
+    {
+      "name": "legacy_el_oro_a52ee359871cabde1915.tif",
+      "zone": "el_oro",
+      "sha256": "fa939fd1e02cc8904da45e5061aa281d2f6f86627bb4114b647fb916f35f2a40"
+    },
+    {
+      "name": "legacy_el_oro_1d111d3b6ce04545c9c4.tif",
+      "zone": "el_oro",
+      "sha256": "d83ed453999574d6ebd6a71f31e4883cb7b365b2242bd4339a879803f7ffa5c3"
+    },
+    {
+      "name": "legacy_el_oro_b369865d83f0d951f710.tif",
+      "zone": "el_oro",
+      "sha256": "fa41d85b1e2ee2ffbad4205df99526649ea888714c5e66df8272e3abf1a61424"
+    },
+    {
+      "name": "legacy_el_oro_9a98805929be43a4a404.tif",
+      "zone": "el_oro",
+      "sha256": "3248d31b0a397948ea67c8723984a33bcb265153bec58ff3f1291e6f2538d2c3"
+    },
+    {
+      "name": "legacy_el_oro_1c56a187a1225238be0f.tif",
+      "zone": "el_oro",
+      "sha256": "34875ed9c301365741c3a612d628417c94404a3a2eca15eb7410c2501aaaccf2"
+    },
+    {
+      "name": "legacy_el_oro_e279856133557938b201.tif",
+      "zone": "el_oro",
+      "sha256": "45b58054f5c8bc4139614516064f526f61e22045c6bd7bbc2bb407f8be4a2ea6"
+    },
+    {
+      "name": "legacy_el_oro_bd6e7a398f9581fa071a.tif",
+      "zone": "el_oro",
+      "sha256": "d17b1826db38083b467173ec5713192096ca26764b36b3bcbdede4ad47d906b2"
+    },
+    {
+      "name": "legacy_el_oro_e53cbd1162234f88d0f9.tif",
+      "zone": "el_oro",
+      "sha256": "8303b92c1b8156209cbe4eeaa51d2af6b8781ed577e804e66bd32b04f2461ff3"
+    },
+    {
+      "name": "legacy_el_oro_b44c2eb6b5280535053b.tif",
+      "zone": "el_oro",
+      "sha256": "6d4038bb99fa67ea308a057e103c81c6219a26d938cdde49f9e07dabebb06fb3"
+    },
+    {
+      "name": "legacy_el_oro_d0d7edc6ae6e948e4a9f.tif",
+      "zone": "el_oro",
+      "sha256": "fbd86734b981be12cdbbcfbdf91a8acb44e62b789a301199f50bee670a4e4362"
+    },
+    {
+      "name": "legacy_el_oro_2282776984e1d2ceb35d.tif",
+      "zone": "el_oro",
+      "sha256": "2541b2c1d512604b0302dc59f789e76cf8ba5d608d38d3cee12e8676534e5460"
+    },
+    {
+      "name": "legacy_el_oro_a9ef6adbe788db98ac0c.tif",
+      "zone": "el_oro",
+      "sha256": "f4aa9ef4913b24ef8115d04bb849ed1239da64232c6b2cadb5a4fa03631c6598"
+    },
+    {
+      "name": "legacy_el_oro_d7a91751b29a9f26da48.tif",
+      "zone": "el_oro",
+      "sha256": "48d1da064f5e001aa9d339c7d6856ce6bd446677e665e99ea904db0a8c11f7a3"
+    },
+    {
+      "name": "legacy_el_oro_3149cbb8d707f5bee18a.tif",
+      "zone": "el_oro",
+      "sha256": "aae89f33558e4508a4199f42fd8fc18fcc4e8a8b310f819860d0b5cb00e4a6b7"
+    },
+    {
+      "name": "legacy_el_oro_fb716b384b5858a9737e.tif",
+      "zone": "el_oro",
+      "sha256": "ed9e5643f249c8cc4b16458875c343aec83c6b2227aae07ee2ba74943304ff0a"
+    },
+    {
+      "name": "legacy_el_oro_8661d0a7d4db6bdbffd4.tif",
+      "zone": "el_oro",
+      "sha256": "b047783eab5dcaa2f7d64235205a53117e0c316ba822f215c61cdad274a2f800"
+    },
+    {
+      "name": "legacy_el_oro_864acc0e386ef1881238.tif",
+      "zone": "el_oro",
+      "sha256": "2916361b3d71982d076f44852aeb299c43a6acc60efa5bc9fdb2c09df71e4443"
+    },
+    {
+      "name": "legacy_el_oro_7bba68762026641feaf4.tif",
+      "zone": "el_oro",
+      "sha256": "ae96363beb60dd7f5f9d64a2d1a9fac05de6b1a00de47798be92c0721264a772"
+    },
+    {
+      "name": "legacy_el_oro_a629318bb748d5bdde4c.tif",
+      "zone": "el_oro",
+      "sha256": "df6e5e3f44613b99130b2ebf6e296f9467f4b683fd48a4e620409a2fb1d196a0"
+    },
+    {
+      "name": "legacy_el_oro_b158c0bedf56a9523e42.tif",
+      "zone": "el_oro",
+      "sha256": "7208f432fd46c21c6a600c5c1453e002b8754355e8edcf9f1cd164f287feb66e"
+    },
+    {
+      "name": "legacy_el_oro_334ac0d3c6880ad77517.tif",
+      "zone": "el_oro",
+      "sha256": "6e3d6574268b664da3f4374eb3e7acb2c298baebe3ce9dd641df7db9235e05ba"
+    },
+    {
+      "name": "legacy_el_oro_47f27215ad205f97d101.tif",
+      "zone": "el_oro",
+      "sha256": "c3dc38aec94b9f5c046780ed78f173dfa9e7add54ae7e46b951141603b2a6e61"
+    },
+    {
+      "name": "legacy_el_oro_e79db917d81d1c2c664f.tif",
+      "zone": "el_oro",
+      "sha256": "6021c3ed8396a1addc7fa091d021906b1b49d11143d7dd7a6d79cf9d0dfeb255"
+    },
+    {
+      "name": "legacy_el_oro_cb5c217331c6d8f6e783.tif",
+      "zone": "el_oro",
+      "sha256": "4fecb10719d6197a6abe13e440ed0f2559d4dc9a7254c704d78195447ed8c57f"
+    },
+    {
+      "name": "legacy_el_oro_602dab1ce5a9b5398846.tif",
+      "zone": "el_oro",
+      "sha256": "fd1420fdc321aa6eff117fb94f3cfe8105b4f747203f771bd34914d590cfdee8"
+    },
+    {
+      "name": "legacy_el_oro_3e9d5e892f599c436e09.tif",
+      "zone": "el_oro",
+      "sha256": "af98920651c1a4e354428261c8f5e897fa0ae7b7b5d5a15f3d5d622b78560fba"
+    },
+    {
+      "name": "legacy_el_oro_8cbd61d6721eaf0049f8.tif",
+      "zone": "el_oro",
+      "sha256": "71ac826cf996074d27338d6e05a9ff07110f61579d918a24c799c3b421094dd8"
+    },
+    {
+      "name": "legacy_el_oro_f9b9a30df6ed7c21477b.tif",
+      "zone": "el_oro",
+      "sha256": "32321b68b0612a6301453e7a47b112daa16c433a24b84d9c46d515257a87cba3"
+    },
+    {
+      "name": "legacy_el_oro_535b424abb6d45ea89c9.tif",
+      "zone": "el_oro",
+      "sha256": "3c96819dfab40b6567694cd51a73e5db71d0a547685373818a6770c379907c7c"
+    },
+    {
+      "name": "legacy_el_oro_6c9ed4518123643d9afb.tif",
+      "zone": "el_oro",
+      "sha256": "f0af28b784daff89d1384e3723a4bb94fdf2aca49b3904d150892e1d45e42d08"
+    },
+    {
+      "name": "legacy_el_oro_e5abfac362a776124716.tif",
+      "zone": "el_oro",
+      "sha256": "c47fb573ac03fc62b8fa11ed835e1a302fd072e441d5a7d8ecebb4c5e613a04d"
+    },
+    {
+      "name": "legacy_el_oro_fe558e222abd22ffcab7.tif",
+      "zone": "el_oro",
+      "sha256": "7fbd318ccc0ceb9b484648afdc9b9d5b7475dd64dc9d8354a3a80034052ba9fe"
+    },
+    {
+      "name": "legacy_el_oro_2a3d2d36a044165db1ce.tif",
+      "zone": "el_oro",
+      "sha256": "95329db72d75a2b61d920f7835c94ba1f304c703ee72b2bd6b674f8ecb3d8260"
+    },
+    {
+      "name": "legacy_el_oro_617f7b4b7a9e4df7fdb5.tif",
+      "zone": "el_oro",
+      "sha256": "53a69041911de20830487e418a0010f434116fa9856f9278e00cb8dfac6f4272"
+    },
+    {
+      "name": "legacy_el_oro_1ba4e5675f7f3ca5525c.tif",
+      "zone": "el_oro",
+      "sha256": "c104b802d827f1e988ef460221c0f4f064bd4d86dbdd1be6bfb6e7d14475743d"
+    },
+    {
+      "name": "legacy_el_oro_acbe8b357b6f80bdf35e.tif",
+      "zone": "el_oro",
+      "sha256": "950754744a7e8b5afe930f6e692d0d5c9470cbcee9e7e402444a8641e4578605"
+    },
+    {
+      "name": "legacy_el_oro_e830dcd0d80544a5e1a1.tif",
+      "zone": "el_oro",
+      "sha256": "3223096bc7ddf32ea1619919a9d417abf91de75ba93c9f00dde9d3de7ef298bc"
+    },
+    {
+      "name": "legacy_el_oro_18436c99249dc9193f29.tif",
+      "zone": "el_oro",
+      "sha256": "be8ce5d22f112f26fa0dc567b2982b8fdc2e4a5969b950ce99221d04f3df9fff"
+    },
+    {
+      "name": "legacy_el_oro_4fff168f7bb1a76ab6e5.tif",
+      "zone": "el_oro",
+      "sha256": "0aa873cc90c77ab5018704e3e850e7cb943a319fea99619752a93da59a02a8d3"
+    },
+    {
+      "name": "legacy_el_oro_cfd0ac3b9f15cb9a184a.tif",
+      "zone": "el_oro",
+      "sha256": "19054be4d299bd5512ad69ca919b0fcddf5900d2b92d2d512e1dc6df5f2825a9"
+    },
+    {
+      "name": "legacy_el_oro_66889daf86a26c2d95fb.tif",
+      "zone": "el_oro",
+      "sha256": "815a004bf777253f8415e6a462a10387de321e72355d1b46ddcaf9e7762ae4d5"
+    },
+    {
+      "name": "legacy_el_oro_6d473a195ea0570212e0.tif",
+      "zone": "el_oro",
+      "sha256": "32575b1531661fdfef4a50225a67e17a1eadfbefdf1b11d102e5aa3a3754528e"
+    },
+    {
+      "name": "new_golfo_guayaquil_8c944d28c1d14ac95fda.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "b11b552e95d144067f7dbb4d9a503d93142624b2cdff617a62a0acded4d4e1f3"
+    },
+    {
+      "name": "new_golfo_guayaquil_4e17e167fff17964bcbb.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "06d004e0436aa43398c962678afeee238aa98775c9a872c17e08aae41e507cb8"
+    },
+    {
+      "name": "new_golfo_guayaquil_9b21fb7baa7a3868edc8.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "646440d0243239801a3f500373375e3f804815c341e1e1132f973293746097be"
+    },
+    {
+      "name": "new_golfo_guayaquil_a3cdba4da387c62bd55b.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "7d60a2ed6160d0d6f650247b6b7937b8750f8f4d39cec612f866b1aab1cd7eb3"
+    },
+    {
+      "name": "new_golfo_guayaquil_78633a02954e1f14cd51.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "8ac69937c9f8eed238f33f114154bbaebd1b7f043d0f891ad14abe994f1d7231"
+    },
+    {
+      "name": "new_golfo_guayaquil_715d6ad596bdac014973.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "4ff5d90eda43f155c6065485ceb2c23f4d18f5ab0d235d20d75598f2724b30a1"
+    },
+    {
+      "name": "new_golfo_guayaquil_cfc63f14c2e688ed15cc.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "30f3be71300e3a464420eaf9e99097b14833c77785611868b065e06eacbdc858"
+    },
+    {
+      "name": "new_golfo_guayaquil_127106e4b0302920c227.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "29fed52105dca2f0ff0bd1dbbdee91ffb4c1b695db8a55b141794a0c0a4dc1f2"
+    },
+    {
+      "name": "new_golfo_guayaquil_84849c41b7789fbb84e8.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "73b05994810d393ff288547a5663e6193143a25636f5700ee393bd402298ee13"
+    },
+    {
+      "name": "new_golfo_guayaquil_fed27b4c7348299bc69e.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "f71243c9a17af8dea10c5dea395df73da593d8ed1d80c2e452e8f1ef74ec3c78"
+    },
+    {
+      "name": "new_golfo_guayaquil_c7688fc59b4cf2bdee61.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "4804c3d34e03444b9b6a2d15556bf375833f05a7ba501e77ceb5c788c8dc5dfa"
+    },
+    {
+      "name": "new_golfo_guayaquil_67cce166fe51d5b46eda.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "388747ed731ca81ed25e6c35b2ae84879f99d76e46827183ecf88a9b1ae59ff7"
+    },
+    {
+      "name": "new_golfo_guayaquil_3ee4c8d1deada67d8eb4.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "ceb5ddf1ccda7e82284e3bc6084faf9a37fe127f03568a6ebbbd5931ed3c27bb"
+    },
+    {
+      "name": "new_golfo_guayaquil_17d45da18a2f366fc16b.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "5d962c7e17b24070d08109d85d37df9e6f66204ab2582ccf3edf65507f372740"
+    },
+    {
+      "name": "new_golfo_guayaquil_cd1bce74a32beff43032.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "f9c9362a030f0e1622a351f10ed1d1aeda53163e36145ebd79b7feebfd3ac983"
+    },
+    {
+      "name": "new_golfo_guayaquil_561976fe3b5b2601c129.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "06bd719e6e6ccf132f0b9b0ed74b1e889de67052aa74b405b965c9f3574b3350"
+    },
+    {
+      "name": "new_golfo_guayaquil_cca99773f04dff1c7101.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "25f891573a6d0b731631b3be8d875d7db9b89ac11db8752ff29f00cc0f59d0a7"
+    },
+    {
+      "name": "new_golfo_guayaquil_02ee78729518f92f5ec8.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "78f719acec705e48b9e29a97894c7c4bc28ab666e5ab9e0187eff7fc21e9166c"
+    },
+    {
+      "name": "new_golfo_guayaquil_e9287c7b3020362384a2.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "a96572f51f035cea7e73fbf302b0c88f1d7541903a1ae1b34c5d391a76fc4997"
+    },
+    {
+      "name": "new_golfo_guayaquil_165035742aa932636e71.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "a2d05ff5b8a988c872c5d68d071bb9d873bc3a16fd6650f6534be035c3188bc7"
+    },
+    {
+      "name": "new_golfo_guayaquil_9843b6f8dcda4887d3a8.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "8b2cc684bacfc029847dd0d734fd2ce0541e528b67205a6e7885ebb47e560f6c"
+    },
+    {
+      "name": "new_golfo_guayaquil_d7d03a2ff5d528605619.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "0ba85da43b5644de5fdcc5501a8f5af6af0433ffb9ca452588a828ed3fb54c15"
+    },
+    {
+      "name": "new_golfo_guayaquil_489e33f1ac1796dbe41e.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "79cc76c56d5c257f1cddf2095a7f5280d10e374f17380f34957179592b1ffee3"
+    },
+    {
+      "name": "new_golfo_guayaquil_3bca1cb723339a75d6b3.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "43565c4e04486f76b6f9ca2df2da7f91c5b64a62a3711c193cefc0d7f3517ecb"
+    },
+    {
+      "name": "new_golfo_guayaquil_9b8488728d448a495cce.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "44750b50e6fcdaf7565413a08e9e2987e5d020575e848dea7f9286421cdee4ba"
+    },
+    {
+      "name": "new_golfo_guayaquil_59f644b71869022429ae.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "0a8dffd52f1b23ce478e67efc5f66e061a9cf25fd8d739d09c09caa0d8a45a83"
+    },
+    {
+      "name": "new_golfo_guayaquil_82c2b5653321b54cea43.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "d08cd3df06ceb17be62538a779dfc77f814b687ca82a0494aaa84a325c227509"
+    },
+    {
+      "name": "new_golfo_guayaquil_4a2313ddb77c1a54dffe.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "79a838375ddcf58f9883971fd2a123decfc32012de155e0671296c0087cb7107"
+    },
+    {
+      "name": "new_golfo_guayaquil_93cbf093d3b5c614c67b.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "352732a1aba8f10f92fcc4dd486271fbe9f82af21e59317cd5e39fa55fd764b6"
+    },
+    {
+      "name": "new_golfo_guayaquil_b9c73db70ef37acf84c9.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "43546f02dc6845796794d26fb78c701e264dde4d8b0422475a569a438e1514e5"
+    },
+    {
+      "name": "new_golfo_guayaquil_ae62b0edacdd0f9840d8.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "38c237a0b3c57682bd81c4373fc6a73606b05fe82a4417f7627edc1ceb780ab1"
+    },
+    {
+      "name": "new_golfo_guayaquil_efbc484bb78a2ddd1f19.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "0be7688ba35c8315d4a5656809441152e5748074c857237cda3488b8f089032b"
+    },
+    {
+      "name": "new_golfo_guayaquil_04215ae2c5d0a9bd9f9d.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "67957875002a19a0e73e24f80739ed2b46648973745ef2f447bd85987fcde5d1"
+    },
+    {
+      "name": "new_golfo_guayaquil_48f1b6d83851cb0d9354.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "f51c4678c70990d4f436ec0922af7bfe3c13bc62cc19521214b01940d8744375"
+    },
+    {
+      "name": "new_golfo_guayaquil_713247385ec037985528.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "a8924e80a8147898d28a68418ed5c2473d82054c5660b22c48cd5f852199ae00"
+    },
+    {
+      "name": "new_golfo_guayaquil_0010a7f2dd06018054f5.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "3887df2ab7a4c9075e8c1a8fee9d4d4fa4c75800401d38041eea10173cb5b982"
+    },
+    {
+      "name": "new_golfo_guayaquil_75f3df3765fedd49313f.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "7c25391c79ee2b8fafa4e9dfe792f23d5a579e4206c56bc45d71c8df39df0549"
+    },
+    {
+      "name": "new_golfo_guayaquil_48419bd1b5dcfea2d39f.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "09526d0addba8e16c90e88b0a4b98e0f46aa90faf9dd199a1f4a117668daeecf"
+    },
+    {
+      "name": "new_golfo_guayaquil_fa4759b2225a130d63a3.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "02a07f55f4cdab84c56f906ac8ebf660c235047cd463e2a29a7b68d7d65c0d5b"
+    },
+    {
+      "name": "new_golfo_guayaquil_5d78643f42cc547a6259.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "f2b228633796e117864090a4db5c382f6b944165d131dd57630863d32a581935"
+    },
+    {
+      "name": "new_golfo_guayaquil_e174d41155c53755a746.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "e76314b5807839a3b3eb6bb2824ce84c1324955d8a1d8aaec8112e490bdc6e72"
+    },
+    {
+      "name": "new_golfo_guayaquil_4c3d44d8c976174d0a54.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "4000f77711b710b0361ec979c21e4dd0ec419af64bf95f00a6c7411bda160127"
+    },
+    {
+      "name": "new_golfo_guayaquil_861878a14f3fa040d856.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "035def664e3cf346b955a6e87d3a40251e773dc7acc493e0cf6e6271f890b615"
+    },
+    {
+      "name": "new_golfo_guayaquil_27fe3ad4fc6e6b549f24.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "5b9a6483c8c6bb3c9bdecd8cefcf415631c4b929d5ee60ffa17970cf20fe25b0"
+    },
+    {
+      "name": "new_golfo_guayaquil_79b0252ac54b71273305.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "6b16d3ac6614971eb065c8bac5144799194e4e737b334805171c624e74df7ec2"
+    },
+    {
+      "name": "new_golfo_guayaquil_6e78cc6f8528d73e2b96.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "f7b754e0d1ebd6c51963d16666aa678b64dfa38f56bd1872eab140c4dcc58433"
+    },
+    {
+      "name": "new_golfo_guayaquil_f792a75d0af2740a5aa0.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "137d28e26de191cd4be0bc6edab1da64aeec2edd767ed1ac28d920145f018900"
+    },
+    {
+      "name": "new_golfo_guayaquil_556c9e53934bd178f962.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "332064be6fb5122643dbf40040ab3f8f70751665a1f1961c450e0b197852d297"
+    },
+    {
+      "name": "new_golfo_guayaquil_7bc4b281f1f10dfef9f4.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "9d0d759ffdc314e8ef31bca383b395178b6481f6b6c4c090e7b79d3c38f60bd3"
+    },
+    {
+      "name": "new_golfo_guayaquil_0971af046ea5a9eba9c2.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "ac42697033573285572a8b874a93fdc42c9325b306479d63e4078cea5968d892"
+    },
+    {
+      "name": "new_golfo_guayaquil_57adb6a148eef2d60a79.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "2bf79a606b7546a301c72b922e50cd0a9d0b942c99b8f4becffb81cdfc300f31"
+    },
+    {
+      "name": "new_golfo_guayaquil_5a4dd3327e63c131334a.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "d6b5f9b6fbd2faa410d5929624c1674d711ee7e2c1ee50f471c062983878863f"
+    },
+    {
+      "name": "new_golfo_guayaquil_af91389fe1fc3db8e8ce.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "f0f1c736e143a2e7b0f8df8c2e905bf7ac959c9b176f23ce7aab5814c8c6d538"
+    },
+    {
+      "name": "new_golfo_guayaquil_1e6a93a0121163377cb0.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "8d6bf2571913e67d62d60c172413f03049556bc20d2d8a12697b3b13cf7abd07"
+    },
+    {
+      "name": "new_golfo_guayaquil_e5f3965fa2424abb4da8.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "4a71d0c3545ad441d0694be5c63cf59033fac140c633bb8cfd263eaac0c65038"
+    },
+    {
+      "name": "new_golfo_guayaquil_3e443f1bcb6d0a9d379c.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "a01fcb2d66d84eac5804cd470e2e17107de7b0f92d1d35ec5c2cc005f2220aff"
+    },
+    {
+      "name": "new_golfo_guayaquil_abf831b81299fd65c5b6.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "87627b42b4a0a8e9499db69553b6ac470e44f266233cc7a8c176e03395fd5311"
+    },
+    {
+      "name": "new_golfo_guayaquil_2021f4882b3af7f364fd.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "dc457d12bfa09765680c26d5ecc6c8d928bb02b31ed2c57c47d44c1097262b42"
+    },
+    {
+      "name": "new_golfo_guayaquil_c52c0184d2c48bf3ce28.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "33b70f8bbdd707a71de447081e0ee4901712be2b7b090ee2bd6bab70a57847c7"
+    },
+    {
+      "name": "new_golfo_guayaquil_1d0d04597d2911830428.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "48781df5ef1a452aaf21fda8d95f3bfb7dc46a805e52bf5bfa30cc5110f1264a"
+    },
+    {
+      "name": "new_golfo_guayaquil_4085b59bd04e0b6a5b87.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "9d2d6264f27eecfe21a3bc25b4d5a182df3da1f8000628afabdadea3d185cd93"
+    },
+    {
+      "name": "new_golfo_guayaquil_50aba55c0f349feac895.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "bd71fad825c08c3ee2a78d65a95a05e81e76d535ad7c6cb37c70ad60bad7068f"
+    },
+    {
+      "name": "new_golfo_guayaquil_3ae907095c2e8cfc59bb.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "763dd6a90099b78f29ba9795922ec754f44c8bee8533c932396ebc06eeb7a11d"
+    },
+    {
+      "name": "new_golfo_guayaquil_3ba6a47d2084c2626928.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "dcd46926821b093697aeff74148763db22d05f3235e80238fc2a434f425b801d"
+    },
+    {
+      "name": "new_golfo_guayaquil_a88782732daa5afb0b17.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "fe1cd54796062184bd481f28c61e6928d7894196f003402c9c77538afc841a9c"
+    },
+    {
+      "name": "new_golfo_guayaquil_e8c253f26d9105648cef.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "eafeb5cc29b951dfbe60869a017797321de95116a7aac4aa4ecf9ff4fb243a82"
+    },
+    {
+      "name": "new_golfo_guayaquil_b44f292152f4042f0f15.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "980eb319966e426df627d98e72b049ccbf7476b87ff596909c4e6e19e5939d6d"
+    },
+    {
+      "name": "new_golfo_guayaquil_d2c085d97be890b602e3.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "266aa866bcfe724a43d0722e56547bad73a07e25d27b3d23615307ba26841ca8"
+    },
+    {
+      "name": "new_golfo_guayaquil_2b2ac66c32190c74ba97.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "280edbb8b187c47b69fb504f5f20cf026143ae99d06a860298bdbeb992ff20a5"
+    },
+    {
+      "name": "new_golfo_guayaquil_782d74a75649914727c0.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "39d63c74c5b065736311337ff3ab221198aac223430d1dbeb9170f6fd088cf8f"
+    },
+    {
+      "name": "new_golfo_guayaquil_b8063ac1342235610402.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "65c5b2ff69c97ae32d3efd76e26dd5238cd39bb21f4d6add33322568dfb58d99"
+    },
+    {
+      "name": "new_golfo_guayaquil_69c72d442432cc6cb98a.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "b9ef85f7699e4444d4c2b597cfc294867d174371b8f22b01c7e6d0d03b19d88f"
+    },
+    {
+      "name": "new_golfo_guayaquil_559506d6c089addfd02e.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "0e7018112020b7a939d8521efec5f15930b548de8763cfbfe2b4e4544efcc81d"
+    },
+    {
+      "name": "new_golfo_guayaquil_d4dfd7dc97d1ca1a5c9b.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "9a17d2a2fb9395115174ce718ac434eece233ab01cddce6d83b350417deb317b"
+    },
+    {
+      "name": "new_golfo_guayaquil_aca05e947a617ef5b335.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "dd0fb0dd0d50ae17a70213f6046832f598b0fdb9d9fa15e260fcd5c7f24956e0"
+    },
+    {
+      "name": "new_golfo_guayaquil_8a4b0b7dfde42e6c4d45.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "c206b43fc5e8a03c2981a06ed0fc373c874ec8a68ce1dd24468f2a70916e9984"
+    },
+    {
+      "name": "new_golfo_guayaquil_d0f890cd1ea845cdc1b2.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "67f5a2a4d1e066060230b79bbc5b531aead781c2433af137391df9d4d0fd53c8"
+    },
+    {
+      "name": "new_golfo_guayaquil_5f59f3b23e1bd982e79a.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "1c19f6090288169814edeccafc40788de0c6055f614973340622e7e441175b19"
+    },
+    {
+      "name": "new_golfo_guayaquil_c90828e144ecb357470d.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "ad2fd2b28498da0120aedd2ad7049892a9f8851494700ac3ed9dfcbc14ef7619"
+    },
+    {
+      "name": "new_golfo_guayaquil_deb6dc8e24c81cc2b75d.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "07f238d0e6a1e3e21e20aebaa5270cc4fb150212b058e753ef40aeaf35f04669"
+    },
+    {
+      "name": "new_golfo_guayaquil_b6fc5e704aa64fe90764.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "4613752ccc0d9ce9d2141cc3ffc777e071cd9a427946aea0d44e8abb1c615ab6"
+    },
+    {
+      "name": "new_golfo_guayaquil_62dd656386d27f626079.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "413e7fe582173e112191f4d72a7e7de09ec70fcab715c01d24eaaca75c4771c3"
+    },
+    {
+      "name": "new_golfo_guayaquil_3e58544f63b67c93f564.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "d3cb2203600675a5be01f3603c119c4d7c1b63cda6c6fa803e967fb6469037f9"
+    },
+    {
+      "name": "new_golfo_guayaquil_5a361d8f216e3dd4570c.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "eb394deeb3c98c40a285aa9b3689e4c94c7799f0176055024bb252a68d5bf25b"
+    },
+    {
+      "name": "new_golfo_guayaquil_c2150b502c5433518ec1.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "96b7bc71e4bcd587941846fd8166d1624f5a8585045ccb17a89f9269fe5c5e11"
+    },
+    {
+      "name": "new_golfo_guayaquil_889b7c21e4849cb932ec.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "3e5c147ff177621a47e94289b4d8a2cf0ce0dd42f5b8213defe124cde98dffbe"
+    },
+    {
+      "name": "new_golfo_guayaquil_c0761dbcd78af6758bff.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "5e7b5c00bcd06a29b7e63fe882143f9609ec328b3a6e8aa916032e99ab651209"
+    },
+    {
+      "name": "new_golfo_guayaquil_b5881bdb6e9eb4108554.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "8f52ede9079b4a283d56dbd04ecf2ce5ddbf608406397b55584bef604e4957f0"
+    },
+    {
+      "name": "new_golfo_guayaquil_afd933ab063de3a79a91.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "2b0a31ab9d9d163b12fd339975daf7c545c597a38d13ad6a8e430dc79fac0f5e"
+    },
+    {
+      "name": "new_golfo_guayaquil_5cb11f50f84230079887.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "3dd85e8cbdbcba241088c14a9045b0d58fb68107777f1f3ba2f4be9aa1451215"
+    },
+    {
+      "name": "new_golfo_guayaquil_65b3f1f17888ad738cc3.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "c3fb9588adc5d63d172e68e54dc71eb944eb612cc491c26a1f796eaa7206c3b9"
+    },
+    {
+      "name": "new_golfo_guayaquil_ebd6317f8d975214a73f.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "5ed35ba86b0297f83b816c2bf9771be01cddf283053f77124849fcb4867ff44d"
+    },
+    {
+      "name": "new_golfo_guayaquil_b0e551c2e39705e47143.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "aafabfab7a00eeaa38ca85035c78ea4fa2d0eed39396a68ba7a2a1b562be99e7"
+    },
+    {
+      "name": "new_golfo_guayaquil_d202e2320096054ea2e0.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "351719df12ab5b29f8057f0de8c1e7f800a876f839d5a9e7365b3514d9612268"
+    },
+    {
+      "name": "new_golfo_guayaquil_268e35684cd8d4296b7e.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "341bb2f7fcc5713993e8efd58fec048c8191b657055b2ec34098f5dc43e79b2a"
+    },
+    {
+      "name": "new_golfo_guayaquil_a9ad5d78c216dcff68e2.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "a2ba762fc62c9791862896bd659bc5d72fb29c0762727c79ab5a96407d8e2738"
+    },
+    {
+      "name": "new_golfo_guayaquil_866c2337d47b50f56031.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "593d64503fc760d23abc13f095190a5a51c7060d69e4d435eafa7906bc1af9b9"
+    },
+    {
+      "name": "new_golfo_guayaquil_1f801672a32473ca9327.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "7f5a8c15289b18276e8ace48f52835c1842b4d4ddd567203eb724d6fd3739f45"
+    },
+    {
+      "name": "new_golfo_guayaquil_02db35058872c0cb2cd3.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "191a6b98b2a110caad8c3cde3867e7bb67bdd9a11c1edd473c4d289ebffec1ec"
+    },
+    {
+      "name": "new_golfo_guayaquil_e234db1104dc1fa44895.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "e013be47bcb57fefcb7f009f5156ea52e9f9eb664cd3576daf391af0e9ad34f4"
+    },
+    {
+      "name": "new_golfo_guayaquil_52f1c9b7f23b0d24489e.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "4cb5fc41bc96a38cd339bc5a701273586fa1223919dc051fea15963a743d52e3"
+    },
+    {
+      "name": "new_golfo_guayaquil_dd1a9c381265c1da80df.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "962fa4518e30bda7ae9ce4546523af4676e8bd6abdc6a2de2661f4584970a7cf"
+    },
+    {
+      "name": "new_golfo_guayaquil_185575d41c4ec133ceec.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "15a747494b638d565d533316663f2f575d8fb8903a6173e87de8f69b13831526"
+    },
+    {
+      "name": "new_golfo_guayaquil_7ff0ef6841ef0579167a.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "0e8af65c23a5b9c078670b35c2f312efb58e39950eb8396a0ee705e6a17efc17"
+    },
+    {
+      "name": "new_golfo_guayaquil_e4aec5027991dab6b5a6.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "2a57c73a240051d59da8256ebe960d5a5fecf430b2616a2470654ad268b7cb75"
+    },
+    {
+      "name": "new_golfo_guayaquil_93f1431636e0d3280d01.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "ae46e7202b6a3d69269bc448be8087f4c3eb3beb837f0368120d3ee52bf017d0"
+    },
+    {
+      "name": "new_golfo_guayaquil_862cc33ba20c2e8bf985.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "d0859fe9b89dce1f14448fb7b5e9b1ec282afcf0b9b9d5cd9600a3680ce71832"
+    },
+    {
+      "name": "new_golfo_guayaquil_46596967db643423e634.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "481397058c1462e273b4c7385855940aa8417d6a2a02e6e69d152fb0288b428d"
+    },
+    {
+      "name": "new_golfo_guayaquil_e7a73cb712a24d968a68.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "c512fc000052e6644285e334320a25633525f5dc1b11240399f96b8cb7b819b9"
+    },
+    {
+      "name": "new_golfo_guayaquil_aca293b669561b5da9ec.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "1a20f23c0f16e4ee43f1137f5fb47e3dcbbc487d39650cb1c9d29e3cda4f4434"
+    },
+    {
+      "name": "new_golfo_guayaquil_99c36531af331a4fed6b.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "5a23323c3c410b2d2d3898aaff76359af374051360d6fef5254d56ddf3fa7682"
+    },
+    {
+      "name": "new_golfo_guayaquil_5280ea16506a780c7336.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "a11c24ac22777ff40d0ef2c93734b6a678de88c277e2bd3ee8b579f75f5d3a27"
+    },
+    {
+      "name": "new_golfo_guayaquil_23c1aaf7d9bc12a08138.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "a4565a772b70e38efc79a6ab95653a7ec9a8b27e18788e6a4bead261a925f95c"
+    },
+    {
+      "name": "new_golfo_guayaquil_6f544b1d6e8d3dc7fda4.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "4792a5f209086fb6a2994db29eb0c1e6fcbdc4b6b155c884f9224dad25954718"
+    },
+    {
+      "name": "new_golfo_guayaquil_941e37ac2aea57ea1e9a.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "a3e9d2f30d216b710aebc262244729050f24e4cc9dad16fff5d6a771176c9cac"
+    },
+    {
+      "name": "new_golfo_guayaquil_02e8ed4b13c1f72d2784.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "b2776f72d8f14e2998fb91b5796b875b38566953958e10f35072eecfea7f560c"
+    },
+    {
+      "name": "new_golfo_guayaquil_26b8d565de381e92fd5d.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "f4c579e055ef71e945099d13ede6f1dca59a2f215b016777bd8d71f6740c0c43"
+    },
+    {
+      "name": "new_golfo_guayaquil_2ab60bae77bfa72431ac.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "5124e134d195c58075761995bba78826c48c67edf1e182586fa5bd409e14866f"
+    },
+    {
+      "name": "new_golfo_guayaquil_c0a2007048a1f4f14431.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "934f42b5cff63d601a15b7c5b1efb13d52e1d91a3e85cffa766735b3e1c3d551"
+    },
+    {
+      "name": "new_golfo_guayaquil_432c153438d8cd91e614.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "ca53c7873a7b26a9bfd3b0ca9522a21221a5f07f84498d20b5b75ce9a8fbf9b3"
+    },
+    {
+      "name": "new_golfo_guayaquil_695887f283618b990efb.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "cad7fd980e8a30e7d14916cf78e883f5cba6c83a9db6678026879227cc41bd76"
+    },
+    {
+      "name": "new_golfo_guayaquil_cf5e169a9a6e4443bcf9.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "34d2b75c4231a9a12224969102ef35686f51409d6583223cb6233ee7d3af2b6e"
+    },
+    {
+      "name": "new_golfo_guayaquil_acca4dcdfe30913d9093.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "cb54ebf6f3f46f83cbb5647c413c8187b2c49c94fc3da35484b12dcdf64990d5"
+    },
+    {
+      "name": "new_golfo_guayaquil_ae3e61e60b0ebf89260c.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "ef9a988cc2040276e959d119c07db87f20c56c368dc3930b6fa8c45874babf43"
+    },
+    {
+      "name": "new_golfo_guayaquil_27bf19c688833f7adab9.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "1bb36a1350cc77a7ec81db677a017fb4009bfad91f3387ea2c67b6b82e7a12b4"
+    },
+    {
+      "name": "new_golfo_guayaquil_f73487b1a9e1d6c9ccd7.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "8598aa3b4fe47b12bab3f8690897c5b76c3fffdcff41d9eae1bb431797858540"
+    },
+    {
+      "name": "new_golfo_guayaquil_127dcec74bdcd2bc4c98.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "f40bfe4e4d9d8a421cb44a664948119b3a88060a9676541b3c86c33e5e31f11c"
+    },
+    {
+      "name": "new_golfo_guayaquil_6c51765f8ba3a7a47bae.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "838d7d515b273b32f50371bb6cf72907ad8feca447770cc6b8c89a8607248073"
+    },
+    {
+      "name": "new_golfo_guayaquil_358a9c0ac7296e6d152e.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "0e1134e81e1da3dfa6174f746ba47fa528afc8037f6a3ceddc131d2afd7db0fd"
+    },
+    {
+      "name": "new_golfo_guayaquil_09b3335119e8fd421022.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "3f719f8ac676a17c871ec419b23feb37ad0f226ff9ac7948aab1a95ffcc1bc63"
+    },
+    {
+      "name": "new_golfo_guayaquil_eaf1ab1659fb0a9c8a5f.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "175f8e3a4ff240ee0906abb037bbb4df94d74a790ee0e2b4f13b68a3cd2f236d"
+    },
+    {
+      "name": "new_golfo_guayaquil_36ede0c1cc9f18cc438b.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "5578b96f18bc0ec7a7dc20251e488ddee839bd536478f4602efd66f85f6dc722"
+    },
+    {
+      "name": "new_golfo_guayaquil_4c1deb5c30cdb168d3df.tif",
+      "zone": "golfo_guayaquil",
+      "sha256": "02ea00310e3042217c0a51aeb776f78f6be99221dc86004fe4116b9f821ed887"
+    },
+    {
+      "name": "new_lagos_imbabura_79cd0237014c49c5276a.tif",
+      "zone": "lagos_imbabura",
+      "sha256": "4b64cf0e9e07df3eb9b38138fa0199f780eb090ee3ec413b0691856d4d95542a"
+    },
+    {
+      "name": "new_lagos_imbabura_192b9e641f4174c8c50c.tif",
+      "zone": "lagos_imbabura",
+      "sha256": "7687fe263a0200cec41b33a4c01d0cbe4dc7754372f7cf32865beff224a44591"
+    },
+    {
+      "name": "new_lagos_imbabura_615bc38c2abf02f54318.tif",
+      "zone": "lagos_imbabura",
+      "sha256": "3450923101a16e18cb7e6872bea23d36c65d9d1135c9d3ea1ca529e506d508d9"
+    },
+    {
+      "name": "new_lagos_imbabura_6db82bd176a23518306f.tif",
+      "zone": "lagos_imbabura",
+      "sha256": "e1e15e504060eab738bfe8ae5185940642b220b14764ae6d92528c8a9d1ab7a5"
+    },
+    {
+      "name": "new_lagos_imbabura_6d72a8aab27e5082603d.tif",
+      "zone": "lagos_imbabura",
+      "sha256": "ef0852fe04d63acc3c1476d0b998c151ba45ae660fd733a1d21c320520ac6ebf"
+    },
+    {
+      "name": "new_lagos_imbabura_dcc2c1fa9e810d5d85fa.tif",
+      "zone": "lagos_imbabura",
+      "sha256": "046ed293861c8561b189a6002ee5383317238a6128fe368749ec2f1a0f45b4da"
+    },
+    {
+      "name": "new_lagos_imbabura_f77e0c2193832410ba0b.tif",
+      "zone": "lagos_imbabura",
+      "sha256": "dc2f2ecbc76bdd1d74b57d6c962f700b3e2cd5ac7022613d38a178174bbb9bfe"
+    },
+    {
+      "name": "new_lagos_imbabura_6fd426509be18e2a3e1a.tif",
+      "zone": "lagos_imbabura",
+      "sha256": "a59e5d836453d89261093f2b612445aaf4a043bd638df7900917745b985c2cef"
+    },
+    {
+      "name": "new_lagos_imbabura_68b79fc31b2d87ec83e7.tif",
+      "zone": "lagos_imbabura",
+      "sha256": "7c3061a96dc2be9061e4a24bcecb50c71fb0eb55e739753d8c12d9c7d8fce2bc"
+    },
+    {
+      "name": "new_lagos_imbabura_21e6841ca530c2920388.tif",
+      "zone": "lagos_imbabura",
+      "sha256": "063fcacbcf11fc71a33a7fed6594599e568a6bc46276fba6f23f88717bab6d5e"
+    },
+    {
+      "name": "new_lagos_imbabura_61cef985f7c8994d86f6.tif",
+      "zone": "lagos_imbabura",
+      "sha256": "3434b035e5eeb963d080b81000f5251f42785ae001db9403ea29ff2d4e44853d"
+    },
+    {
+      "name": "new_lagos_imbabura_fca0b76e893e38bfe16f.tif",
+      "zone": "lagos_imbabura",
+      "sha256": "fdbdf8bee31c896bc146efe7c8f5ea41b7c54ceb3feee9cfa416948b2993a406"
+    },
+    {
+      "name": "new_lagos_imbabura_82cac8d785a45f02606b.tif",
+      "zone": "lagos_imbabura",
+      "sha256": "eb200c3e242bf6059eff12f26397b253254d5bbc4f14b817b4a889a17657b885"
+    },
+    {
+      "name": "new_lagos_imbabura_3d4c7502c9d79453cb03.tif",
+      "zone": "lagos_imbabura",
+      "sha256": "9b6df5f45dc9675eccb2ba685a139c9e4613c72ab603883621fffdef8f7b3701"
+    },
+    {
+      "name": "new_lagos_imbabura_e0d880a79107ae77aa61.tif",
+      "zone": "lagos_imbabura",
+      "sha256": "7ae7c2aa943370683f340b7a556fd6d180133dd95d04168d8f50115d1c9a23b6"
+    },
+    {
+      "name": "new_lagos_imbabura_3d0d3cd3c29b0a2f2ff7.tif",
+      "zone": "lagos_imbabura",
+      "sha256": "de194c25098f1eae0033211e813a883b7edf61adec81fcf62a3c6f28f4e0b077"
+    },
+    {
+      "name": "new_lagos_imbabura_153d521c587415202ddd.tif",
+      "zone": "lagos_imbabura",
+      "sha256": "38588193b082ab11523f17d47ff3ce143dac8bee2203fa025365196ef296b6b4"
+    },
+    {
+      "name": "new_lagos_imbabura_0e5603f74c9900be7b9c.tif",
+      "zone": "lagos_imbabura",
+      "sha256": "c57851719a907f21a884eec96284585850a99971b5ccbae1270240e11074115a"
+    },
+    {
+      "name": "new_lagos_imbabura_393a1facd838380e4968.tif",
+      "zone": "lagos_imbabura",
+      "sha256": "391fc47b585ae614127c906b94f753ae69bd59b17ce93d5189d17e187bf8244d"
+    },
+    {
+      "name": "new_rio_napo_f5b3a5bd284dbc65f50b.tif",
+      "zone": "rio_napo",
+      "sha256": "9c8f5f90ba3051bc2d4ae2603d89b0085bc5b1b69cb5472d132636866b7a28c3"
+    },
+    {
+      "name": "new_rio_napo_06ea8251943091b8b78a.tif",
+      "zone": "rio_napo",
+      "sha256": "ffbc5c59dc1166f4f7779b709cb86db09b2526af458d1d77d518fccd03a4a47b"
+    },
+    {
+      "name": "new_rio_napo_ba29c87fd9e107509808.tif",
+      "zone": "rio_napo",
+      "sha256": "07055b355ecbc8a204037833db0168176ce0b98e3eac277a0ccc0662c97e929b"
+    },
+    {
+      "name": "new_rio_napo_d98c27dc7f98400d2347.tif",
+      "zone": "rio_napo",
+      "sha256": "7f901eafe2f922349c08f7eb9a83a8bca38017dbd26171637eb61599f42e2195"
+    },
+    {
+      "name": "new_rio_napo_cfb2b5a8cde1dab41fc0.tif",
+      "zone": "rio_napo",
+      "sha256": "300a36a33623e1b5d75b72ff61398701d3ba201b4c8525879f4aec2b7fbd1ee3"
+    },
+    {
+      "name": "new_rio_napo_387abae42b046f4da15d.tif",
+      "zone": "rio_napo",
+      "sha256": "4aa143d6659098ea98b6a4c8d450fda71537236551cb352e626826be218cc5f8"
+    },
+    {
+      "name": "new_rio_napo_a49773eb0e0bbd3d2d58.tif",
+      "zone": "rio_napo",
+      "sha256": "a617e5d53968e1602fd8999a73b5866d62aa652c4816156b0b718d9fbf6ba0f7"
+    },
+    {
+      "name": "new_rio_napo_513c77e42515abaaf842.tif",
+      "zone": "rio_napo",
+      "sha256": "39a0110ce6298ad59cb16cff7fc3fda8b021db70cc9607208e14419ae96dfe9d"
+    },
+    {
+      "name": "new_rio_napo_a77c25d8f555b6277fb4.tif",
+      "zone": "rio_napo",
+      "sha256": "e406ea39241e0008a79b8597a2af8f68af99830f1371f88c914a49c28ffa4312"
+    },
+    {
+      "name": "new_rio_napo_07522f9f4252da17a77b.tif",
+      "zone": "rio_napo",
+      "sha256": "3d6ed6083cff98bfa59d980942679a0d45c3b3f9c459b78201837bb64ed5e10a"
+    },
+    {
+      "name": "new_rio_napo_63eee984ba13590132ce.tif",
+      "zone": "rio_napo",
+      "sha256": "33e0e4af2888f08eb7d4ec1afc407458b007629ee93d7e7905ce66bce33823ad"
+    },
+    {
+      "name": "new_rio_napo_cc82df9d97a8a50e8e74.tif",
+      "zone": "rio_napo",
+      "sha256": "379420d663c9d0ed7c4321ebdc56eca7aa71d5701c82f2308fd4f9ff658797a2"
+    },
+    {
+      "name": "new_rio_napo_01583e18d0be8b47a8ae.tif",
+      "zone": "rio_napo",
+      "sha256": "096bb61e1c5c33cdce799a589a151d381a71b1a1ccbaeb2c314ecb9018f34735"
+    },
+    {
+      "name": "new_rio_napo_4b153ede260147bfe160.tif",
+      "zone": "rio_napo",
+      "sha256": "0a4d0b270247f82864551dbf0dcf345ba43d2caa6073de96602b561a16921e28"
+    },
+    {
+      "name": "new_rio_napo_e360b4ac05785a06c589.tif",
+      "zone": "rio_napo",
+      "sha256": "a1c4d928d0484d1d21abbde4123beed6f2e97b3452b532b753729ebf48f8f935"
+    },
+    {
+      "name": "new_rio_napo_465ba81708e184b339bd.tif",
+      "zone": "rio_napo",
+      "sha256": "6307c483b26776a96638e9e152ebbedb3dd802027d71efebaff824758cc94388"
+    },
+    {
+      "name": "new_rio_napo_25939e719d3d071ac214.tif",
+      "zone": "rio_napo",
+      "sha256": "620afc75a1432f6b92b1bfabf95027f6b284c1f8ae211897b62ae6a3b03de5f4"
+    },
+    {
+      "name": "new_rio_napo_e31ba677d063f6702b8e.tif",
+      "zone": "rio_napo",
+      "sha256": "4f0894d437c3ba894a9b2ee05b92aeb976a1c4c9c39771b6d3751e6918fe6028"
+    },
+    {
+      "name": "new_rio_napo_795adbe2fb2b70bf6d13.tif",
+      "zone": "rio_napo",
+      "sha256": "cd01c54aede226f6a3d39b11820cc21195b1fadbbb033bd599c46592abe75c1a"
+    },
+    {
+      "name": "new_rio_napo_cc81afad050b58156dcc.tif",
+      "zone": "rio_napo",
+      "sha256": "78eeb35c98c24158275b5def7d682a551d6549278510950dccdce4f01d1fcf25"
+    },
+    {
+      "name": "new_rio_napo_805c96ad6e5ac1d6c6e8.tif",
+      "zone": "rio_napo",
+      "sha256": "355fe42488d257e36446c575e5f1e28f209f2f5d8e8fdd51f8c5939562793348"
+    },
+    {
+      "name": "new_rio_napo_11a2ca146f837078056e.tif",
+      "zone": "rio_napo",
+      "sha256": "bdef9c6cfba843d15d6c88249dd95c3b9842a91996acd484605c66a4876131e6"
+    },
+    {
+      "name": "new_rio_napo_f6cf5e80245b2a581fbf.tif",
+      "zone": "rio_napo",
+      "sha256": "45c4034d17484c8a45b150f12ba72dd7af18bc47cf376787d79e6289c4f13e6b"
+    },
+    {
+      "name": "new_rio_napo_c371a78a35e905a23d30.tif",
+      "zone": "rio_napo",
+      "sha256": "470231b93b9768c19384fa6968af80a2186fad3add23bf8d330d0ee70da3719f"
+    },
+    {
+      "name": "new_rio_napo_a622441a1744f225759d.tif",
+      "zone": "rio_napo",
+      "sha256": "b9ca0af849085f834a7f2d7f13b66cfc3dffb2d3fcd573eed10f311fa7b8ee39"
+    },
+    {
+      "name": "new_rio_napo_25ecb5e2be18b116dd85.tif",
+      "zone": "rio_napo",
+      "sha256": "1a3a6b38626d75db573d26df58a6db18955835bba5e98363b704e4391eb11147"
+    },
+    {
+      "name": "new_rio_napo_ae098323dd21130d6dc6.tif",
+      "zone": "rio_napo",
+      "sha256": "f256ab1cf28b24d1536927677a8a745f97b15ad8ef7218b7e4b211a3c89b0ae9"
+    },
+    {
+      "name": "new_rio_napo_284eeca6c6105f35b477.tif",
+      "zone": "rio_napo",
+      "sha256": "68cd3b0cda375bae358486cffef15ef063ec1572d74df75a8d5ef96af4d7aa6a"
+    },
+    {
+      "name": "new_rio_napo_3910fb929ee83dd63620.tif",
+      "zone": "rio_napo",
+      "sha256": "56952f6483af48311eb4e80ee59135ea9220d414d9cbb6f788f4ded6dfa6c0ff"
+    },
+    {
+      "name": "new_rio_napo_62427793687bf023caa5.tif",
+      "zone": "rio_napo",
+      "sha256": "5032fce5841650c40dd38b2f927c7e8be9147a1e511a2ea16935e69f3c04276d"
+    },
+    {
+      "name": "new_rio_napo_ab1a7bbd99ff4f1f0b59.tif",
+      "zone": "rio_napo",
+      "sha256": "89178f9a1ede7105ad54bc6a6de09e377cfaef9aa1da52dbd695e367ba07e659"
+    },
+    {
+      "name": "new_rio_napo_da0866b26efc0e694ea1.tif",
+      "zone": "rio_napo",
+      "sha256": "6914309b609f813e38bc57d95ec0050453d28f63336714c6e7c45153835366cb"
+    },
+    {
+      "name": "new_rio_napo_8afd4a35af9a9384957e.tif",
+      "zone": "rio_napo",
+      "sha256": "88bc901eda7b447c5194840f1de446079db0fda2f4c5ccdbbfd7f1123a608a97"
+    },
+    {
+      "name": "new_rio_napo_94e98355aca404d2f665.tif",
+      "zone": "rio_napo",
+      "sha256": "b6098a21d45ceb4351ad7bb6d7aa1e345560deb9fff31dc30109a151c4f4fcaa"
+    }
+  ],
+  "model_affine_not_used_as_training_statistics": true
+}

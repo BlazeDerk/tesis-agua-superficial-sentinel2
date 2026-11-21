@@ -1,0 +1,65 @@
+{
+  "chequeado_utc": "2026-11-21T06:44:14.596574+00:00",
+  "metodo": "comparación local de registros y SHA-256 de archivos actuales",
+  "prueba_previa_utc": "2026-10-03T18:26:50.479559+00:00",
+  "inicio_ensayo_utc": "2026-10-03T18:29:09.363123+00:00",
+  "verificacion_ensayo_utc": "2026-10-03T18:49:43.432784+00:00",
+  "lanzamiento_final_utc": "2026-10-05T02:28:07.3667825Z",
+  "reanudacion_utc": "2026-10-05T20:20:51.917860+00:00",
+  "termino_final_utc": "2026-10-05T22:56:22.113977+00:00",
+  "declaracion_original_lanzamiento": "Four of59 finalTest patches were observed in the03Oct technical smoke; no hyperparameter or split search from those results.",
+  "parametros_entrenables_ensayo": 1873681,
+  "parametros_entrenables_final": 16588945,
+  "sha256_codigo": "a6e0c1a5fe44aa14fc69bc28772ad6a228f25b6d65272f2875f66cb4c83f405f",
+  "sha256_manifest": "b19c606660a27bc4e4c9ae1e4bad02f6074f1ed478afa2841a1480fe5fa6b7ba",
+  "sha256_checkpoint": "9e28f92b557bdd2e9a2e7b068a6622254ddbf80080926b8c004368ad5683dda4",
+  "fase_previa_vs_final_561_coinciden": true,
+  "fase_previa_vs_ensayo_40_coinciden": true,
+  "particion_completa_smoke_final_sha_identico": true,
+  "cuatro_expuestos": 4,
+  "reparto_final": {
+    "train": 460,
+    "val": 42,
+    "test": 59
+  },
+  "epoca_seleccionada_por_val_loss": 50,
+  "tasa_por_epoca": [
+    {
+      "primera_epoca_registrada": 1,
+      "tasa": 9.999999747378752e-05
+    },
+    {
+      "primera_epoca_registrada": 30,
+      "tasa": 4.999999873689376e-05
+    },
+    {
+      "primera_epoca_registrada": 36,
+      "tasa": 2.499999936844688e-05
+    },
+    {
+      "primera_epoca_registrada": 50,
+      "tasa": 1.249999968422344e-05
+    }
+  ],
+  "originales_releidos_y_verificados": 1110,
+  "unificados_del_legado_releidos_y_verificados": 1110,
+  "inventario_archivo_de_traspaso": {
+    "nombre": "Dataset_UNet.rar",
+    "sha256": "4db2c312c247e59e8f4df8bfa03505e80a0216a9d89938151a747d2f23a8d63c",
+    "bytes": 162237219,
+    "tif": 1110,
+    "otros_miembros": [
+      "Contexto_Dataset_UNet_Tesis.md",
+      "masks",
+      "images"
+    ]
+  },
+  "distribucion_legado": {
+    "fuera del split": 226,
+    "train": 274,
+    "val": 21,
+    "test": 34
+  },
+  "tareas_gee_documentadas": 7,
+  "catalogo_gee_reconsultado": false
+}

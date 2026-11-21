@@ -1,0 +1,76 @@
+{
+  "timestamp_utc": "2026-10-05T02:29:20.630285+00:00",
+  "test_confusion": {
+    "n_patches": 59,
+    "valid_pixels": 3866624,
+    "water_pixels": 908590,
+    "predicted_water_pixels": 906795,
+    "tp": 851937,
+    "fp": 54858,
+    "fn": 56653,
+    "tn": 2903176,
+    "iou_water": 0.8842583894729614,
+    "f1_water": 0.9385744333267212
+  },
+  "test_by_zone": {
+    "el_oro": {
+      "n_patches": 34,
+      "valid_pixels": 2228224,
+      "water_pixels": 214310,
+      "predicted_water_pixels": 195708,
+      "tp": 171034,
+      "fp": 24674,
+      "fn": 43276,
+      "tn": 1989240,
+      "iou_water": 0.7156713604927063,
+      "f1_water": 0.8342755436897278
+    },
+    "golfo_guayaquil": {
+      "n_patches": 21,
+      "valid_pixels": 1376256,
+      "water_pixels": 687613,
+      "predicted_water_pixels": 704459,
+      "tp": 675167,
+      "fp": 29292,
+      "fn": 12446,
+      "tn": 659351,
+      "iou_water": 0.9417802691459656,
+      "f1_water": 0.9700173735618591
+    },
+    "lagos_imbabura": {
+      "n_patches": 1,
+      "valid_pixels": 65536,
+      "water_pixels": 173,
+      "predicted_water_pixels": 2,
+      "tp": 2,
+      "fp": 0,
+      "fn": 171,
+      "tn": 65363,
+      "iou_water": 0.011560693383216858,
+      "f1_water": 0.022857142612338066
+    },
+    "rio_napo": {
+      "n_patches": 3,
+      "valid_pixels": 196608,
+      "water_pixels": 6494,
+      "predicted_water_pixels": 6626,
+      "tp": 5734,
+      "fp": 892,
+      "fn": 760,
+      "tn": 189222,
+      "iou_water": 0.7763336300849915,
+      "f1_water": 0.8740853667259216
+    }
+  },
+  "test_macro_regions": {
+    "iou_water": 0.61133648827672,
+    "f1_water": 0.6753088566474617,
+    "n_zones": 4,
+    "aggregation": "unweighted_mean_of_region_metrics",
+    "zero_denominator_value": 0.0
+  },
+  "epochs_completed": 50,
+  "tensorflow_version": "2.20.0",
+  "keras_version": "3.15.1",
+  "numpy_version": "2.2.6"
+}

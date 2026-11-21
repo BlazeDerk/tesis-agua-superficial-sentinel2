@@ -1,0 +1,87 @@
+{
+  "fecha_utc": "2026-11-21T06:41:43.543287+00:00",
+  "estado": "verificado",
+  "comparacion": "U-Net menos NDWI sobre los mismos píxeles; diferencias en puntos porcentuales",
+  "casos": 59,
+  "conteos_y_metricas_por_caso_cotejados": 118,
+  "conteos_y_metricas_agregados_cotejados": 20,
+  "diferencias_por_caso_y_agregadas": 69,
+  "grupos_espaciales_en_cada_cohorte": {
+    "all_test": 17,
+    "without_previous_exposure": 16
+  },
+  "sha256_codigo_verificacion": "4aea68b3407e81ecff60de1b0ca46578e421d784dac1dd817c3a33716630a5cc",
+  "comparacion_octubre_regional_y_global": [
+    {
+      "zone": "ALL",
+      "new_minus_october": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0
+      }
+    },
+    {
+      "zone": "el_oro",
+      "new_minus_october": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0
+      }
+    },
+    {
+      "zone": "golfo_guayaquil",
+      "new_minus_october": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0
+      }
+    },
+    {
+      "zone": "lagos_imbabura",
+      "new_minus_october": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0
+      }
+    },
+    {
+      "zone": "rio_napo",
+      "new_minus_october": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0
+      }
+    }
+  ],
+  "comparacion_cuatro_rasteres_de_octubre": [
+    {
+      "name": "legacy_el_oro_29c870859273daa05598.tif",
+      "sha256_archived_raster": "d539debe304172803b69955f6814f43e5be9b61bc69a41fa1f3716a413012a03",
+      "max_abs_probability_difference": 0.0,
+      "pixels_classified_differently": 0
+    },
+    {
+      "name": "new_golfo_guayaquil_44287be7ef78db99823e.tif",
+      "sha256_archived_raster": "f84ed35229de8cf7f6b4ed873d34455b3e69eee9e50f9c0530c53c55f4a050bc",
+      "max_abs_probability_difference": 0.0,
+      "pixels_classified_differently": 0
+    },
+    {
+      "name": "new_lagos_imbabura_00c7425f7dc6eb39ceb0.tif",
+      "sha256_archived_raster": "59ccc77c3aeb428e2a1918255c75063d106a7c86435b6663ad6f63e51b4c7375",
+      "max_abs_probability_difference": 0.0,
+      "pixels_classified_differently": 0
+    },
+    {
+      "name": "new_rio_napo_0dcb8d9a39233facf0c8.tif",
+      "sha256_archived_raster": "ce288a20338bc99cd3018ee191f5a9ecb2bd23c162535742e524eda92bdd0fbd",
+      "max_abs_probability_difference": 0.0,
+      "pixels_classified_differently": 0
+    }
+  ]
+}
