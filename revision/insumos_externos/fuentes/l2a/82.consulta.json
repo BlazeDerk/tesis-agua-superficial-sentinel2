@@ -1,0 +1,15 @@
+{
+  "original_l1c": "S2B_MSIL1C_20190929T015649_N0208_R060_T50HLH_20190929T063252",
+  "query": {
+    "collections": "sentinel-2-l2a",
+    "datetime": "2019-09-29T00:00:00Z/2019-09-30T00:00:00Z",
+    "query": "{\"mgrs:utm_zone\": {\"eq\": 50}, \"mgrs:latitude_band\": {\"eq\": \"H\"}, \"mgrs:grid_square\": {\"eq\": \"LH\"}}",
+    "limit": 100
+  },
+  "selection_rule": "earliest_s2_generation_time_then_item_id_among_exact_identity_matches",
+  "matching_ids": [
+    "S2B_50HLH_20190929_0_L2A",
+    "S2B_50HLH_20190929_1_L2A"
+  ],
+  "chosen": "S2B_50HLH_20190929_0_L2A"
+}

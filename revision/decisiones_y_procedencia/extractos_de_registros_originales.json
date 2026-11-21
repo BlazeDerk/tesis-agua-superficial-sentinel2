@@ -1,0 +1,403 @@
+{
+  "D01": {
+    "sha256_del_archivo_completo": "845a941b9cfdd159b60bda2f543cd4a40723dd82769ce7b5ba0331fe939e9bef",
+    "campos_originales": {
+      "checked_utc": "2026-10-03T18:26:50.479559+00:00",
+      "pipeline_sha256": "a6e0c1a5fe44aa14fc69bc28772ad6a228f25b6d65272f2875f66cb4c83f405f",
+      "manifest_sha256": "b19c606660a27bc4e4c9ae1e4bad02f6074f1ed478afa2841a1480fe5fa6b7ba",
+      "seed": 42,
+      "seed_search_performed": false,
+      "seed_selected_from_test_metrics": false,
+      "spatial_block_m": 10240,
+      "buffer_m": 2560,
+      "model_constructed": false,
+      "test_evaluated": false,
+      "admitted_count": 686,
+      "loader_excluded_counts_by_zone": {
+        "el_oro": 174,
+        "golfo_guayaquil": 0,
+        "lagos_imbabura": 0,
+        "rio_napo": 0
+      },
+      "buffer_excluded_count": 125
+    }
+  },
+  "D05": {
+    "sha256_del_archivo_completo": "0ac810c456780c1c2c9fcdf2deb8972ef5a5af1506dab4e06cff38e116770e28",
+    "campos_originales": {
+      "timestamp_utc": "2026-10-03T18:29:09.363123+00:00",
+      "mode": "smoke-multiregional",
+      "split_counts": {
+        "train": 32,
+        "val": 4,
+        "test": 4
+      },
+      "epochs_completed": 2,
+      "trainable_parameters": 1873681,
+      "pretrained_transfer": {
+        "source": "Keras VGG16 ImageNet include_top=False",
+        "source_channels": "BGR after RGBpreprocess_input",
+        "input_order": "B2,B3,B4,B8",
+        "kernel_rgb_mapping": "B2blue->BGR0,B3green->BGR1,B4red->BGR2 direct",
+        "nir_initialization": "mean_of_three_pretrained_kernels_unscaled_heuristic",
+        "optical_kernels_unchanged": true,
+        "copied_conv_layers": [
+          "block1_conv1",
+          "block1_conv2",
+          "block2_conv1",
+          "block2_conv2",
+          "block3_conv1",
+          "block3_conv2",
+          "block3_conv3",
+          "block4_conv1",
+          "block4_conv2",
+          "block4_conv3",
+          "block5_conv1",
+          "block5_conv2",
+          "block5_conv3"
+        ],
+        "normalization": "DN/10000 before model",
+        "model_preprocess": "normalized*255 minus BGRandNIRmeans",
+        "means": [
+          103.939,
+          116.779,
+          123.68,
+          114.79933333333334
+        ],
+        "reflectance_clipping": false,
+        "first_conv_nir_zero_equivalence_max_abs_error": 0.0,
+        "encoder_frozen": true,
+        "domain_warning": "ImageNetnaturalcolors differ from satellite surface reflectance; NIRnotpretrained"
+      },
+      "pipeline_sha256": "a6e0c1a5fe44aa14fc69bc28772ad6a228f25b6d65272f2875f66cb4c83f405f",
+      "manifest_sha256": "b19c606660a27bc4e4c9ae1e4bad02f6074f1ed478afa2841a1480fe5fa6b7ba",
+      "test_evaluations": 1
+    }
+  },
+  "D07": {
+    "sha256_del_archivo_completo": "f66fedb6fb17e681f56ae1c1143c62bf46b338fb787af3bd652f746ce0d24ead",
+    "campos_originales": {
+      "checked_utc": "2026-10-03T18:49:43.432784+00:00",
+      "actual_smoke_samples": 40,
+      "actual_smoke_epochs": 2,
+      "root_figures_visually_inspected": [
+        "regional metrics",
+        "history",
+        "saved four-region predictions"
+      ]
+    }
+  },
+  "D08": {
+    "sha256_del_archivo_completo": "862d310cd2e8dc637371061fbf9fdbfafca718a69e30ba61c75932e82c215de1",
+    "campos_originales": {
+      "launched_utc": "2026-10-05T02:28:07.3667825Z",
+      "parameters": {
+        "epochs_max": 50,
+        "batch_size": 4,
+        "threads": 8,
+        "seed": 42,
+        "buffer_m": 2560,
+        "learning_rate": 0.0001,
+        "encoder_frozen": false
+      },
+      "pipeline_sha256": "a6e0c1a5fe44aa14fc69bc28772ad6a228f25b6d65272f2875f66cb4c83f405f",
+      "prior_smoke_test_exposure": "Four of59 finalTest patches were observed in the03Oct technical smoke; no hyperparameter or split search from those results."
+    }
+  },
+  "D10": {
+    "sha256_del_archivo_completo": "5b12c025ee63f6b428a7a8f9293c30f7e61082d2a84e418cfc1c9c8bed9a8aa9",
+    "campos_originales": {
+      "timestamp_utc": "2026-10-05T02:29:20.630285+00:00",
+      "completion_timestamp_utc": "2026-10-05T22:56:22.113977+00:00",
+      "mode": "final",
+      "split_counts": {
+        "train": 460,
+        "val": 42,
+        "test": 59
+      },
+      "epochs_completed": 50,
+      "trainable_parameters": 16588945,
+      "pretrained_transfer": {
+        "source": "Keras VGG16 ImageNet include_top=False",
+        "source_channels": "BGR after RGBpreprocess_input",
+        "input_order": "B2,B3,B4,B8",
+        "kernel_rgb_mapping": "B2blue->BGR0,B3green->BGR1,B4red->BGR2 direct",
+        "nir_initialization": "mean_of_three_pretrained_kernels_unscaled_heuristic",
+        "copied_conv_layers": [
+          "block1_conv1",
+          "block1_conv2",
+          "block2_conv1",
+          "block2_conv2",
+          "block3_conv1",
+          "block3_conv2",
+          "block3_conv3",
+          "block4_conv1",
+          "block4_conv2",
+          "block4_conv3",
+          "block5_conv1",
+          "block5_conv2",
+          "block5_conv3"
+        ],
+        "encoder_frozen": false,
+        "normalization": "DN/10000 before model",
+        "model_preprocess": "normalized*255 minus BGRandNIRmeans",
+        "means": [
+          103.939,
+          116.779,
+          123.68,
+          114.79933333333334
+        ],
+        "reflectance_clipping": false,
+        "optical_kernels_unchanged": null,
+        "first_conv_nir_zero_equivalence_max_abs_error": null,
+        "measurement_status": "initial_runtime_values_lost_on_reboot",
+        "evidence_scope": "source_algorithm_and_loaded_trained_checkpoint_not_initial_runtime_measurement",
+        "domain_warning": "ImageNetnaturalcolors differ from satellite surface reflectance; NIRnotpretrained"
+      },
+      "best_validation_epoch_one_based": 50,
+      "selected_checkpoint_sha256": "9e28f92b557bdd2e9a2e7b068a6622254ddbf80080926b8c004368ad5683dda4",
+      "test_evaluations": 1
+    }
+  },
+  "D12": {
+    "sha256_del_archivo_completo": "77c5b7cd3a7940697b9287775869b786dd46cc0ec5ee38a60cb50e3a83cfb54f",
+    "campos_originales": {
+      "timestamp_utc": "2026-10-05T20:20:51.917860+00:00",
+      "interruption_reason": "operating_system_reboot",
+      "initial_epoch": 16,
+      "next_epoch_one_based": 17,
+      "total_epochs_requested": 50,
+      "additional_epochs_maximum": 34,
+      "prior_checkpoint_optimizer_iterations": 1840,
+      "seed_original": 42,
+      "seed_training_start": 58,
+      "rng_continuity_limit": "Framework prefetch/process state was not serialized; bitwise uninterrupted equivalence is not claimed",
+      "test_evaluations_before_resume": 0,
+      "known_previous_smoke_test_exposure": 4,
+      "selection_rule": "minimum cumulative val_loss; threshold0.5 fixed; Test used only after selection"
+    }
+  },
+  "D17": {
+    "sha256_del_archivo_completo": "2bc4ddc330b020310db6c14d8021a2f7d228d073cbfe07b46ae463e6bbce0593",
+    "campos_originales": {
+      "timestamp_utc": "2026-10-05T23:41:15.747673+00:00",
+      "sample_unique_count": 123,
+      "sample_draw_count": 160,
+      "test_samples_read": 0,
+      "deployment_model_changed": false,
+      "protected_artifacts_unchanged": true,
+      "model_experimental_sha256": "ba72426e94c0d0dff39120d62f182ce9ec2eaa5b20c4e383f38e5b8dac97ce2a",
+      "deployment_reason": "Experimental only. Small-water improvement measured on oversampled Train; Val lacks the Imbabura <=250 stratum. Independent reviewed reference still needed."
+    }
+  },
+  "D18": {
+    "sha256_del_archivo_completo": "5ec1298bcac3b7eac9bc76a4baccf8f12514a6e969d071b48397dc2a06f08c0a",
+    "campos_originales": {
+      "epochs": 2,
+      "batch_size": 4,
+      "seed": 4205,
+      "learning_rate": 2e-05,
+      "optimizer": "Adam new state",
+      "loss": "BCE25Dice75 experimental: 0.25 BCE +0.75 (1-Dice), smooth1 per image",
+      "encoder_frozen": true,
+      "sample_size": 160,
+      "val_evaluation": "all42, once after epoch2, no epoch selection or extra tuning",
+      "test_evaluation": false,
+      "deployment_model_changed": false
+    }
+  },
+  "P07": {
+    "sha256_del_archivo_completo": "97538425f572e825efdee8fc0ffe78335a9453ec4de7274cc6a562255d983b53",
+    "campos_originales": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "geodesic": false,
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -80.2,
+                  -2.82
+                ],
+                [
+                  -79.8,
+                  -2.82
+                ],
+                [
+                  -79.8,
+                  -2.38
+                ],
+                [
+                  -80.2,
+                  -2.38
+                ],
+                [
+                  -80.2,
+                  -2.82
+                ]
+              ]
+            ]
+          },
+          "id": "0",
+          "properties": {
+            "bands": "B2,B3,B4,B8,water_mask",
+            "cloud_buffer_m": 60,
+            "cloud_collection": "COPERNICUS/S2_CLOUD_PROBABILITY",
+            "cloud_probability_threshold": 40,
+            "composite": "median",
+            "crs": "EPSG:32717",
+            "crs_transform": "10,0,0,0,-10,10000000",
+            "end_exclusive": "2024-01-01",
+            "label_type": "MNDWI_pseudolabel",
+            "mask_formula": "(B3-B11)/(B3+B11)",
+            "matched_scene_count": 1414,
+            "min_clear_observations": 3,
+            "mndwi_threshold": 0,
+            "nodata": 65535,
+            "pixel_m": 10,
+            "reduction_parallel_scale": 4,
+            "scene_cloud_percent_max": 90,
+            "sr_collection": "COPERNICUS/S2_SR_HARMONIZED",
+            "start": "2020-01-01",
+            "stored_units": "SR_x_10000",
+            "swir_native_pixel_m": 20,
+            "swir_resampling": "bilinear",
+            "zone": "golfo_guayaquil"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "geodesic": false,
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -78.47,
+                  0.1
+                ],
+                [
+                  -78.02,
+                  0.1
+                ],
+                [
+                  -78.02,
+                  0.48
+                ],
+                [
+                  -78.47,
+                  0.48
+                ],
+                [
+                  -78.47,
+                  0.1
+                ]
+              ]
+            ]
+          },
+          "id": "1",
+          "properties": {
+            "bands": "B2,B3,B4,B8,water_mask",
+            "cloud_buffer_m": 60,
+            "cloud_collection": "COPERNICUS/S2_CLOUD_PROBABILITY",
+            "cloud_probability_threshold": 40,
+            "composite": "median",
+            "crs": "EPSG:32717",
+            "crs_transform": "10,0,0,0,-10,10000000",
+            "end_exclusive": "2024-01-01",
+            "label_type": "MNDWI_pseudolabel",
+            "mask_formula": "(B3-B11)/(B3+B11)",
+            "matched_scene_count": 417,
+            "min_clear_observations": 3,
+            "mndwi_threshold": 0,
+            "nodata": 65535,
+            "pixel_m": 10,
+            "reduction_parallel_scale": 4,
+            "scene_cloud_percent_max": 90,
+            "sr_collection": "COPERNICUS/S2_SR_HARMONIZED",
+            "start": "2020-01-01",
+            "stored_units": "SR_x_10000",
+            "swir_native_pixel_m": 20,
+            "swir_resampling": "bilinear",
+            "zone": "lagos_imbabura"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "geodesic": false,
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -77.8,
+                  -1.14
+                ],
+                [
+                  -77.42,
+                  -1.14
+                ],
+                [
+                  -77.42,
+                  -0.92
+                ],
+                [
+                  -77.8,
+                  -0.92
+                ],
+                [
+                  -77.8,
+                  -1.14
+                ]
+              ]
+            ]
+          },
+          "id": "2",
+          "properties": {
+            "bands": "B2,B3,B4,B8,water_mask",
+            "cloud_buffer_m": 60,
+            "cloud_collection": "COPERNICUS/S2_CLOUD_PROBABILITY",
+            "cloud_probability_threshold": 40,
+            "composite": "median",
+            "crs": "EPSG:32717",
+            "crs_transform": "10,0,0,0,-10,10000000",
+            "end_exclusive": "2024-01-01",
+            "label_type": "MNDWI_pseudolabel",
+            "mask_formula": "(B3-B11)/(B3+B11)",
+            "matched_scene_count": 601,
+            "min_clear_observations": 3,
+            "mndwi_threshold": 0,
+            "nodata": 65535,
+            "pixel_m": 10,
+            "reduction_parallel_scale": 4,
+            "scene_cloud_percent_max": 90,
+            "sr_collection": "COPERNICUS/S2_SR_HARMONIZED",
+            "start": "2020-01-01",
+            "stored_units": "SR_x_10000",
+            "swir_native_pixel_m": 20,
+            "swir_resampling": "bilinear",
+            "zone": "rio_napo"
+          }
+        }
+      ]
+    }
+  },
+  "P09": {
+    "sha256_del_archivo_completo": "7dfc4888ce1785b0c5c31a3d63fd0e982fd4226c8a29cb5d9e813af4cbcea112",
+    "campos_originales": {
+      "observed_utc": "2026-10-03T18:17:17.809Z",
+      "owned_tasks": [
+        " Completada  S2_rio_napo_2020_2023_QC_clear_count  4L6JQ7MGFHBESDNGLXUA23YR  30 sept 2026, 12:39:26 p.m.  30 sept 2026, 1:31:27 p.m.  25 min  1  100  62,553.082 ",
+        " Completada  S2_rio_napo_2020_2023  U57REHPWKRZPEFHJMPSNCWXM  30 sept 2026, 12:39:26 p.m.  30 sept 2026, 1:31:23 p.m.  41 min  1  100  107,680.1719 ",
+        " Completada  S2_lagos_imbabura_2020_2023_QC_clear_count  J6LSCRYURBJOUKW4DRW7GKWE  30 sept 2026, 12:39:25 p.m.  30 sept 2026, 1:03:13 p.m.  34 min  1  100  86,434.0625 ",
+        " Completada  S2_lagos_imbabura_2020_2023  H3Q7BG6BSSGDFKFFTGQJQ54M  30 sept 2026, 12:39:25 p.m.  30 sept 2026, 12:45:22 p.m.  18 min  1  100  136,753.2188 ",
+        " Completada  S2_golfo_guayaquil_2020_2023_QC_clear_count  DFKSTVMUM5TH4ULLGLI6AF62  30 sept 2026, 12:39:25 p.m.  30 sept 2026, 9:41:16 p.m.  2 h  2  100  202,805.2656 ",
+        " Completada  S2_golfo_guayaquil_2020_2023  2JJJD6QIAFT672T7R5VD4FO5  30 sept 2026, 12:39:24 p.m.  30 sept 2026, 5:22:17 p.m.  2 h  2  100  240,291.0625 ",
+        " Completada  S2_UNet_Fase1_proveniencia  TDBG3VADPJZYIJU4GNPBJGJG  30 sept 2026, 12:39:24 p.m.  30 sept 2026, 12:39:28 p.m.  4 s  1  100  0.0718 "
+      ]
+    }
+  }
+}

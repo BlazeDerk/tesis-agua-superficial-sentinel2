@@ -28,11 +28,15 @@ El checkpoint pesa 199 255 390 bytes y su SHA-256 es `9e28f92b557bdd2e9a2e7b068a
 
 En `resultados_historicos/` se encuentran las 118 filas por recorte y método, el resumen de ambas cohortes, los contrastes U-Net menos NDWI y el control de octubre. Las diferencias de métricas se expresan en puntos porcentuales. En la tabla del subconjunto de 55, Imbabura figura sin muestras. El análisis usa una nueva inferencia del modelo original. Las tablas anteriores de `../resultados/` conservan el estado histórico de recuperación anterior a esta inferencia.
 
-En `bandas_train/` se indican medias, desviaciones poblacionales, extremos y tamaños por banda, globales y por zona. El cálculo usa los 460 Train antes del aumento y de la capa afín. La tabla externa distingue el soporte completo tras el relleno, los valores finitos y los píxeles comunes de evaluación. Las diferencias de media y ambas orientaciones de la razón de desviaciones están identificadas en las tablas.
+En `bandas_train/` se indican medias, desviaciones poblacionales, extremos y tamaños por banda, globales y por zona. El cálculo usa los 460 Train antes del aumento y de la capa afín. La tabla externa distingue el soporte completo tras el relleno, los valores finitos y los píxeles comunes de evaluación. Las diferencias de media y ambas orientaciones de la razón de desviaciones están identificadas en las tablas. El JSON externo conserva una nota sobre la ausencia de Train en el paquete inicial del revisor. El cálculo posterior del 21 de noviembre empleó los originales del equipo.
 
 ## Píxeles y distribución de datos
 
-La tabla `inventario_probabilidades.csv` contiene los nombres, tamaños y SHA-256 de las 59 probabilidades históricas y las 256 externas. El equipo conserva los TIFF en las dos entregas provistas al revisor. El paquete externo se llama `resultados_externos_v1.zip` y la entrega de revisión contiene `resultados_hist59_nueva_inferencia_v1/probabilidades/`. Los hashes permiten cotejar cada archivo antes del análisis. La disponibilidad pública de los binarios está pendiente de un depósito autorizado.
+La entrega de trabajo se llama `Entrega_revision_final_v1`. En ella, los 59 TIFF de probabilidades ecuatorianos están en `resultados_hist59_nueva_inferencia_v1/probabilidades/`. Los 256 TIFF externos están dentro de `evaluacion_externa_previa/resultados_externos_v1.zip`, con SHA-256 `18fc33daecad950b3fb25a10988b4d11f4131c8435165e788dc076585b098a8c`. El [inventario de los 315 TIFF](inventario_probabilidades.csv) identifica cada archivo con su ruta, tamaño y SHA-256. La entrega se conserva en el equipo del proyecto. La disponibilidad pública de los binarios está pendiente de un depósito autorizado.
+
+```sh
+python revision/verificar_probabilidades.py RUTA_A/Entrega_revision_final_v1
+```
 
 Para la evaluación de las ventanas externas, utilice una copia autorizada de `Paquete_evaluacion_externa_S1S2Water` que contenga `manifest_s1s2.csv`, `datos/`, `fuentes/`, `plan_congelado.json` y `estado_adquisicion.json`. El manifiesto, el plan y las tablas conservadas están incluidos en `insumos_externos/`. Los archivos L2A preparados ya son reflectancias físicas en B2, B3, B4, B8 y B11. El modelo recibe las cuatro primeras bandas y B11 interviene en MNDWI.
 
@@ -40,6 +44,13 @@ Para la evaluación de las ventanas externas, utilice una copia autorizada de `P
 python revision/inferir_y_evaluar.py --manifest RUTA_PAQUETE_EXTERNO/manifest_s1s2.csv --validate-only --out-dir control_externo_local
 python revision/inferir_y_evaluar.py --manifest RUTA_PAQUETE_EXTERNO/manifest_s1s2.csv --checkpoint RUTA_MODELO/model_best.keras --out-dir externo_local --batch-size 4
 python revision/graficar_resultados.py --results externo_local
+```
+
+La carpeta `insumos_externos/` también conserva el programa original de adquisición, los registros STAC de S1S2-Water y los registros de las 16 adquisiciones L2A del plan congelado. Quien necesite regenerar las ventanas puede trabajar en una copia de esa carpeta y ejecutar las dos órdenes siguientes desde ella. La primera obtiene por rangos los 32 TIFF de referencia y validez de las 16 escenas de prueba. La segunda utiliza sus ventanas congeladas para leer la óptica L2A. Antes de evaluar, coteje los archivos regenerados con los hashes del manifiesto conservado en el repositorio. La descarga requiere que los servicios públicos de origen sigan disponibles.
+
+```sh
+python fuentes/extraer_referencias_test.py
+python preparar_l2a.py descargar
 ```
 
 ## Contraste entre L1C y L2A
@@ -50,6 +61,12 @@ El plan se limita a los tres TIFF ópticos L1C originales de S023, S025 y S033. 
 python revision/obtener_l1c_original.py --index-root revision/insumos_externos/fuentes
 python revision/obtener_l1c_original.py --index-root revision/insumos_externos/fuentes --out-dir l1c_original --max-gb 6 --download
 python revision/diagnosticar_l1c_l2a.py --scene-ids 23,25,33 --l1c-root l1c_original --external-root RUTA_PAQUETE_EXTERNO --manifest revision/insumos_externos/manifest_s1s2.csv --plan revision/insumos_externos/plan_congelado.json --archive-index-root revision/insumos_externos/fuentes --out-dir contraste_local
+```
+
+Las seis tablas de `diagnostico_l1c_l2a_v1/` conservan el soporte, las transiciones, la distribución de bandas e índices y las matrices de confusión de las 48 ventanas. La [lectura por escena](diagnostico_l1c_l2a_v1/lectura_escenas.md) reúne los F1, las diferencias entre niveles y el alcance de la comparación. El metadato portable identifica los tres miembros de los archivos de los autores con sus huellas. Para conciliar las tablas y regenerar esa lectura a partir del repositorio:
+
+```sh
+python revision/scripts/conciliar_contraste.py --tablas revision/diagnostico_l1c_l2a_v1 --externo revision/insumos_externos/conteos --salida control_contraste_local
 ```
 
 ## Procedencia y derechos

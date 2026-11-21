@@ -57,5 +57,22 @@
     "test_obtener_l1c_original.py": "f0a38ffc53ed87d136eb58735b3584ca9f226b72b733f4853a7b420326645999",
     "test_reevaluar_historicos.py": "e736fe725e86ac393f970095382294f241dcea864ebd731bba6cf5e33c8164ce"
   },
-  "note": "El inventario comprueba los bytes de los TIFF conservados con acceso del equipo; no constituye un enlace de descarga público."
+  "note": "El inventario comprueba los bytes de los TIFF conservados con acceso del equipo; no constituye un enlace de descarga público.",
+  "diagnostico_L1C_L2A": {
+    "inicio_utc": "2026-11-21T06:54:24.787309+00:00",
+    "fin_utc": "2026-11-21T06:54:34.042880+00:00",
+    "codigo": 0,
+    "escenas": [
+      "23",
+      "25",
+      "33"
+    ],
+    "ventanas": 48,
+    "manifest_sha256": "53c01804256a98a65d0ee212650f28153350d677da913fcc85d6d117beea8f97",
+    "plan_sha256": "a3ebb2c24937c93f26626df87d32e87306daac6e1312d335989475a1f908f014",
+    "descarga_inicio_utc": "2026-11-21T06:40:37.806466+00:00",
+    "descarga_fin_utc": "2026-11-21T06:54:24.273365+00:00",
+    "bytes_miembros_comprimidos": 5281097030,
+    "archivos_y_huellas": "diagnostico_l1c_l2a_v1/adquisicion_l1c.json"
+  }
 }

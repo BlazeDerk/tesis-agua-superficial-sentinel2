@@ -1,0 +1,38 @@
+[
+  {
+    "file_bytes": 2030858012,
+    "crc32": "fd7ff099",
+    "sha256": "a5e365c10921d69b9cb1321de7b1907fd9a2ec98f5d7f188df7cbb705dd30c4a",
+    "filename": "23/sentinel12_s2_23_img.tif",
+    "archive_url": "https://zenodo.org/api/records/11278238/files/part2.zip/content",
+    "archive_size": 32717311258,
+    "compressed_size": 1877373317,
+    "range_requests": 19,
+    "archive_whole_checksum_verified": false,
+    "received_utc": "2026-11-21T06:54:08.074467+00:00"
+  },
+  {
+    "file_bytes": 1792873811,
+    "crc32": "faeb735b",
+    "sha256": "e0b421d2cbc1323b1eb3746bf35a7eec7785c23bb8450b48443d0dcbad436480",
+    "filename": "25/sentinel12_s2_25_img.tif",
+    "archive_url": "https://zenodo.org/api/records/11278238/files/part2.zip/content",
+    "archive_size": 32717311258,
+    "compressed_size": 1695899690,
+    "range_requests": 17,
+    "archive_whole_checksum_verified": false,
+    "received_utc": "2026-11-21T06:54:16.130235+00:00"
+  },
+  {
+    "file_bytes": 1814330122,
+    "crc32": "bf18e555",
+    "sha256": "2f5b91b736b0bfa86bcdaaad5ac6a982130c4765778237d7b932862516371269",
+    "filename": "33/sentinel12_s2_33_img.tif",
+    "archive_url": "https://zenodo.org/api/records/11278238/files/part3.zip/content",
+    "archive_size": 30763336558,
+    "compressed_size": 1707824023,
+    "range_requests": 17,
+    "archive_whole_checksum_verified": false,
+    "received_utc": "2026-11-21T06:54:24.272783+00:00"
+  }
+]

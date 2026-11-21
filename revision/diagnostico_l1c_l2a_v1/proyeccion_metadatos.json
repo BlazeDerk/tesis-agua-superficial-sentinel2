@@ -1,0 +1,5 @@
+{
+  "origen_sha256": "86b1d1f67b1ab2307350cca7310628f0df4b5387abf4abdb4a3aa93896ecffa8",
+  "proyeccion_portatil_sha256": "9639dbf84b9909e1a73b1246ec17e8597bb5e3dce39575370fcba1d08ae28283",
+  "campo_modificado": "source_files[].l1c_path (solo ruta del miembro local)"
+}

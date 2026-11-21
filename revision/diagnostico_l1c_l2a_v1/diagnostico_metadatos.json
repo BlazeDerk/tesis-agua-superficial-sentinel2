@@ -1,0 +1,223 @@
+{
+  "status": "paired_L1C_L2A_diagnostic_completed",
+  "created_utc": "2026-11-21T06:54:33.994763+00:00",
+  "scene_ids": [
+    "23",
+    "25",
+    "33"
+  ],
+  "n_cases": 48,
+  "manifest_sha256": "53c01804256a98a65d0ee212650f28153350d677da913fcc85d6d117beea8f97",
+  "plan_sha256": "a3ebb2c24937c93f26626df87d32e87306daac6e1312d335989475a1f908f014",
+  "thresholds": {
+    "ndwi": ">0",
+    "mndwi": ">0"
+  },
+  "same_common_support_for_four_index_variants": true,
+  "support_definition": "finite five-band values at both levels; manual VALID=1 and raster masks; positive denominators of both indices at both levels",
+  "reference_unmodified": true,
+  "model_loaded": false,
+  "threshold_tuning": false,
+  "original_author_initial_threshold": "not specified in source available; zero is our diagnostic, not a certified reconstruction",
+  "interpretation_limit": "Level differences, historical expert edits, resampling or initialization parameters cannot be causally separated from this diagnostic alone. Do not claim experts rewrote the reference.",
+  "source_files": [
+    {
+      "scene_id": "23",
+      "l1c_path": "l1c_original/23/sentinel12_s2_23_img.tif",
+      "l1c_source": "S2A_MSIL1C_20190816T180921_N0208_R084_T12SVF_20190816T214639",
+      "l2a_product": "S2A_MSIL2A_20190816T180921_N0213_R084_T12SVF_20190816T222328.SAFE",
+      "l2a_id": "S2A_12SVF_20190816_0_L2A",
+      "same_acquisition_key": [
+        "S2A",
+        "20190816T180921",
+        "R084",
+        "12SVF"
+      ],
+      "l2a_item_sha256": "3b620206e6bd9bb3e5adf8935e1e43a6eadcaef151c55166c58056dd7e475aa6",
+      "original_member": "23/sentinel12_s2_23_img.tif",
+      "archive_url": "https://zenodo.org/api/records/11278238/files/part2.zip/content",
+      "archive_index_sha256": "160e3a3e4d169e5232cbd2a8a9bbce4aeeb3698dde8d1645284bd34d017d6575",
+      "bytes": 2030858012,
+      "crc32": 4253020313,
+      "sha256": "a5e365c10921d69b9cb1321de7b1907fd9a2ec98f5d7f188df7cbb705dd30c4a",
+      "native_crs": "EPSG:32612",
+      "native_shape": [
+        10980,
+        10980
+      ],
+      "native_transform": [
+        10.0,
+        0.0,
+        399960.0,
+        0.0,
+        -10.0,
+        4100040.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "native_band_descriptions": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "original_order_from_author_spec": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "source_nodata": null,
+      "reference_transform": [
+        10.0,
+        0.0,
+        399960.0,
+        0.0,
+        -10.0,
+        4100040.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "alignment": "nearest_neighbor_to_unchanged_reference_grid",
+      "radiometry": "uint16_DN/10000_once_no_offset_no_clipping"
+    },
+    {
+      "scene_id": "25",
+      "l1c_path": "l1c_original/25/sentinel12_s2_25_img.tif",
+      "l1c_source": "S2A_MSIL1C_20190828T084601_N0208_R107_T37VCE_20190828T123410",
+      "l2a_product": "S2A_MSIL2A_20190828T084601_N0213_R107_T37VCE_20190828T131555.SAFE",
+      "l2a_id": "S2A_37VCE_20190828_0_L2A",
+      "same_acquisition_key": [
+        "S2A",
+        "20190828T084601",
+        "R107",
+        "37VCE"
+      ],
+      "l2a_item_sha256": "c6d1a6aded6dfe32094253ec01f6ad01d143ba23f2feaef4f67f15f5ac10b9ae",
+      "original_member": "25/sentinel12_s2_25_img.tif",
+      "archive_url": "https://zenodo.org/api/records/11278238/files/part2.zip/content",
+      "archive_index_sha256": "160e3a3e4d169e5232cbd2a8a9bbce4aeeb3698dde8d1645284bd34d017d6575",
+      "bytes": 1792873811,
+      "crc32": 4209734491,
+      "sha256": "e0b421d2cbc1323b1eb3746bf35a7eec7785c23bb8450b48443d0dcbad436480",
+      "native_crs": "EPSG:32637",
+      "native_shape": [
+        10980,
+        10980
+      ],
+      "native_transform": [
+        10.0,
+        0.0,
+        300000.0,
+        0.0,
+        -10.0,
+        6500040.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "native_band_descriptions": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "original_order_from_author_spec": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "source_nodata": null,
+      "reference_transform": [
+        10.0,
+        0.0,
+        300000.0,
+        0.0,
+        -10.0,
+        6500040.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "alignment": "nearest_neighbor_to_unchanged_reference_grid",
+      "radiometry": "uint16_DN/10000_once_no_offset_no_clipping"
+    },
+    {
+      "scene_id": "33",
+      "l1c_path": "l1c_original/33/sentinel12_s2_33_img.tif",
+      "l1c_source": "S2A_MSIL1C_20190913T154901_N0208_R054_T18TXS_20190913T192840",
+      "l2a_product": "S2A_MSIL2A_20190913T154901_N0213_R054_T18TXS_20190913T200642.SAFE",
+      "l2a_id": "S2A_18TXS_20190913_0_L2A",
+      "same_acquisition_key": [
+        "S2A",
+        "20190913T154901",
+        "R054",
+        "18TXS"
+      ],
+      "l2a_item_sha256": "87a16e81ed7aa706187b6b21e544a2fcc9d8f95ffca937d75c10580f80e24f18",
+      "original_member": "33/sentinel12_s2_33_img.tif",
+      "archive_url": "https://zenodo.org/api/records/11278238/files/part3.zip/content",
+      "archive_index_sha256": "9f92d346d43efef37ff9f4838e1c9e10cc8e27b4265df371030e0817e3d5ab55",
+      "bytes": 1814330122,
+      "crc32": 3206079829,
+      "sha256": "2f5b91b736b0bfa86bcdaaad5ac6a982130c4765778237d7b932862516371269",
+      "native_crs": "EPSG:32618",
+      "native_shape": [
+        10980,
+        10980
+      ],
+      "native_transform": [
+        10.0,
+        0.0,
+        600000.0,
+        0.0,
+        -10.0,
+        5200020.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "native_band_descriptions": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "original_order_from_author_spec": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "source_nodata": null,
+      "reference_transform": [
+        10.0,
+        0.0,
+        600000.0,
+        0.0,
+        -10.0,
+        5200020.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "alignment": "nearest_neighbor_to_unchanged_reference_grid",
+      "radiometry": "uint16_DN/10000_once_no_offset_no_clipping"
+    }
+  ]
+}
