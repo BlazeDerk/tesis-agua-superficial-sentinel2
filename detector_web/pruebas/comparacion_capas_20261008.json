@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-08",
+  "comparison_version": "4.0.0",
+  "automated_checks": {
+    "comparison": 19,
+    "input_security": 30,
+    "http_worker": 8
+  },
+  "real_scenes": {
+    "Esmeraldas_20250212": {
+      "water_ha": 62.35,
+      "background_ha": 512.19,
+      "cloud_scl_ha": 7.48,
+      "approx_candidate_water_ha": 1.25,
+      "human_references": false,
+      "iou_f1": null
+    },
+    "El_Oro_validation_MNDWI": {
+      "water_f1": 0.9135,
+      "water_iou": 0.8407,
+      "reference": "automatic MNDWI",
+      "independent_test": false
+    }
+  },
+  "ui_checks": {
+    "invalid_nodata0_rejected": true,
+    "shifted_grid_rejected": true,
+    "reference_change_clears_metrics_and_maps": true,
+    "blank_reference_template_preserved": true,
+    "cancel_resets_detection": true,
+    "layer_legend_matches_selection": true
+  },
+  "scope": {
+    "water_background": "frozen binary U-Net/VGG16",
+    "cloud": "SCL codes 8/9/10",
+    "ponds": "water intersected with union of approximate geometric candidate boxes",
+    "exclusive_four_class_model": false,
+    "camaroneras_confirmed": false
+  }
+}

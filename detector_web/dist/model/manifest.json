@@ -1,0 +1,2873 @@
+{
+  "format_version": 1,
+  "version": "1.0.0",
+  "model_sha256": "9e28f92b557bdd2e9a2e7b068a6622254ddbf80080926b8c004368ad5683dda4",
+  "source_sha256": "a6e0c1a5fe44aa14fc69bc28772ad6a228f25b6d65272f2875f66cb4c83f405f",
+  "architecture": {
+    "input_shape": [
+      null,
+      256,
+      256,
+      4
+    ],
+    "output_shape": [
+      null,
+      256,
+      256,
+      1
+    ],
+    "input_scale": 10000.0,
+    "means_bgr_nir": [
+      103.939,
+      116.779,
+      123.68,
+      114.79933333333334
+    ],
+    "keras_layers": [
+      {
+        "name": "sentinel_B2_B3_B4_B8_div10000",
+        "class_name": "InputLayer",
+        "config": {
+          "batch_shape": [
+            null,
+            256,
+            256,
+            4
+          ],
+          "dtype": "float32",
+          "sparse": false,
+          "ragged": false,
+          "name": "sentinel_B2_B3_B4_B8_div10000",
+          "optional": false
+        }
+      },
+      {
+        "name": "vgg_bgr_nir_affine",
+        "class_name": "VGG4Preprocess",
+        "config": {
+          "name": "vgg_bgr_nir_affine",
+          "activity_regularizer": null,
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "autocast": true
+        }
+      },
+      {
+        "class_name": "InputLayer",
+        "name": "input_layer_1",
+        "config": {
+          "batch_shape": [
+            null,
+            256,
+            256,
+            4
+          ],
+          "dtype": "float32",
+          "sparse": false,
+          "ragged": false,
+          "name": "input_layer_1",
+          "optional": false
+        }
+      },
+      {
+        "class_name": "Conv2D",
+        "name": "block1_conv1",
+        "config": {
+          "name": "block1_conv1",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 64,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "GlorotUniform",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "class_name": "Conv2D",
+        "name": "block1_conv2",
+        "config": {
+          "name": "block1_conv2",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 64,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "GlorotUniform",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "class_name": "MaxPooling2D",
+        "name": "block1_pool",
+        "config": {
+          "name": "block1_pool",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "pool_size": [
+            2,
+            2
+          ],
+          "padding": "valid",
+          "strides": [
+            2,
+            2
+          ],
+          "data_format": "channels_last"
+        }
+      },
+      {
+        "class_name": "Conv2D",
+        "name": "block2_conv1",
+        "config": {
+          "name": "block2_conv1",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 128,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "GlorotUniform",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "class_name": "Conv2D",
+        "name": "block2_conv2",
+        "config": {
+          "name": "block2_conv2",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 128,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "GlorotUniform",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "class_name": "MaxPooling2D",
+        "name": "block2_pool",
+        "config": {
+          "name": "block2_pool",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "pool_size": [
+            2,
+            2
+          ],
+          "padding": "valid",
+          "strides": [
+            2,
+            2
+          ],
+          "data_format": "channels_last"
+        }
+      },
+      {
+        "class_name": "Conv2D",
+        "name": "block3_conv1",
+        "config": {
+          "name": "block3_conv1",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 256,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "GlorotUniform",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "class_name": "Conv2D",
+        "name": "block3_conv2",
+        "config": {
+          "name": "block3_conv2",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 256,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "GlorotUniform",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "class_name": "Conv2D",
+        "name": "block3_conv3",
+        "config": {
+          "name": "block3_conv3",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 256,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "GlorotUniform",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "class_name": "MaxPooling2D",
+        "name": "block3_pool",
+        "config": {
+          "name": "block3_pool",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "pool_size": [
+            2,
+            2
+          ],
+          "padding": "valid",
+          "strides": [
+            2,
+            2
+          ],
+          "data_format": "channels_last"
+        }
+      },
+      {
+        "class_name": "Conv2D",
+        "name": "block4_conv1",
+        "config": {
+          "name": "block4_conv1",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 512,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "GlorotUniform",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "class_name": "Conv2D",
+        "name": "block4_conv2",
+        "config": {
+          "name": "block4_conv2",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 512,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "GlorotUniform",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "class_name": "Conv2D",
+        "name": "block4_conv3",
+        "config": {
+          "name": "block4_conv3",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 512,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "GlorotUniform",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "class_name": "MaxPooling2D",
+        "name": "block4_pool",
+        "config": {
+          "name": "block4_pool",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "pool_size": [
+            2,
+            2
+          ],
+          "padding": "valid",
+          "strides": [
+            2,
+            2
+          ],
+          "data_format": "channels_last"
+        }
+      },
+      {
+        "class_name": "Conv2D",
+        "name": "block5_conv1",
+        "config": {
+          "name": "block5_conv1",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 512,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "GlorotUniform",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "class_name": "Conv2D",
+        "name": "block5_conv2",
+        "config": {
+          "name": "block5_conv2",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 512,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "GlorotUniform",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "class_name": "Conv2D",
+        "name": "block5_conv3",
+        "config": {
+          "name": "block5_conv3",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 512,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "GlorotUniform",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "class_name": "MaxPooling2D",
+        "name": "block5_pool",
+        "config": {
+          "name": "block5_pool",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "pool_size": [
+            2,
+            2
+          ],
+          "padding": "valid",
+          "strides": [
+            2,
+            2
+          ],
+          "data_format": "channels_last"
+        }
+      },
+      {
+        "name": "decoder1_upsample",
+        "class_name": "UpSampling2D",
+        "config": {
+          "name": "decoder1_upsample",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "size": [
+            2,
+            2
+          ],
+          "data_format": "channels_last",
+          "interpolation": "bilinear"
+        }
+      },
+      {
+        "name": "decoder1_skip",
+        "class_name": "Concatenate",
+        "config": {
+          "name": "decoder1_skip",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "axis": -1
+        }
+      },
+      {
+        "name": "decoder1_conv1",
+        "class_name": "Conv2D",
+        "config": {
+          "name": "decoder1_conv1",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 128,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "HeNormal",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "name": "decoder1_conv2",
+        "class_name": "Conv2D",
+        "config": {
+          "name": "decoder1_conv2",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 128,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "HeNormal",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "name": "decoder2_upsample",
+        "class_name": "UpSampling2D",
+        "config": {
+          "name": "decoder2_upsample",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "size": [
+            2,
+            2
+          ],
+          "data_format": "channels_last",
+          "interpolation": "bilinear"
+        }
+      },
+      {
+        "name": "decoder2_skip",
+        "class_name": "Concatenate",
+        "config": {
+          "name": "decoder2_skip",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "axis": -1
+        }
+      },
+      {
+        "name": "decoder2_conv1",
+        "class_name": "Conv2D",
+        "config": {
+          "name": "decoder2_conv1",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 64,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "HeNormal",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "name": "decoder2_conv2",
+        "class_name": "Conv2D",
+        "config": {
+          "name": "decoder2_conv2",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 64,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "HeNormal",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "name": "decoder3_upsample",
+        "class_name": "UpSampling2D",
+        "config": {
+          "name": "decoder3_upsample",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "size": [
+            2,
+            2
+          ],
+          "data_format": "channels_last",
+          "interpolation": "bilinear"
+        }
+      },
+      {
+        "name": "decoder3_skip",
+        "class_name": "Concatenate",
+        "config": {
+          "name": "decoder3_skip",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "axis": -1
+        }
+      },
+      {
+        "name": "decoder3_conv1",
+        "class_name": "Conv2D",
+        "config": {
+          "name": "decoder3_conv1",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 32,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "HeNormal",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "name": "decoder3_conv2",
+        "class_name": "Conv2D",
+        "config": {
+          "name": "decoder3_conv2",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 32,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "HeNormal",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "name": "decoder4_upsample",
+        "class_name": "UpSampling2D",
+        "config": {
+          "name": "decoder4_upsample",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "size": [
+            2,
+            2
+          ],
+          "data_format": "channels_last",
+          "interpolation": "bilinear"
+        }
+      },
+      {
+        "name": "decoder4_skip",
+        "class_name": "Concatenate",
+        "config": {
+          "name": "decoder4_skip",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "axis": -1
+        }
+      },
+      {
+        "name": "decoder4_conv1",
+        "class_name": "Conv2D",
+        "config": {
+          "name": "decoder4_conv1",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 16,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "HeNormal",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "name": "decoder4_conv2",
+        "class_name": "Conv2D",
+        "config": {
+          "name": "decoder4_conv2",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 16,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "HeNormal",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "name": "decoder5_upsample",
+        "class_name": "UpSampling2D",
+        "config": {
+          "name": "decoder5_upsample",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "size": [
+            2,
+            2
+          ],
+          "data_format": "channels_last",
+          "interpolation": "bilinear"
+        }
+      },
+      {
+        "name": "decoder5_skip",
+        "class_name": "Concatenate",
+        "config": {
+          "name": "decoder5_skip",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "axis": -1
+        }
+      },
+      {
+        "name": "decoder5_conv1",
+        "class_name": "Conv2D",
+        "config": {
+          "name": "decoder5_conv1",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 16,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "HeNormal",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "name": "decoder5_conv2",
+        "class_name": "Conv2D",
+        "config": {
+          "name": "decoder5_conv2",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 16,
+          "kernel_size": [
+            3,
+            3
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "same",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "relu",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "HeNormal",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      },
+      {
+        "name": "water_probability",
+        "class_name": "Conv2D",
+        "config": {
+          "name": "water_probability",
+          "trainable": true,
+          "dtype": {
+            "module": "keras",
+            "class_name": "DTypePolicy",
+            "config": {
+              "name": "float32"
+            },
+            "registered_name": null
+          },
+          "filters": 1,
+          "kernel_size": [
+            1,
+            1
+          ],
+          "strides": [
+            1,
+            1
+          ],
+          "padding": "valid",
+          "data_format": "channels_last",
+          "dilation_rate": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "activation": "sigmoid",
+          "use_bias": true,
+          "kernel_initializer": {
+            "module": "keras.initializers",
+            "class_name": "GlorotUniform",
+            "config": {
+              "seed": null,
+              "input_axes": null,
+              "output_axes": null
+            },
+            "registered_name": null
+          },
+          "bias_initializer": {
+            "module": "keras.initializers",
+            "class_name": "Zeros",
+            "config": {},
+            "registered_name": null
+          },
+          "kernel_regularizer": null,
+          "bias_regularizer": null,
+          "activity_regularizer": null,
+          "kernel_constraint": null,
+          "bias_constraint": null
+        }
+      }
+    ]
+  },
+  "arrays": [
+    {
+      "layer": "block1_conv1",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        4,
+        64
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 9216,
+      "sha256": "8d2f1985963041312d77cd553fdcc85c144cf63b543d237e8f2ca84ac98aa610",
+      "segments": [
+        {
+          "chunk": "weights-000.bin",
+          "byte_offset": 0,
+          "byte_length": 9216,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "block1_conv1",
+      "name": "bias",
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 256,
+      "sha256": "4b84364ee74abcdc33b50fecfa32f2c3df43b1f775d691b1d85d511c4d68dd72",
+      "segments": [
+        {
+          "chunk": "weights-000.bin",
+          "byte_offset": 9216,
+          "byte_length": 256,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "block1_conv2",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        64,
+        64
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 147456,
+      "sha256": "00e9f7ae18c95e74bc5f9aac78236e3dc01bba256a6409816ddce7793ce73063",
+      "segments": [
+        {
+          "chunk": "weights-000.bin",
+          "byte_offset": 9472,
+          "byte_length": 147456,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "block1_conv2",
+      "name": "bias",
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 256,
+      "sha256": "f755bca82c575c7a3395c32b6b102fecb67676c78ddc7148793836a02cb15d26",
+      "segments": [
+        {
+          "chunk": "weights-000.bin",
+          "byte_offset": 156928,
+          "byte_length": 256,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "block2_conv1",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        64,
+        128
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 294912,
+      "sha256": "5c481515f0a492f20c2746c9e7bd939393b22d32f6150e00e16c1bd8cda087ef",
+      "segments": [
+        {
+          "chunk": "weights-000.bin",
+          "byte_offset": 157184,
+          "byte_length": 294912,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "block2_conv1",
+      "name": "bias",
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 512,
+      "sha256": "8f9d28c38f8cca3bcbda01768b503a4aa2d113286afbf4a9420aa249ac6f8625",
+      "segments": [
+        {
+          "chunk": "weights-000.bin",
+          "byte_offset": 452096,
+          "byte_length": 512,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "block2_conv2",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        128,
+        128
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 589824,
+      "sha256": "08774a029f0f7509f38518ce4df8bd2049a9298060b078eb844a0b24d4bdcc90",
+      "segments": [
+        {
+          "chunk": "weights-000.bin",
+          "byte_offset": 452608,
+          "byte_length": 589824,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "block2_conv2",
+      "name": "bias",
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 512,
+      "sha256": "e61162ef3f4832998af03975e5e6d582be021b0480ad9530372861e322f9557c",
+      "segments": [
+        {
+          "chunk": "weights-000.bin",
+          "byte_offset": 1042432,
+          "byte_length": 512,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "block3_conv1",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        128,
+        256
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 1179648,
+      "sha256": "9d9da7800f7bfcfc5a186b9f8321e99eb9b90dada973f3f8111c79ad74333e32",
+      "segments": [
+        {
+          "chunk": "weights-000.bin",
+          "byte_offset": 1042944,
+          "byte_length": 1179648,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "block3_conv1",
+      "name": "bias",
+      "shape": [
+        256
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 1024,
+      "sha256": "9977e87915028fdf0d779480ca1d06c1ed8960dcc43ad1bb6a0444184cc5b03b",
+      "segments": [
+        {
+          "chunk": "weights-000.bin",
+          "byte_offset": 2222592,
+          "byte_length": 1024,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "block3_conv2",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 2359296,
+      "sha256": "7c7ea27bc0dfdaa894a4fdfa20e030c588c8d8849a965e9949553d587a050473",
+      "segments": [
+        {
+          "chunk": "weights-000.bin",
+          "byte_offset": 2223616,
+          "byte_length": 2359296,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "block3_conv2",
+      "name": "bias",
+      "shape": [
+        256
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 1024,
+      "sha256": "c2242582caacbbf180d239dd9713a7c03eace2545f90043110388b2b0f437dd1",
+      "segments": [
+        {
+          "chunk": "weights-000.bin",
+          "byte_offset": 4582912,
+          "byte_length": 1024,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "block3_conv3",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 2359296,
+      "sha256": "772675d6d3ee5e9aff53e6832ceddb3d80c11cf5a220e8602778c4ac22c37409",
+      "segments": [
+        {
+          "chunk": "weights-000.bin",
+          "byte_offset": 4583936,
+          "byte_length": 2359296,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "block3_conv3",
+      "name": "bias",
+      "shape": [
+        256
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 1024,
+      "sha256": "5397626032611d1ddde32317088c2df781171bc07dc68f922c02e8781a3ba04c",
+      "segments": [
+        {
+          "chunk": "weights-000.bin",
+          "byte_offset": 6943232,
+          "byte_length": 1024,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "block4_conv1",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        256,
+        512
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 4718592,
+      "sha256": "b27b8ccac79ee8d78347b4a8bbd116dd0cdfd61b02e0d589331f0ecf6e812d4f",
+      "segments": [
+        {
+          "chunk": "weights-000.bin",
+          "byte_offset": 6944256,
+          "byte_length": 1444352,
+          "array_byte_offset": 0
+        },
+        {
+          "chunk": "weights-001.bin",
+          "byte_offset": 0,
+          "byte_length": 3274240,
+          "array_byte_offset": 1444352
+        }
+      ]
+    },
+    {
+      "layer": "block4_conv1",
+      "name": "bias",
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 2048,
+      "sha256": "3baaa037ec3b937e35c8e37976e44b1c1ff5f0a792656e0d9ee65e9da6ad5fd2",
+      "segments": [
+        {
+          "chunk": "weights-001.bin",
+          "byte_offset": 3274240,
+          "byte_length": 2048,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "block4_conv2",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        512,
+        512
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 9437184,
+      "sha256": "70cfaec8974ac0dbae54bf647effa84eb72a3765c7e1d341f60cd5cfb0bdef74",
+      "segments": [
+        {
+          "chunk": "weights-001.bin",
+          "byte_offset": 3276288,
+          "byte_length": 5112320,
+          "array_byte_offset": 0
+        },
+        {
+          "chunk": "weights-002.bin",
+          "byte_offset": 0,
+          "byte_length": 4324864,
+          "array_byte_offset": 5112320
+        }
+      ]
+    },
+    {
+      "layer": "block4_conv2",
+      "name": "bias",
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 2048,
+      "sha256": "59b84d5231d283b941209dfe639c2b2ad3ac029a7371385933891ab72b786cc3",
+      "segments": [
+        {
+          "chunk": "weights-002.bin",
+          "byte_offset": 4324864,
+          "byte_length": 2048,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "block4_conv3",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        512,
+        512
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 9437184,
+      "sha256": "26adf82dbe17391fa357b14115f4a1a215bcdf21db6b1d7bc764d301136882aa",
+      "segments": [
+        {
+          "chunk": "weights-002.bin",
+          "byte_offset": 4326912,
+          "byte_length": 4061696,
+          "array_byte_offset": 0
+        },
+        {
+          "chunk": "weights-003.bin",
+          "byte_offset": 0,
+          "byte_length": 5375488,
+          "array_byte_offset": 4061696
+        }
+      ]
+    },
+    {
+      "layer": "block4_conv3",
+      "name": "bias",
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 2048,
+      "sha256": "4522712cbc872992ef7fac4a4e992d55acd5fb335b18be37e6975fa65c349776",
+      "segments": [
+        {
+          "chunk": "weights-003.bin",
+          "byte_offset": 5375488,
+          "byte_length": 2048,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "block5_conv1",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        512,
+        512
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 9437184,
+      "sha256": "e1046c642b1303133cc7fb7387d9d531453de7e5096a143cb7d63b7bb11f3645",
+      "segments": [
+        {
+          "chunk": "weights-003.bin",
+          "byte_offset": 5377536,
+          "byte_length": 3011072,
+          "array_byte_offset": 0
+        },
+        {
+          "chunk": "weights-004.bin",
+          "byte_offset": 0,
+          "byte_length": 6426112,
+          "array_byte_offset": 3011072
+        }
+      ]
+    },
+    {
+      "layer": "block5_conv1",
+      "name": "bias",
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 2048,
+      "sha256": "6314e289e2ce76f3cedf52e298d99c4b77e06eb68fe92e6154e32088c564356e",
+      "segments": [
+        {
+          "chunk": "weights-004.bin",
+          "byte_offset": 6426112,
+          "byte_length": 2048,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "block5_conv2",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        512,
+        512
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 9437184,
+      "sha256": "9e23835fadb00c81127eccb278a782234d89ef1d68ed60038a633895d9c92ca1",
+      "segments": [
+        {
+          "chunk": "weights-004.bin",
+          "byte_offset": 6428160,
+          "byte_length": 1960448,
+          "array_byte_offset": 0
+        },
+        {
+          "chunk": "weights-005.bin",
+          "byte_offset": 0,
+          "byte_length": 7476736,
+          "array_byte_offset": 1960448
+        }
+      ]
+    },
+    {
+      "layer": "block5_conv2",
+      "name": "bias",
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 2048,
+      "sha256": "48abb07d07668f4586b91008776405e8d0f071ba4d66b4c50a669108ca47bc03",
+      "segments": [
+        {
+          "chunk": "weights-005.bin",
+          "byte_offset": 7476736,
+          "byte_length": 2048,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "block5_conv3",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        512,
+        512
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 9437184,
+      "sha256": "e3bbe474d98c11f7798f0e5a302cf28cc7ebe265b2b70553d68c2a2d6a71dcb4",
+      "segments": [
+        {
+          "chunk": "weights-005.bin",
+          "byte_offset": 7478784,
+          "byte_length": 909824,
+          "array_byte_offset": 0
+        },
+        {
+          "chunk": "weights-006.bin",
+          "byte_offset": 0,
+          "byte_length": 8388608,
+          "array_byte_offset": 909824
+        },
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 0,
+          "byte_length": 138752,
+          "array_byte_offset": 9298432
+        }
+      ]
+    },
+    {
+      "layer": "block5_conv3",
+      "name": "bias",
+      "shape": [
+        512
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 2048,
+      "sha256": "8c2239786aac80a5af6d524cfe7811e121d21547527e0779765380a7d75a8c40",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 138752,
+          "byte_length": 2048,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder1_conv1",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        1024,
+        128
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 4718592,
+      "sha256": "255c19cf1e0011d4295ccfc668a2b392bd850566905e7beb55ce0b6e53393727",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 140800,
+          "byte_length": 4718592,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder1_conv1",
+      "name": "bias",
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 512,
+      "sha256": "bdba5ad40bf95082be0b3dfe3b0319280a5a070e7d98ea68ad007277081d9f43",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 4859392,
+          "byte_length": 512,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder1_conv2",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        128,
+        128
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 589824,
+      "sha256": "944edeef7db920bd77d011eb25827179fd58c8994f9903a42e9e3f0aa07febae",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 4859904,
+          "byte_length": 589824,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder1_conv2",
+      "name": "bias",
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 512,
+      "sha256": "273764c90040c7f98b7e4d1704d13f22db18bbd7167c8d8682831d00588013c9",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 5449728,
+          "byte_length": 512,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder2_conv1",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        640,
+        64
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 1474560,
+      "sha256": "082189bca8f5af45862a695eaaa2785a64d5cb9d789f78cf079fe5b12fe7578c",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 5450240,
+          "byte_length": 1474560,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder2_conv1",
+      "name": "bias",
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 256,
+      "sha256": "dde96248ca0ef1876feb277ce65706d476a0743a09f02349aa054cf91ed8c2b3",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 6924800,
+          "byte_length": 256,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder2_conv2",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        64,
+        64
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 147456,
+      "sha256": "d291d8f62ac15c6648622438cc9213888beff63dafd5ce98f4c2587de53fdead",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 6925056,
+          "byte_length": 147456,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder2_conv2",
+      "name": "bias",
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 256,
+      "sha256": "80d75414715184ddb0a44d8fd6bf90934c12b0e71cfce98f1777bb3f76107155",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 7072512,
+          "byte_length": 256,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder3_conv1",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        320,
+        32
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 368640,
+      "sha256": "7766fad36c17c177ebcafd5b8714f3521f5d136d28c63059a7a51dfbfa870e02",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 7072768,
+          "byte_length": 368640,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder3_conv1",
+      "name": "bias",
+      "shape": [
+        32
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 128,
+      "sha256": "f075dd4675ab1f417b4d8eb99a8479ad308bca2d0b43dc668ab3a04d2525aa63",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 7441408,
+          "byte_length": 128,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder3_conv2",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        32,
+        32
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 36864,
+      "sha256": "fd01c956d19f58d66a926735dda28c0dd35bd059b6bf0ee8b5c93e95ce72369a",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 7441536,
+          "byte_length": 36864,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder3_conv2",
+      "name": "bias",
+      "shape": [
+        32
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 128,
+      "sha256": "ef6c552f91663e6e2a7fca095bc1a499e59af4ce337bb482f833e8bdfdc43765",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 7478400,
+          "byte_length": 128,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder4_conv1",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        160,
+        16
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 92160,
+      "sha256": "90079018dde04624adade2094de452061cb21eedf7c1ca7c09480f2553e35192",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 7478528,
+          "byte_length": 92160,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder4_conv1",
+      "name": "bias",
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 64,
+      "sha256": "0dd0956761c95c2b40e790a367e9594528152378e401f564e09584b315560a5a",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 7570688,
+          "byte_length": 64,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder4_conv2",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        16,
+        16
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 9216,
+      "sha256": "f76575e26a9a2063dea52769aa68186ff402b7c8b555ded35618f2cfb3613bf4",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 7570752,
+          "byte_length": 9216,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder4_conv2",
+      "name": "bias",
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 64,
+      "sha256": "382d6a8681a92044899e83415d964513780d244f5bad3e7ab8122ddcc457f684",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 7579968,
+          "byte_length": 64,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder5_conv1",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        80,
+        16
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 46080,
+      "sha256": "8ebdc887d741ddcf7d84ec0d7c149b2c07e4a56d77a30e4eaf1227c545cf00ae",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 7580032,
+          "byte_length": 46080,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder5_conv1",
+      "name": "bias",
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 64,
+      "sha256": "5eadaa7628c002f18f38f0d75a8d09eb9a8caa2ebe90e2e4def14e252b61bd8c",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 7626112,
+          "byte_length": 64,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder5_conv2",
+      "name": "kernel",
+      "shape": [
+        3,
+        3,
+        16,
+        16
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 9216,
+      "sha256": "e706c6e4a7138d337ce160c197d93d57aae7922c2574aa3eb80901e8f8e8d8e6",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 7626176,
+          "byte_length": 9216,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "decoder5_conv2",
+      "name": "bias",
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 64,
+      "sha256": "00489483a2b78d93c7fc4ba7b0b15b9ec2e0c0a653c3dbd36f67d224781b2f6f",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 7635392,
+          "byte_length": 64,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "water_probability",
+      "name": "kernel",
+      "shape": [
+        1,
+        1,
+        16,
+        1
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 64,
+      "sha256": "7d597e62dab2256f8a23310d1e103d0fe500b5699dd4c628075dc88ba0587701",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 7635456,
+          "byte_length": 64,
+          "array_byte_offset": 0
+        }
+      ]
+    },
+    {
+      "layer": "water_probability",
+      "name": "bias",
+      "shape": [
+        1
+      ],
+      "dtype": "float32",
+      "byte_order": "little-endian",
+      "order": "C",
+      "byte_length": 4,
+      "sha256": "5c1885b261700e9d1815d5f3b02b3cf10bf0213340a3a3b646f8e81f22c9ac83",
+      "segments": [
+        {
+          "chunk": "weights-007.bin",
+          "byte_offset": 7635520,
+          "byte_length": 4,
+          "array_byte_offset": 0
+        }
+      ]
+    }
+  ],
+  "chunks": [
+    {
+      "file": "weights-000.bin",
+      "byte_length": 8388608,
+      "sha256": "0a472f9fb7025e0edbe331c45e15ff651fe8fd0cab69176f8c1490ea34658fbc"
+    },
+    {
+      "file": "weights-001.bin",
+      "byte_length": 8388608,
+      "sha256": "85d29f47abc34ff0be504dd76e343315f4fc6294cbd8cef995dc5b4f7af0eb86"
+    },
+    {
+      "file": "weights-002.bin",
+      "byte_length": 8388608,
+      "sha256": "51bd6b4306307c26eee0eaa1463671846b9d570be7f1847cb6e95aadc106ef3b"
+    },
+    {
+      "file": "weights-003.bin",
+      "byte_length": 8388608,
+      "sha256": "3db22e884aaa364b6bb4a9f960cc4ba78b0a11366ca1dacedcb5f0da70ff333c"
+    },
+    {
+      "file": "weights-004.bin",
+      "byte_length": 8388608,
+      "sha256": "8a19d7d8160a493b342e67dfd2b17437e0ac37f48ed2b0f3683fef2bffbe030e"
+    },
+    {
+      "file": "weights-005.bin",
+      "byte_length": 8388608,
+      "sha256": "6b9b56b0e3cadd7933c936fd01369c66862f726781a67f94ff6886f6669ef39d"
+    },
+    {
+      "file": "weights-006.bin",
+      "byte_length": 8388608,
+      "sha256": "0c78c8654f6ed3f689bfe8acd700f0233147331f51f0c1920804651a669dd216"
+    },
+    {
+      "file": "weights-007.bin",
+      "byte_length": 7635524,
+      "sha256": "3f4a5223c985babc043958ce5fa2291806b0721028c7c6e57f0990f3e8b1c9e2"
+    }
+  ],
+  "fixture": {
+    "id": "new_golfo_guayaquil_a9d7f0f571594db9d671.tif",
+    "split": "val",
+    "zone": "golfo_guayaquil",
+    "input_file": "fixture_input_u16.bin",
+    "input_shape": [
+      256,
+      256,
+      4
+    ],
+    "input_dtype": "uint16",
+    "input_order": "HWC little-endian",
+    "input_sha256": "ea0f3928380c79e9188fc64f53acd263f5060b98a9328a3c155bf0aab68ba85c",
+    "probability_file": "fixture_probability_f32.bin",
+    "probability_shape": [
+      256,
+      256
+    ],
+    "probability_dtype": "float32",
+    "probability_sha256": "350a1584a09153952abee981ceda816394d5e18b40c479c26751984dbe6db6e3",
+    "keras_call_batch_size": 1,
+    "test_historico_consultado": false,
+    "source_image_sha256": "badf5b8889db07f3c7b180833730f774d4c50d346f8fc763d1bbc404f5b12a62"
+  },
+  "total_weight_bytes": 66355780,
+  "maximum_chunk_bytes": 8388608,
+  "source_model_unchanged": true,
+  "browser_parity_required_before_use": true,
+  "training_executed": false
+}

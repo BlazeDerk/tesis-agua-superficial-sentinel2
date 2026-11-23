@@ -1,0 +1,784 @@
+{
+  "escenas": [
+    {
+      "case": 1,
+      "site": "esmeraldas",
+      "label": "Estuario de Esmeraldas",
+      "item_id": "S2B_T17NPB_20250212T155223_L2A",
+      "item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T17NPB_20250212T155223_L2A",
+      "collection": "sentinel-2-c1-l2a",
+      "sensing_time_utc": "2025-02-12T15:52:55.218000Z",
+      "processing_baseline": "05.11",
+      "image_sha256": "36abe5608400a536aabfb24e21675622051acfcca2824deb6cda0547bda176b0",
+      "scl_sha256": "27d0d673411d76403faa59092b939ea1236a438468256b8aabfd2e14e75bfded",
+      "grid": {
+        "crs": "EPSG:32717",
+        "transform": [
+          10.0,
+          0.0,
+          651150.0,
+          0.0,
+          -10.0,
+          10108520.0
+        ],
+        "bounds": [
+          651150.0,
+          10105960.0,
+          653710.0,
+          10108520.0
+        ],
+        "bounds_wgs84": [
+          -79.64159239845455,
+          0.9583720171156707,
+          -79.61858035831541,
+          0.9815357819804026
+        ],
+        "width": 256,
+        "height": 256,
+        "pixel_size_m": 10
+      },
+      "optical_assets": [
+        {
+          "band": "B2",
+          "stac_asset": "blue",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/N/PB/2025/2/S2B_T17NPB_20250212T155223_L2A/B02.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32617",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 1,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 0,
+          "output_valid_max": 9248
+        },
+        {
+          "band": "B3",
+          "stac_asset": "green",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/N/PB/2025/2/S2B_T17NPB_20250212T155223_L2A/B03.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32617",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 0,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 84,
+          "output_valid_max": 8784
+        },
+        {
+          "band": "B4",
+          "stac_asset": "red",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/N/PB/2025/2/S2B_T17NPB_20250212T155223_L2A/B04.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32617",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 0,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 6,
+          "output_valid_max": 9720
+        },
+        {
+          "band": "B8",
+          "stac_asset": "nir",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/N/PB/2025/2/S2B_T17NPB_20250212T155223_L2A/B08.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32617",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 0,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 97,
+          "output_valid_max": 9200
+        }
+      ],
+      "scl_asset": {
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/N/PB/2025/2/S2B_T17NPB_20250212T155223_L2A/SCL.tif",
+        "raster_metadata": {
+          "nodata": 0,
+          "data_type": "uint8",
+          "spatial_resolution": 20
+        },
+        "native_crs": "EPSG:32617",
+        "native_pixel_size_m": 20,
+        "warp_resampling": "nearest_neighbor"
+      },
+      "patch_quality": {
+        "total_pixels": 65536,
+        "valid_source_pixels": 65536,
+        "source_nodata_pixels": 0,
+        "cloud_scl_pixels": 748,
+        "shadow_scl_pixels": 7334,
+        "snow_scl_pixels": 0,
+        "defective_scl_pixels": 0,
+        "all_four_harmonized_channels_zero_pixels": 0,
+        "cloud_fraction_valid_source": 0.01141357421875,
+        "scl_native_resolution_m": 20,
+        "scl_is_same_item_as_optical": true
+      },
+      "independence": {
+        "overlapping_inventory_patches": [],
+        "inventory_patch_count_compared": 860,
+        "image_sha_matches_inventory": false,
+        "new_scene_year": 2025,
+        "selection_before_model_inference": true,
+        "legacy_el_oro_dates_unknown": true
+      }
+    },
+    {
+      "case": 2,
+      "site": "daule_peripa",
+      "label": "Entorno de Daule–Peripa",
+      "item_id": "S2C_T17MPV_20250624T153812_L2A",
+      "item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2C_T17MPV_20250624T153812_L2A",
+      "collection": "sentinel-2-c1-l2a",
+      "sensing_time_utc": "2025-06-24T15:43:45.488000Z",
+      "processing_baseline": "05.11",
+      "image_sha256": "fbac5e24c454bc19b49b5074d5fc4875e0198a97d1e13e4a8bcdd75a67a7a9c1",
+      "scl_sha256": "f76a4548553a98611ade4ccdeabc3920feb08119790c6c41309b694fff6bbaf7",
+      "grid": {
+        "crs": "EPSG:32717",
+        "transform": [
+          10.0,
+          0.0,
+          655610.0,
+          0.0,
+          -10.0,
+          9901770.0
+        ],
+        "bounds": [
+          655610.0,
+          9899210.0,
+          658170.0,
+          9901770.0
+        ],
+        "bounds_wgs84": [
+          -79.60154493999656,
+          -0.9116045822667115,
+          -79.57853416664642,
+          -0.8884416249886815
+        ],
+        "width": 256,
+        "height": 256,
+        "pixel_size_m": 10
+      },
+      "optical_assets": [
+        {
+          "band": "B2",
+          "stac_asset": "blue",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/PV/2025/6/S2C_T17MPV_20250624T153812_L2A/B02.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32717",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 0,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 269,
+          "output_valid_max": 9520
+        },
+        {
+          "band": "B3",
+          "stac_asset": "green",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/PV/2025/6/S2C_T17MPV_20250624T153812_L2A/B03.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32717",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 0,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 288,
+          "output_valid_max": 9272
+        },
+        {
+          "band": "B4",
+          "stac_asset": "red",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/PV/2025/6/S2C_T17MPV_20250624T153812_L2A/B04.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32717",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 0,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 200,
+          "output_valid_max": 9232
+        },
+        {
+          "band": "B8",
+          "stac_asset": "nir",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/PV/2025/6/S2C_T17MPV_20250624T153812_L2A/B08.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32717",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 0,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 865,
+          "output_valid_max": 9280
+        }
+      ],
+      "scl_asset": {
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/PV/2025/6/S2C_T17MPV_20250624T153812_L2A/SCL.tif",
+        "raster_metadata": {
+          "nodata": 0,
+          "data_type": "uint8",
+          "spatial_resolution": 20
+        },
+        "native_crs": "EPSG:32717",
+        "native_pixel_size_m": 20,
+        "warp_resampling": "nearest_neighbor"
+      },
+      "patch_quality": {
+        "total_pixels": 65536,
+        "valid_source_pixels": 65536,
+        "source_nodata_pixels": 0,
+        "cloud_scl_pixels": 62600,
+        "shadow_scl_pixels": 1044,
+        "snow_scl_pixels": 0,
+        "defective_scl_pixels": 0,
+        "all_four_harmonized_channels_zero_pixels": 0,
+        "cloud_fraction_valid_source": 0.9552001953125,
+        "scl_native_resolution_m": 20,
+        "scl_is_same_item_as_optical": true
+      },
+      "independence": {
+        "overlapping_inventory_patches": [],
+        "inventory_patch_count_compared": 860,
+        "image_sha_matches_inventory": false,
+        "new_scene_year": 2025,
+        "selection_before_model_inference": true,
+        "legacy_el_oro_dates_unknown": true
+      }
+    },
+    {
+      "case": 3,
+      "site": "quilotoa",
+      "label": "Laguna Quilotoa",
+      "item_id": "S2B_T17MQV_20251206T154110_L2A",
+      "item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T17MQV_20251206T154110_L2A",
+      "collection": "sentinel-2-c1-l2a",
+      "sensing_time_utc": "2025-12-06T15:43:19.189000Z",
+      "processing_baseline": "05.11",
+      "image_sha256": "4419e483619efca2d2778f3b03bfa0311f0a005387b9c43f001545c8ae47673b",
+      "scl_sha256": "6cd3637b4492111f4b9cdbc2fa13ce2b4aaf12e5ff68c6df2b5ffa198e631698",
+      "grid": {
+        "crs": "EPSG:32717",
+        "transform": [
+          10.0,
+          0.0,
+          731970.0,
+          0.0,
+          -10.0,
+          9906380.0
+        ],
+        "bounds": [
+          731970.0,
+          9903820.0,
+          734530.0,
+          9906380.0
+        ],
+        "bounds_wgs84": [
+          -78.91558102904082,
+          -0.8695903881876286,
+          -78.89257528804154,
+          -0.8464322325227015
+        ],
+        "width": 256,
+        "height": 256,
+        "pixel_size_m": 10
+      },
+      "optical_assets": [
+        {
+          "band": "B2",
+          "stac_asset": "blue",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/QV/2025/12/S2B_T17MQV_20251206T154110_L2A/B02.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32717",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 0,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 103,
+          "output_valid_max": 3340
+        },
+        {
+          "band": "B3",
+          "stac_asset": "green",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/QV/2025/12/S2B_T17MQV_20251206T154110_L2A/B03.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32717",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 0,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 81,
+          "output_valid_max": 3552
+        },
+        {
+          "band": "B4",
+          "stac_asset": "red",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/QV/2025/12/S2B_T17MQV_20251206T154110_L2A/B04.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32717",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 0,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 23,
+          "output_valid_max": 3936
+        },
+        {
+          "band": "B8",
+          "stac_asset": "nir",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/QV/2025/12/S2B_T17MQV_20251206T154110_L2A/B08.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32717",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 3618,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 0,
+          "output_valid_max": 8400
+        }
+      ],
+      "scl_asset": {
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/QV/2025/12/S2B_T17MQV_20251206T154110_L2A/SCL.tif",
+        "raster_metadata": {
+          "nodata": 0,
+          "data_type": "uint8",
+          "spatial_resolution": 20
+        },
+        "native_crs": "EPSG:32717",
+        "native_pixel_size_m": 20,
+        "warp_resampling": "nearest_neighbor"
+      },
+      "patch_quality": {
+        "total_pixels": 65536,
+        "valid_source_pixels": 65516,
+        "source_nodata_pixels": 20,
+        "cloud_scl_pixels": 0,
+        "shadow_scl_pixels": 0,
+        "snow_scl_pixels": 0,
+        "defective_scl_pixels": 0,
+        "all_four_harmonized_channels_zero_pixels": 0,
+        "cloud_fraction_valid_source": 0.0,
+        "scl_native_resolution_m": 20,
+        "scl_is_same_item_as_optical": true
+      },
+      "independence": {
+        "overlapping_inventory_patches": [],
+        "inventory_patch_count_compared": 860,
+        "image_sha_matches_inventory": false,
+        "new_scene_year": 2025,
+        "selection_before_model_inference": true,
+        "legacy_el_oro_dates_unknown": true
+      }
+    },
+    {
+      "case": 4,
+      "site": "cajas_toreadora",
+      "label": "Sector Toreadora · Cajas",
+      "item_id": "S2B_T17MPT_20251226T153624_L2A",
+      "item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T17MPT_20251226T153624_L2A",
+      "collection": "sentinel-2-c1-l2a",
+      "sensing_time_utc": "2025-12-26T15:43:53.999000Z",
+      "processing_baseline": "05.11",
+      "image_sha256": "1186c1bd806e599f704163a9d7c7ae7a57bf7f6e97974321f4a49fbe9649478e",
+      "scl_sha256": "b5f438889b4c72e7a41890a4b883137f08ae42310fdfb630c99d3094fdc06030",
+      "grid": {
+        "crs": "EPSG:32717",
+        "transform": [
+          10.0,
+          0.0,
+          696580.0,
+          0.0,
+          -10.0,
+          9693520.0
+        ],
+        "bounds": [
+          696580.0,
+          9690960.0,
+          699140.0,
+          9693520.0
+        ],
+        "bounds_wgs84": [
+          -79.2316116435959,
+          -2.794621059277875,
+          -79.20855503650948,
+          -2.771436806035455
+        ],
+        "width": 256,
+        "height": 256,
+        "pixel_size_m": 10
+      },
+      "optical_assets": [
+        {
+          "band": "B2",
+          "stac_asset": "blue",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/PT/2025/12/S2B_T17MPT_20251226T153624_L2A/B02.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32717",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 0,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 55,
+          "output_valid_max": 2192
+        },
+        {
+          "band": "B3",
+          "stac_asset": "green",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/PT/2025/12/S2B_T17MPT_20251226T153624_L2A/B03.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32717",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 0,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 56,
+          "output_valid_max": 2432
+        },
+        {
+          "band": "B4",
+          "stac_asset": "red",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/PT/2025/12/S2B_T17MPT_20251226T153624_L2A/B04.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32717",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 0,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 42,
+          "output_valid_max": 2600
+        },
+        {
+          "band": "B8",
+          "stac_asset": "nir",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/PT/2025/12/S2B_T17MPT_20251226T153624_L2A/B08.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32717",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 0,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 53,
+          "output_valid_max": 4784
+        }
+      ],
+      "scl_asset": {
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/PT/2025/12/S2B_T17MPT_20251226T153624_L2A/SCL.tif",
+        "raster_metadata": {
+          "nodata": 0,
+          "data_type": "uint8",
+          "spatial_resolution": 20
+        },
+        "native_crs": "EPSG:32717",
+        "native_pixel_size_m": 20,
+        "warp_resampling": "nearest_neighbor"
+      },
+      "patch_quality": {
+        "total_pixels": 65536,
+        "valid_source_pixels": 65536,
+        "source_nodata_pixels": 0,
+        "cloud_scl_pixels": 0,
+        "shadow_scl_pixels": 0,
+        "snow_scl_pixels": 0,
+        "defective_scl_pixels": 0,
+        "all_four_harmonized_channels_zero_pixels": 0,
+        "cloud_fraction_valid_source": 0.0,
+        "scl_native_resolution_m": 20,
+        "scl_is_same_item_as_optical": true
+      },
+      "independence": {
+        "overlapping_inventory_patches": [],
+        "inventory_patch_count_compared": 860,
+        "image_sha_matches_inventory": false,
+        "new_scene_year": 2025,
+        "selection_before_model_inference": true,
+        "legacy_el_oro_dates_unknown": true
+      }
+    },
+    {
+      "case": 5,
+      "site": "upano_macas",
+      "label": "Río Upano · Macas",
+      "item_id": "S2B_T17MRT_20251106T153620_L2A",
+      "item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a/items/S2B_T17MRT_20251106T153620_L2A",
+      "collection": "sentinel-2-c1-l2a",
+      "sensing_time_utc": "2025-11-06T15:43:43.153000Z",
+      "processing_baseline": "05.11",
+      "image_sha256": "f2d9541cf1e90ac3fdce93175dbdb285805a2b2292c19ab4f705952a0d10636e",
+      "scl_sha256": "8527f81d70d97d0709d2575ab7c5a098bfdc4bfc616e5b9d3f4245117df0583d",
+      "grid": {
+        "crs": "EPSG:32717",
+        "transform": [
+          10.0,
+          0.0,
+          820170.0,
+          0.0,
+          -10.0,
+          9742300.0
+        ],
+        "bounds": [
+          820170.0,
+          9739740.0,
+          822730.0,
+          9742300.0
+        ],
+        "bounds_wgs84": [
+          -78.1215669003572,
+          -2.3516530386083963,
+          -78.09852383413146,
+          -2.3284742785506167
+        ],
+        "width": 256,
+        "height": 256,
+        "pixel_size_m": 10
+      },
+      "optical_assets": [
+        {
+          "band": "B2",
+          "stac_asset": "blue",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/RT/2025/11/S2B_T17MRT_20251106T153620_L2A/B02.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32717",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 4,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 0,
+          "output_valid_max": 13568
+        },
+        {
+          "band": "B3",
+          "stac_asset": "green",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/RT/2025/11/S2B_T17MRT_20251106T153620_L2A/B03.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32717",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 0,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 222,
+          "output_valid_max": 9928
+        },
+        {
+          "band": "B4",
+          "stac_asset": "red",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/RT/2025/11/S2B_T17MRT_20251106T153620_L2A/B04.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32717",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 0,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 108,
+          "output_valid_max": 8816
+        },
+        {
+          "band": "B8",
+          "stac_asset": "nir",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/RT/2025/11/S2B_T17MRT_20251106T153620_L2A/B08.tif",
+          "raster_metadata": {
+            "nodata": 0,
+            "data_type": "uint16",
+            "spatial_resolution": 10,
+            "scale": 0.0001,
+            "offset": -0.1
+          },
+          "native_crs": "EPSG:32717",
+          "native_pixel_size_m": 10,
+          "warp_resampling": "nearest_neighbor",
+          "model_units": "SR_x_10000",
+          "conversion_formula": "round((raw_DN * asset_scale + asset_offset) * 10000), clip 0..65534; source NoData preserved as 65535",
+          "negative_values_clipped_count": 0,
+          "above_65534_clipped_count": 0,
+          "output_valid_min": 288,
+          "output_valid_max": 11000
+        }
+      ],
+      "scl_asset": {
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/17/M/RT/2025/11/S2B_T17MRT_20251106T153620_L2A/SCL.tif",
+        "raster_metadata": {
+          "nodata": 0,
+          "data_type": "uint8",
+          "spatial_resolution": 20
+        },
+        "native_crs": "EPSG:32717",
+        "native_pixel_size_m": 20,
+        "warp_resampling": "nearest_neighbor"
+      },
+      "patch_quality": {
+        "total_pixels": 65536,
+        "valid_source_pixels": 65536,
+        "source_nodata_pixels": 0,
+        "cloud_scl_pixels": 0,
+        "shadow_scl_pixels": 0,
+        "snow_scl_pixels": 0,
+        "defective_scl_pixels": 0,
+        "all_four_harmonized_channels_zero_pixels": 0,
+        "cloud_fraction_valid_source": 0.0,
+        "scl_native_resolution_m": 20,
+        "scl_is_same_item_as_optical": true
+      },
+      "independence": {
+        "overlapping_inventory_patches": [],
+        "inventory_patch_count_compared": 860,
+        "image_sha_matches_inventory": false,
+        "new_scene_year": 2025,
+        "selection_before_model_inference": true,
+        "legacy_el_oro_dates_unknown": true
+      }
+    }
+  ]
+}
