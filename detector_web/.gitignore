@@ -1,7 +1,0 @@
-node_modules/
-.sites-runtime/
-dist/client/
-dist/server/
-dist/model/weights-*.bin
-dist/model/.pesos-*/
-dist/vendor/*.js
