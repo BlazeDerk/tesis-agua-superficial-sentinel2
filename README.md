@@ -1,46 +1,72 @@
-# Segmentación de cuerpos de agua superficiales en Ecuador con Sentinel‑2
+# Segmentación de cuerpos de agua superficiales en Ecuador con Sentinel-2
 
 **Martín Alexander Peña Paladines y Brandon Estefano Castillo Ortega**
 
-Este repositorio reúne el código y los resultados del estudio piloto en El Oro, el Golfo de Guayaquil, los lagos de Imbabura y el río Napo. El modelo delimita el agua superficial con una U-Net cuyo codificador VGG16 recibe las bandas B2, B3, B4 y B8. El estudio reunió 860 pares de imágenes y máscaras. Los filtros de calidad y la separación espacial dejaron 561 recortes de 256 × 256 píxeles distribuidos en 460 de entrenamiento, 42 de validación y 59 de prueba.
+¿Cómo cambia la delimitación del agua entre un estuario, un lago andino y un río amazónico? Este trabajo de titulación evalúa una red U-Net con un codificador VGG16 adaptado a cuatro bandas de Sentinel-2. El estudio reúne imágenes de El Oro, el Golfo de Guayaquil, los lagos de Imbabura y el río Napo. La red produce una probabilidad de agua por píxel y el detector web permite examinar la delimitación sobre la imagen original.
 
-## Resultados
+[Ruta de reproducción](revision/README.md) · [Detector web](detector_web/) · [Métricas por zona](revision/resultados_historicos/historicos_resumen.csv) · [Evaluación externa por escena](revision/analisis_local/escenas_y_pesos.csv)
 
-La comparación cubre los mismos 3 866 624 píxeles de prueba. El método NDWI clasifica como agua un píxel cuando la diferencia entre las reflectancias verde e infrarroja cercana, dividida por su suma, supera cero. Las cifras de U-Net se calcularon a partir de los conteos conservados de la corrida de 50 épocas, con un umbral de 0,5.
+## Recorrido por las fases
 
-| Método | IoU global | F1 global | Media de F1 de las cuatro zonas |
+| Fase | Qué se hizo y cómo comprobarlo |
+|---|---|
+| 1. Recolección en Earth Engine | Se obtuvieron mosaicos Sentinel-2 de 2020–2023 del Golfo, Imbabura y Napo. Se filtraron las nubes y se exigieron al menos tres observaciones claras por píxel. Las imágenes contienen B2 (azul), B3 (verde), B4 (rojo) y B8 (infrarrojo cercano) a 10 m. Se usó también B11 para generar la máscara de agua con MNDWI. [Script ejecutado](metodo_original/gee_v1_ejecutado.js) · [Registro de los mosaicos](revision/decisiones_y_procedencia/procedencia_mosaicos_gee.csv) |
+| 2. Recorte, auditoría y partición | Se combinaron 555 pares de El Oro con 305 nuevos en parches de 256 × 256 y se exigió un mínimo de 50 píxeles de agua. De los 860 pares, se excluyeron 174 de El Oro con valores espectrales cero de origen incierto y otros 125 para mantener la separación espacial. Quedaron **460 para entrenamiento, 42 para validación y 59 para prueba**. [Recorte y unificación](metodo_original/fase2_recortar_unificar.py) · [Partición final](manifiestos/particion.csv) · [Trazabilidad de El Oro](revision/decisiones_y_procedencia/trazabilidad_555_el_oro.csv) |
+| 3. Entrenamiento de U-Net/VGG16 | El ensayo técnico usó 40 parches y dos épocas. La corrida final completó 50 épocas con entradas normalizadas, giros, reflejos y una pérdida que combinó entropía cruzada binaria con Dice. Se seleccionó el checkpoint por pérdida de validación. [Código](metodo_original/fase3_entrenar_unet.py) · [Cuaderno](metodo_original/fase3_UNet_VGG16_4canales.ipynb) · [Configuración](metodo_original/entrenamiento_original.json) · [Historial](metodo_original/history_final_original.csv) · [Reanudación](metodo_original/reanudar_final_20261005.py) |
+| 4. Detector y pruebas de uso | Se probó la lectura de GeoTIFF, la inferencia y la consulta de las capas. Se revisaron cinco imágenes de validación y cinco escenas ecuatorianas de 2025 ajenas al entrenamiento. Estas últimas sirvieron para examinar visualmente aciertos aparentes, omisiones y sobreestimaciones. Las nubes se consultan mediante SCL y los posibles estanques requieren revisión. [Aplicación](detector_web/) · [Prueba de paridad entre Keras y navegador](detector_web/pruebas/paridad_keras_webgl.json) · [Cinco escenas de Ecuador](detector_web/pruebas/escenas_ecuador_2025.csv) |
+| 5. Revisión del estudio | Se repitió la inferencia sobre las imágenes históricas originales, se midió la distribución de las cuatro bandas en entrenamiento y se compararon U-Net, NDWI y MNDWI en el conjunto externo S1S2-Water. Un diagnóstico adicional contrastó dos niveles de procesamiento Sentinel-2 en 48 ventanas emparejadas. [Protocolo externo](revision/insumos_externos/protocolo_evaluacion_externa.md) · [Estadísticas de entrada](revision/bandas_train/) · [Lectura del diagnóstico](revision/diagnostico_l1c_l2a_v1/lectura_escenas.md) |
+
+## Resultados en Ecuador
+
+El historial registra cómo evolucionó la pérdida en entrenamiento y validación durante las 50 épocas. [Curvas de entrenamiento y validación](revision/figuras/perdida_entrenamiento_validacion.png)
+
+La intersección sobre la unión (IoU) mide el área de agua que comparten la predicción y la referencia respecto del área que ambas abarcan. F1 combina la proporción de predicciones de agua correctas con la proporción de agua de referencia que se recuperó. Para U-Net se aplicó un umbral de probabilidad de 0,5. Para NDWI se clasificó como agua el valor del índice mayor que cero.
+
+| Cohorte | Píxeles evaluados | IoU U-Net | IoU NDWI | F1 U-Net | F1 NDWI |
+|---|---:|---:|---:|---:|---:|
+| 59 recortes originales | 3 866 624 | 88,43 % | 80,92 % | 93,86 % | 89,45 % |
+| 55 sin exposición previa documentada | 3 604 480 | 87,71 % | 79,58 % | 93,45 % | 88,63 % |
+
+La nueva inferencia reprodujo los conteos de la evaluación original en las cuatro zonas. El F1 de U-Net pasó de **93,86 % al reunir los píxeles a 67,53 % al dar el mismo peso a cada zona**. El Golfo aportó 687 613 de los 908 590 píxeles de agua de referencia. Imbabura aportó un solo recorte, que ya se había examinado en el ensayo técnico y quedó fuera del subconjunto de 55. Las métricas miden concordancia con las etiquetas disponibles. Las etiquetas de los tres mosaicos nuevos proceden de MNDWI y la generación de las de El Oro tiene documentación parcial. [Conteos por recorte](revision/resultados_historicos/historicos_por_recorte.csv) · [Comprobación con la corrida original](revision/resultados_historicos/comparacion_con_original_59.csv) · [Cronología de los cuatro casos](revision/decisiones_y_procedencia/informe_documental.md)
+
+## Evaluación externa
+
+Se reservaron 256 ventanas de 16 escenas del conjunto oficial de prueba S1S2-Water. Sus máscaras se iniciaron con NDWI y fueron corregidas por tres expertos. La comparación usó el mismo soporte válido para los tres métodos. Tres ventanas carecían de píxeles evaluables. [Plan de ventanas](revision/insumos_externos/plan_congelado.json) · [Atribución y fuentes](revision/insumos_externos/ATRIBUCION.md)
+
+| Forma de resumir el F1 | U-Net | NDWI | MNDWI |
 |---|---:|---:|---:|
-| U-Net con VGG16 | 88,43 % | 93,86 % | 67,53 % |
-| NDWI | 80,92 % | 89,45 % | 66,03 % |
+| Todos los píxeles válidos | 93,90 % | 95,72 % | 95,66 % |
+| Igual peso para cada una de las 16 escenas | 87,06 % | 82,96 % | 81,92 % |
 
-U-Net obtuvo mayor concordancia global y en las dos zonas costeras. NDWI obtuvo mayor concordancia en Imbabura y Napo. La muestra de prueba incluye un solo recorte de Imbabura y tres de Napo. El Golfo aporta 687 613 de los 908 590 píxeles de referencia clasificados como agua. Las cifras globales reflejan esa distribución. En las tres zonas incorporadas con mosaicos de Sentinel‑2 se usaron etiquetas automáticas MNDWI. La procedencia detallada de las etiquetas de El Oro permanece sin verificar. La validación con referencias humanas independientes sigue pendiente.
+La diferencia de F1 entre U-Net y NDWI cambió de −1,82 a +4,10 puntos porcentuales al pasar del cálculo global al promedio por escena. Los intervalos exploratorios de ambas diferencias incluyeron el cero. [Métricas e intervalos](revision/analisis_local/metricas_globales_y_medias_con_ic.csv) · [Diferencias pareadas](revision/analisis_local/diferencias_pareadas_con_ic.csv)
 
-Cuatro recortes de prueba habían aparecido en el ensayo preliminar. El 21 de noviembre de 2026 se ejecutó de nuevo el checkpoint final sobre los 59 originales. Los conteos globales y regionales coincidieron exactamente con los de octubre. En los 55 recortes restantes, U-Net alcanzó una IoU de 87,71 % y un F1 de 93,45 %. NDWI alcanzó 79,58 % y 88,63 %, respectivamente. Imbabura quedó sin muestras en esta cohorte.
+Las tres escenas de la figura se eligieron para investigar discrepancias ya observadas. Para cada una se mantuvieron las ventanas, las etiquetas y el umbral cero mientras se comparaban la reflectancia en el techo de la atmósfera (L1C) y la reflectancia de superficie (L2A). En S025, el F1 de NDWI pasó de 84,44 % a 0,52 %. En S023 pasó de 70,25 % a 74,17 %. [Conteos y métricas del diagnóstico](revision/diagnostico_l1c_l2a_v1/metricas_indices_por_escena.csv)
 
-El 20 de noviembre se evaluaron además 256 ventanas de 16 escenas externas S1S2-Water con contrapartes L2A. Sobre el soporte común, U-Net obtuvo 88,49 % de IoU y 93,90 % de F1, NDWI obtuvo 91,78 % y 95,72 %, y MNDWI obtuvo 91,67 % y 95,66 %. Estas referencias se inicializaron con NDWI y fueron corregidas por tres expertos. Se incluyen la media por escena, los contrastes exploratorios con remuestreo de escenas y las estadísticas de los 460 recortes de entrenamiento. [Reproducir los análisis de revisión](revision/README.md).
+![F1 de NDWI y MNDWI con los productos L1C y L2A sobre 16 ventanas por escena. El cambio más grande aparece en el NDWI de S025.](revision/figuras/Comparacion_L1C_L2A.png)
 
-## Reproducir el cálculo de NDWI
+La distribución del agua de referencia ayuda a interpretar las diferencias entre escenas. [F1 y cantidad de agua en las 16 escenas externas](revision/figuras/f1_escenas_externas.png) · [Fuentes de las figuras](revision/figuras/ATRIBUCION.md)
 
-Se utilizó Python 3.12 con las versiones de NumPy y Rasterio indicadas en `requirements.txt`. La reproducción requiere acceso autorizado a los 59 pares originales. Coloque las imágenes en `Dataset_UNet_Unificado/images/` y las máscaras en `Dataset_UNet_Unificado/masks/`, con los nombres registrados en el manifiesto. Desde la raíz del repositorio ejecute
+## Reproducir las pruebas
+
+Desde la raíz del repositorio, con Python 3.12, estos comandos ejecutan pruebas unitarias y reproducen los intervalos de la evaluación externa a partir de los conteos incluidos.
 
 ```sh
 python -m pip install -r requirements.txt
-python -m unittest test_baseline_ndwi
+python -m unittest test_baseline_ndwi -v
+python -m unittest discover -s revision/analisis_local -p "test_*.py" -v
+python revision/analisis_local/analizar_escenas.py
+```
+
+El último comando crea `revision/estadistica_recalculada/`. Para repetir el cálculo de NDWI sobre Ecuador, se necesitan los 59 pares originales en `Dataset_UNet_Unificado/images/` y `Dataset_UNet_Unificado/masks/`. El programa verifica las huellas SHA-256 y la cuadrícula antes de calcular los conteos.
+
+```sh
 python baseline_ndwi.py --splits manifiestos/particion.csv --exposure manifiestos/exposicion.csv --manifest manifiestos/pares_prueba.csv --dataset-root Dataset_UNet_Unificado --out-dir resultados_locales
 ```
 
-El script verifica cada par por SHA-256, comprueba el tipo y la cuadrícula, y calcula los resultados globales y regionales. Puede cotejar el archivo generado `ndwi_resumen.csv` con el de `resultados/`. El CSV por recorte contiene los conteos de verdaderos positivos, falsos positivos, falsos negativos y verdaderos negativos. El JSON identifica los insumos por nombre y huella. Los tiempos de ejecución del JSON corresponden al cálculo de NDWI.
+La guía de reproducción contiene los comandos para evaluar el checkpoint, recuperar las ventanas externas y verificar los 315 mapas de probabilidades. La carpeta `resultados/` conserva el primer cálculo de NDWI. La nueva inferencia histórica completa está en `revision/resultados_historicos/`. [Guía detallada](revision/README.md) · [Inventario de probabilidades](revision/inventario_probabilidades.csv)
 
-## Contenido y acceso
+## Acceso a datos y pesos
 
-- `manifiestos/` contiene la partición final de 561 recortes, los identificadores y hashes de los 59 pares de prueba y las cuatro exposiciones documentadas. Son extractos del registro histórico con las columnas necesarias para reproducir el cálculo.
-- `resultados/` contiene el NDWI por recorte, su resumen y metadatos, la comparación regional con U-Net y los conteos individuales disponibles del modelo. Las celdas vacías de U-Net identifican conteos que faltan.
-- `metodo_original/` conserva los scripts de Earth Engine, preparación de parches, entrenamiento y reanudación, junto con la configuración y el historial. La reproducción del entrenamiento original requiere su entorno, los datos completos y, para la reanudación, el checkpoint intermedio.
+Los GeoTIFF de El Oro y el checkpoint de la corrida final están bajo custodia del equipo. La redistribución de los pares de El Oro requiere documentar la autorización del titular. La revisión conservó la trazabilidad de los 555 pares, los filtros históricos de Earth Engine y los conteos por sector. El listado exacto de gránulos que integraron los mosaicos originales sigue sin recuperarse. [Informe de procedencia](revision/decisiones_y_procedencia/informe_documental.md)
 
-## Consultar el procesamiento y el modelo
-
-El script `metodo_original/gee_v1_ejecutado.js` se ejecuta en el editor de Google Earth Engine con un proyecto habilitado. Exporta los mosaicos de las tres zonas incorporadas. Para preparar el dataset completo se necesitan también las parejas históricas de El Oro. El script de recorte permite indicar las carpetas con `--inputs`, `--legacy` y `--output`. El script de entrenamiento acepta `--dataset`, `--manifest` y `--output`. El archivo de configuración documenta los parámetros originales. Se utilizó TensorFlow 2.20.0 con Keras 3.15.1. Las dependencias de entrenamiento están en `requirements-entrenamiento.txt`.
-
-La reanudación documentada en `reanudar_final_20261005.py` busca los archivos conservados en la estructura original del proyecto y comprueba sus hashes. Para consultarla como registro histórico basta con leer el script. Los comandos de reproducción anteriores ejecutan la comparación NDWI.
-
-El acceso a los GeoTIFF y pesos se gestiona por separado. La autorización para redistribuir los datos antiguos de El Oro está pendiente de documentación.
+S1S2-Water v1.0.1 se distribuye bajo CC BY 4.0. Los productos Sentinel-2 tienen sus propias condiciones de uso. [Datos externos de Wieland y colaboradores](https://zenodo.org/records/11278238) · [Atribuciones y condiciones](revision/insumos_externos/ATRIBUCION.md)

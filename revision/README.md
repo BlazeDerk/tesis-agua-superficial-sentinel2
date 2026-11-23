@@ -69,6 +69,21 @@ Las seis tablas de `diagnostico_l1c_l2a_v1/` conservan el soporte, las transicio
 python revision/scripts/conciliar_contraste.py --tablas revision/diagnostico_l1c_l2a_v1 --externo revision/insumos_externos/conteos --salida control_contraste_local
 ```
 
+## Pruebas y figura del contraste
+
+Para verificar los cálculos de índices, la lectura de rásteres, la inferencia histórica, los momentos por banda y la generación de gráficos, ejecute estos comandos desde la raíz del repositorio.
+
+```sh
+python -m pip install -r revision/requirements-revision.txt
+python -m unittest discover -s revision -p "test_*.py" -v
+```
+
+Las 29 pruebas de este comando usan entradas de control. La evidencia científica proviene de los conteos y las salidas del estudio. La figura del contraste se puede regenerar desde los F1 por escena.
+
+```sh
+python revision/scripts/figura_niveles.py --tabla revision/diagnostico_l1c_l2a_v1/metricas_indices_por_escena.csv --out-dir figura_contraste_local
+```
+
 ## Procedencia y derechos
 
 Las evidencias documentales sobre el ensayo técnico y los 555 pares de El Oro están bajo `decisiones_y_procedencia/`. La carpeta `catalogo_candidatos/` registra una consulta del 21 de noviembre de 2026 a Earth Search sobre los sectores y el periodo del estudio. Se obtuvieron 1 077 productos candidatos para el Golfo, 285 para Imbabura y 364 para Napo. Los conteos originales del cruce de GEE fueron 1 414, 417 y 601. El campo destinado al identificador histórico de GEE se conserva vacío cuando falta evidencia del registro original. El comando `python revision/reconstruir_candidatos.py` guarda una nueva consulta en un directorio separado. Un catálogo reprocesado puede cambiar con el tiempo.

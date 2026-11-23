@@ -1,0 +1,7 @@
+# Figuras de entrenamiento y evaluación externa
+
+**Pérdida de entrenamiento y validación durante 50 épocas.** La figura del equipo de tesis reproduce el historial de la corrida ecuatoriana. La línea discontinua señala la reanudación tras la época 16. La pérdida de validación más baja observada fue 0,1662 en la época 50. El segundo panel amplía las últimas 20 épocas. [Figura](perdida_entrenamiento_validacion.png) · [Historial por época](../../metodo_original/history_final_original.csv)
+
+**F1 por escena y distribución del agua de referencia.** La figura del equipo de tesis compara U-Net/VGG16, NDWI y MNDWI en las 16 escenas externas de prueba. Cada barra indica qué porcentaje de todos los píxeles etiquetados como agua aporta una escena. Las cuatro primeras reúnen el 66,75 %. El F1 cuantifica la coincidencia con las máscaras publicadas de S1S2-Water. [Figura](f1_escenas_externas.png) · [Datos por escena](../analisis_local/escenas_y_pesos.csv)
+
+Las etiquetas externas proceden de *S1S2-Water* v1.0.1, de M. Wieland, F. Fichtner, S. Martinis, S. Groth, C. Krullikowski, S. Plank y M. Motagh, bajo CC BY 4.0. Para esta evaluación se extrajeron 16 ventanas de cada escena y se calcularon las métricas en los píxeles válidos comunes a los tres métodos. La óptica utilizada corresponde a datos Copernicus Sentinel-2 L2A de las mismas adquisiciones. [Conjunto original](https://doi.org/10.5281/zenodo.11278238) · [Licencia de las etiquetas](https://creativecommons.org/licenses/by/4.0/) · [Atribución y procesamiento de las fuentes](../insumos_externos/ATRIBUCION.md)
